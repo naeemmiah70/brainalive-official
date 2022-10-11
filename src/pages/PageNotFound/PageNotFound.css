@@ -1,0 +1,40 @@
+.not-found-div {
+    height: 100vh;
+    background-color: #000;
+}
+
+.dark-bg-color {
+    background-color: #000;
+}
+
+.error-number {
+    font-size: 7.5em;
+    margin: 15px 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.uh-oh {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.error-details {
+    color: #fff;
+    font-size: 1em;
+}
+
+.home-btn {
+    color: #fff;
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin-top: 1rem;
+    padding: 0.75rem 1.75rem;
+    font-weight: 500;
+    border: 1px solid #265b97;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 11px 26px;
+}

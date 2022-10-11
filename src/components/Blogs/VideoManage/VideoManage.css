@@ -1,0 +1,23 @@
+.video-managing-bg {
+    height: 370px;
+    background: url('https://braina.live/blog/wp-content/uploads/2021/11/main-cognitive-load-image_edited-1024x576.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+}
+
+#management-heading {
+    position: absolute;
+    left: 25%;
+    font-size: 42px;
+    top: 20%;
+}
+
+@media only screen and (max-width: 620px) {
+    #management-heading{
+        font-size: 27px;
+        position: absolute;
+        left: 5%;
+    }
+}

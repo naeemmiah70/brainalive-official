@@ -1,0 +1,20 @@
+.webinar-video {
+    opacity: 1;
+    filter: brightness(25%);
+}
+
+.webinar-text-position {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.webinar-text-div {
+    width: 60%;
+}
+
+@media only screen and (max-width: 620px) {
+    .webinar-video {
+        height: 300px;
+    }
+}

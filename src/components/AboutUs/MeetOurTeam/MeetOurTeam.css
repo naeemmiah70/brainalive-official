@@ -1,0 +1,22 @@
+.meet-team-section {
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+    margin-bottom: -1rem;
+    padding: 4rem;
+}
+.meet-team-title{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: -.1rem;
+    font-family: Galano-Grotesque;
+}
+.meet-our-team-section{
+    width: 90%;
+}
+
+@media only screen and (max-width: 620px) {
+    .meet-our-team-section{
+        width: 100%;
+    }
+}

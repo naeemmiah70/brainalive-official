@@ -1,0 +1,64 @@
+.sdk-icon {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(128, 128, 128, 0.093);
+    border-radius: 10px;
+}
+
+.bottom-bg {
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+}
+
+.sdk-text-div {
+    box-shadow: 4px 5px 7px #266e978f;
+    border-radius: 25px;
+    border: 1px solid #266e97;
+    transition: all 700ms ease;
+}
+
+.sdk-text-div:hover {
+    transition: all 300ms ease;
+    box-shadow: 6px 9px 10px 0 rgb(0 0 0), 0 6px 20px 0 rgb(0 0 0);
+    background: #265b97;
+    border-color: #265b97;
+    color: #fff;
+}
+
+.margin-sdk-bg {
+    padding-top: 10rem;
+}
+
+.sdk-bottom-bg {
+    background: url('../../../resource//curve-bg.png');
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.sdk-bottom-title {
+    color: #fff;
+    font-weight: 500;
+}
+
+.sdk-bottom-details {
+    color: #fff;
+    font-weight: 550;
+}
+
+.get-free-demo {
+    border-radius: 30px;
+    border: 0;
+    padding: 8px 10px;
+    box-shadow: 3px 4px 3px #17171742;
+    font-weight: 600;
+    color: #165b6b;
+}
+
+.get-free-demo:hover {
+    transition: all 300ms ease;
+    box-shadow: 6px 9px 10px 0 #17171742, 0 6px 20px 0 #17171742;
+    background: #266574;
+    color: #fff;
+    background: transparent;
+}

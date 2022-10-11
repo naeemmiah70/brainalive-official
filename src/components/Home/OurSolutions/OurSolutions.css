@@ -1,0 +1,105 @@
+.solution-img {
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .solution-div-bg {
+        width: 390px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .solution-header {
+        color: #265B97;
+        font-size: 2.9rem;
+        margin-top: 5.5rem;
+        font-weight: bolder !important;
+        font-family: Galano-Grotesque;
+        letter-spacing: -.3rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .solution-header {
+        color: #265B97;
+        font-size: 2.9rem;
+        margin-top: 5.5rem;
+        font-weight: bolder !important;
+        font-family: Galano-Grotesque;
+        letter-spacing: -.2rem;
+        
+    }
+
+    .solution-div-bg {
+        width: 30rem;
+        height: 250px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .solution-header {
+        color: #265B97;
+        font-size: 2rem;
+        margin-top: 3rem;
+        font-weight: 700;
+        letter-spacing: .01px;
+        font-family: Galano-Grotesque;
+        font-weight: bolder !important;
+    }
+}
+
+.card-text {
+    background-color: rgba(0, 0, 0, 0.625);
+    height: 250px;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-family: Galano-Grotesque;
+    color: #fff;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+
+.hide-card-text {
+    display: none;
+    font-family: Galano-Grotesque;
+}
+
+.hovered-div :hover .hide-card-text {
+    display: block;
+}
+
+.img-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.hovered-div :hover .img-icon {
+    display: none;
+}
+
+.solution-div-bg :hover {
+    -o-transform: translateY(-5%);
+    transform: translateY(-5%);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    position: relative;
+    top: 12px;
+}
+
+.hovered-div :hover {
+    -o-transform: translateY(-5%);
+    transform: translateY(-5%);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}

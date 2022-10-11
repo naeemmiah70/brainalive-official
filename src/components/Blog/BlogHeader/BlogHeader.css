@@ -1,0 +1,8 @@
+.blog-header {
+    height: 300px;
+    background: url('https://braina.live/blog/wp-content/uploads/2021/09/blog-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter:brightness(50%);
+}

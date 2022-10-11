@@ -1,0 +1,162 @@
+.brain-wave-bg {
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+
+}
+
+.wave-heading {
+    text-align: center;
+    font-weight: 900;
+    font-size: 29px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    font-family: Galano-Grotesque;
+
+}
+
+.delta {
+    background: url("../../../resource/gif/delta.webp");
+    background-position: center;
+    background-size: 50% 80%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    opacity: 0.3;
+    height: 400px;
+}
+
+.theta {
+    background: url("../../../resource/gif/theta.webp");
+    background-position: center;
+    background-size: 50% 80%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    opacity: 0.3;
+    height: 400px;
+}
+
+.alpha {
+    background: url("../../../resource/gif/alpha.webp");
+    background-position: center;
+    background-size: 50% 80%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    opacity: 0.3;
+    height: 400px;
+}
+
+.beta {
+    background: url("../../../resource/gif/beta.webp");
+    background-position: center;
+    background-size: 50% 80%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    opacity: 0.3;
+    height: 400px;
+}
+
+.wave-content {
+    position: relative;
+    bottom: 400px;
+    margin-bottom: -400px;
+}
+
+
+
+.wave-title {
+    line-height: 2;
+    font-weight: 700;
+    color: #fff;
+    font-family: Galano-Grotesque;
+}
+
+.wave-details {
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.887);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    
+}
+
+#wave-amount {
+    font-size: 20px;
+    color: #fff;
+}
+
+.wave-change-div:hover .wave-title {
+    color: orange;
+}
+
+.shimmer {
+    margin: 0 auto;
+    display: inline;
+    margin-bottom: 0;
+}
+
+.shimmer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.1);
+    background: -webkit-gradient(linear, left top, right top, from(#3b8294), to(#80a4ad), color-stop(0.5, #80a4ad));
+    background: -moz-gradient(linear, left top, right top, from(#3b8294), to(#80a4ad), color-stop(0.5, #80a4ad));
+    background: gradient(linear, left top, right top, from(#3b8294), to(#80a4ad), color-stop(0.5, #80a4ad));
+    -webkit-background-size: 125px 100%;
+    -moz-background-size: 125px 100%;
+    background-size: 125px 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-animation-name: shimmer;
+    -moz-animation-name: shimmer;
+    animation-name: shimmer;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #fff;
+}
+
+@-moz-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@-o-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+
+    100% {
+        background-position: top right;
+    }
+}

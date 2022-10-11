@@ -1,0 +1,23 @@
+.check-size {
+    height: 35px;
+    width: 35px;
+    margin-right: 12px;
+}
+
+.makes-speacial {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #262626 !important;
+    text-transform: capitalize;
+    font-family: Galano-Grotesque;
+}
+
+.speacial-text {
+    display: flex;
+    letter-spacing: .22px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #212121;
+    line-height: 1.6;
+   opacity: 0.9;
+}

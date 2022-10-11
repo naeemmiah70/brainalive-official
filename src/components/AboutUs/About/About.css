@@ -1,0 +1,50 @@
+.about-bg-color {
+    background-color: #212121;
+}
+
+.div-padding {
+    padding: 6rem;
+}
+
+.about-image {
+    border-radius: 40px;
+    height: 29rem;
+    width: 33rem;
+}
+
+.about-title {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: -.2rem;
+    margin-top: 1.5rem;
+    font-family: Galano-Grotesque;
+}
+
+.about-descriptions {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #FCFCFC;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1.2rem;
+}
+
+@media only screen and (max-width: 620px) {
+
+    .div-padding {
+        padding: 3rem;
+    }
+
+    .about-image {
+        border-radius: 40px;
+        height: 17rem;
+        width: 100%;
+    }
+}
+
+.mission-margin-top {
+    margin-top: -5rem;
+}

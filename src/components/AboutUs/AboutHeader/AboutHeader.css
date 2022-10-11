@@ -1,0 +1,54 @@
+.text-position {
+    position: absolute;
+    height: 100%;
+    top: 40%;
+    left: 30%;
+}
+
+.video-title {
+
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.1;
+    letter-spacing: -.1rem
+}
+
+.video-description {
+    line-height: 35px;
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+@media only screen and (max-width: 1024px) {
+    .text-position {
+        position: absolute;
+        height: 100%;
+        top: 15%;
+        left: 20%;
+    }
+    
+    .video-title {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.1;
+        letter-spacing: -.1rem
+    }
+    
+    .video-description {
+        line-height: 35px;
+        font-size: 15px;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .margin-top-video{
+        margin-top: 80px;
+    }
+    .text-position {
+        position: absolute;
+        height: 100%;
+        top: 40%;
+        left: 10%;
+    }
+}

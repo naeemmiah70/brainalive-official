@@ -1,0 +1,57 @@
+.user-engagement-bg {
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+    margin-top: -10px;
+}
+
+.engagement-header {
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.1rem;
+    line-height: 1.1;
+    margin-top: 3rem;
+    font-family: Galano-Grotesque;
+   letter-spacing: -.20rem;
+}
+
+.engagement-text {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #FCFCFC;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .text-width {
+        width: 50%
+    }
+
+    .analytics-img-1 {
+        height: 33rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .analytics-img-1 {
+        height: 11rem;
+        width: 88%!important;
+    }
+
+    .engagement-header {
+        color: #fff;
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-top: 3rem;
+        font-family: Galano-Grotesque;
+    }
+}
+
+.analytics-img-1 {
+    width: 80%;
+    border-radius: 25px;
+    margin-top: 2.2rem;
+    margin-bottom: 4rem;
+}

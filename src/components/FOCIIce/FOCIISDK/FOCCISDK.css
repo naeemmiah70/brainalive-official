@@ -1,0 +1,130 @@
+.focci-sdk-bg {
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+    display: flex;
+    justify-content: center;
+}
+.focci-sdk-container{
+    width: 75%;
+}
+
+.focci-ce-title {
+  font-size: 2.3rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: Galano-Grotesque;
+
+}
+
+.focci-ce-description {
+    color: #fff;
+    font-weight: 500;
+    width: 70%;
+    letter-spacing: 1px;
+    font-family: Galano-Grotesque;
+}
+@media only screen and (max-width: 520px) {
+    .focci-ce-description {
+        color: rgba(255, 255, 255, 0.882);
+        font-weight: 500;
+        width: 90%;
+        letter-spacing: 1px;
+    }
+    .focci-sdk-container{
+        width: 90%;
+    }
+    .focci-ce-title {
+      font-size: 2rem;
+        color: #fff;
+        font-weight: 700;
+        font-family: Galano-Grotesque;
+    
+    }
+}
+.bar {
+    height: 5px;
+    width: 90px;
+    background: #406cb1;
+    margin: 15px auto 20px;
+    position: relative;
+    border-radius: 30px;
+  }
+  .bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2.6px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #265297;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: MOVE-BG;
+    animation-name: MOVE-BG;
+  }
+  .bar {
+    transform-origin: center bottom;
+    -webkit-animation: bar infinite 4s ease-in-out;
+    -moz-animation: bar infinite 4s ease-in-out;
+    animation: bar infinite 4s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes MOVE-BG {
+    from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(88px);
+      transform: translateX(88px);
+    }
+  }
+  @keyframes MOVE-BG {
+    from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(88px);
+      transform: translateX(88px);
+    }
+  }
+  @-webkit-keyframes bar {
+    0% {
+      transform: scaleY(1);
+    }
+    30% {
+      transform: scaleY(0.6);
+    }
+    60% {
+      transform: scaleY(0.8);
+    }
+    80% {
+      transform: scaleY(0.5);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  @keyframes bar {
+    0% {
+      transform: scaleY(1);
+    }
+    30% {
+      transform: scaleY(0.6);
+    }
+    60% {
+      transform: scaleY(0.8);
+    }
+    80% {
+      transform: scaleY(0.5);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  

@@ -1,0 +1,55 @@
+.apiPng-icon {
+    height: 23px;
+    width: 23px;
+    margin-right: 10px;
+}
+
+.offerings-text {
+    font-weight: 550px;
+    color: #fff;
+    letter-spacing: .22px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.application-icon {
+    height: 35px;
+    width: 45px;
+    margin-right: 10px;
+    color: #C21E7E;
+}
+.webex-icon {
+    height: 35px;
+    width: 85px;
+    margin-right: 10px;
+    color: #C21E7E;
+}
+.application-type-text{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.ready-to-cut-text {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: Galano-Grotesque, Montserrat, sans-serif;
+    font-weight: 700;
+    width: 90%;
+}
+
+@media only screen and (max-width: 620px) {
+    .ready-to-cut-text {
+        font-size: 2rem;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: Galano-Grotesque, Montserrat, sans-serif;
+        font-weight: 700;
+        width: 90%;
+    }
+}
+
+.dotted-border {
+    border-right: 2px dotted rgba(255, 255, 255, 0.613);
+}

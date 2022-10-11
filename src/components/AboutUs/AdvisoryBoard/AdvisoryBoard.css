@@ -1,0 +1,44 @@
+.advisory-team{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: -.1rem;
+    margin-top: 6rem;
+    font-family: Galano-Grotesque;
+}
+.advisory-div {
+    margin-top: 3rem;
+}
+
+.leader-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin-right: 1.5rem;
+}
+
+.advisory-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F6F6F6;
+    margin: 0 0 10px 0;
+    text-decoration: none;
+    font-family: Galano-Grotesque;
+}
+
+.advisory-designation {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #28a3d4;
+    margin: 0 0 0 0;
+    text-decoration: none;
+    font-family: Galano-Grotesque;
+    letter-spacing: 1px;
+}
+
+.leader-img:hover {
+    filter: grayscale(0)
+}

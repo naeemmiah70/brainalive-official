@@ -1,0 +1,45 @@
+.our-team-div {
+    border: 1px #474747 dotted;
+    ;
+    border-radius: 15px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 400px;
+}
+
+.our-team-div:hover {
+    box-shadow: 0 0 12px 0 #000000;
+    background: linear-gradient(45deg, #266497, #264897);
+}
+
+.team-member-image {
+    border: 5px solid rgba(255, 255, 255, 0.897);
+    position: relative;
+    top: 15px;
+}
+
+.linkedIn-icon {
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+    color: white;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    bottom: 40px;
+    color: dodgerblue;
+    background-color: aliceblue;
+    z-index: 2;
+
+}
+
+.team-designation {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #C21E7E;
+    margin: 0 0 0 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}

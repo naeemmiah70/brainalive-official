@@ -1,0 +1,60 @@
+.facilities-title {
+    color: #265B97;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 1.1;
+    letter-spacing: -.1rem;
+    margin-top: 1.5rem;
+    font-family: Galano-Grotesque;
+}
+
+.facilities-description {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-bg-color {
+    background-color: #212121;
+}
+
+.facilities-div-padding {
+    padding: 2rem;
+}
+
+.facilities-image {
+    border-radius: 40px;
+}
+
+.about-title {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: -.1rem;
+    margin-top: 1.5rem;
+    font-family: Galano-Grotesque, Montserrat, sans-serif;
+}
+
+.about-description {
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #FCFCFC;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 620px) {
+
+    .facilities-div-padding {
+        padding: 3rem;
+    }
+}
+
+.mission-margin-top {
+    margin-top: -5rem;
+}
+.facilities-container{
+    width: 90%;
+}

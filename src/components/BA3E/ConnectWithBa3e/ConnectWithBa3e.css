@@ -1,0 +1,24 @@
+.connect-bg {
+    background-color: #1D1D1D;
+}
+
+.connect-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.features-bg {
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+}
+.feature-title{
+    letter-spacing: .22px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: Galano-Grotesque;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.927);
+}

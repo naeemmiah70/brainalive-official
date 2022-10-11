@@ -1,0 +1,14 @@
+.shopper-bg {
+    background: linear-gradient(165.35deg, #265b97 0%, #264897 100%);
+    border-radius: 12px;
+    padding: 12px 0px 20px 100px;
+    box-shadow: 4px 5px 7px #000000;
+}
+.solution-div{
+    border-radius: 20px;
+}
+.shopper-bottom-text{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}

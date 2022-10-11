@@ -1,0 +1,122 @@
+.loading-image-container {
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to left, #0a1a23, #155a6a, #0b1923);
+    background: linear-gradient(to left, #0e4a58, #20788d, #082f38);
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c)
+}
+
+.heartbeat-loader {
+    -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+    animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+.heartbeat-loader:not(:required) {
+    -moz-animation: heartbeat-loader 1300ms ease 0s infinite normal;
+    -webkit-animation: heartbeat-loader 1300ms ease 0s infinite normal;
+    animation: heartbeat-loader 1800ms ease 0s infinite normal;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 10%;
+
+}
+
+@-moz-keyframes heartbeat-loader {
+    0% {
+        -moz-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+
+    14% {
+        -moz-transform: rotate(0) scale(1.3);
+        transform: rotate(0) scale(1.3);
+    }
+
+    28% {
+        -moz-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+
+    42% {
+        -moz-transform: rotate(0) scale(1.3);
+        transform: rotate(0) scale(1.3);
+    }
+
+    70% {
+        -moz-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+}
+
+@-webkit-keyframes heartbeat-loader {
+    0% {
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+
+    14% {
+        -webkit-transform: rotate(0) scale(1.3);
+        transform: rotate(0) scale(1.3);
+    }
+
+    28% {
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+
+    42% {
+        -webkit-transform: rotate(0) scale(1.3);
+        transform: rotate(0) scale(1.3);
+    }
+
+    70% {
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+}
+
+@keyframes heartbeat-loader {
+    0% {
+        -moz-transform: rotate(0) scale(1);
+        -ms-transform: rotate(0) scale(1);
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+
+    14% {
+        -moz-transform: rotate(0) scale(1.3);
+        -ms-transform: rotate(0) scale(1.3);
+        -webkit-transform: rotate(0) scale(1.3);
+        transform: rotate(0) scale(1.3);
+    }
+
+    28% {
+        -moz-transform: rotate(0) scale(1);
+        -ms-transform: rotate(0) scale(1);
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+
+    42% {
+        -moz-transform: rotate(0) scale(1.3);
+        -ms-transform: rotate(0) scale(1.3);
+        -webkit-transform: rotate(0) scale(1.3);
+        transform: rotate(0) scale(1.3);
+    }
+
+    70% {
+        -moz-transform: rotate(0) scale(1);
+        -ms-transform: rotate(0) scale(1);
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);
+    }
+}

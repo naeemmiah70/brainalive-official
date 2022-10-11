@@ -1,0 +1,53 @@
+.form-label {
+    color: #155a6a;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.star-icon {
+    color: #ff0000;
+    font-weight: 400;
+}
+
+.subscribe-form {
+    background: #f2f2f2;
+    padding: 20px 15px 5px;
+    border-radius: 13px;
+    width: 280px;
+    margin-top: 1rem;
+    
+}
+
+.subscribe-input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+    background: none;
+    color: black;
+}
+.subscribe-input:focus{
+  
+       
+        color: black;
+    
+}
+
+.subscribe-submit-btn {
+    box-shadow: 0 14px 26px -12px rgb(233 30 99 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(233 30 99 / 20%);
+    color: #fff;
+    border: none;
+    padding: 8px 20px !important;
+    border-radius: 25px !important;
+    font-size: 12px !important;
+    background: #c82661 !important;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+}
+.subscribe-now-heading{
+    color: #fff;
+    font-family: Galano-Grotesque;
+    margin-top: 3rem;
+}

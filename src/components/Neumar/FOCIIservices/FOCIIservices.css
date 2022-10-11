@@ -1,0 +1,263 @@
+.cro-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.cro-card h4 {
+    font-size: 18px;
+}
+
+.cro-card .image {
+    background: #292929;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width: 66px;
+    height: 65px;
+}
+
+.cro-card .image img {
+    width: 90%;
+}
+
+.cro-card {
+    width: 94%;
+    margin: auto;
+}
+
+.cro-card p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.cro-card .image img {
+    width: 68%;
+    border-radius: 0;
+}
+
+.cro-card .image {
+    width: 56px;
+    height: 55px;
+}
+
+.card-shadow {
+    box-shadow: 4px 5px 7px #266e978f;
+    border-radius: 25px;
+    border: 1px solid #266e97;
+    transition: all 700ms ease;
+}
+
+.card-shadow:hover {
+    transition: all 300ms ease;
+    box-shadow: 6px 9px 10px 0 rgb(0 0 0), 0 6px 20px 0 rgb(0 0 0);
+    background: #265b97;
+    border-color: #265b97;
+    color: #fff;
+}
+
+.single_service.service_right {
+    padding-right: 44px;
+    padding-left: 0;
+    text-align: right
+}
+
+.single_service.service_right img {
+    right: -20px;
+    left: auto;
+}
+
+.single_service:nth-child(1),
+.single_service:nth-child(3) {
+    right: 180px;
+}
+
+.service_right:nth-child(1),
+.service_right:nth-child(3) {
+    right: -180px;
+}
+
+.single_service:nth-child(2) {
+    margin: 5rem 0;
+}
+
+.single_service img {
+    max-width: 50px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.single_service {
+    position: relative;
+    padding-left: 44px;
+    margin-bottom: 15px
+}
+
+.single_service p {
+    padding: 0 15px;
+}
+
+.single_service h4 {
+    margin-bottom: 0;
+    font-size: 18px
+}
+
+.service_right h4 {
+    margin-bottom: 0;
+    font-size: 18px
+}
+.focii-center-text{
+    position: relative;
+    left: 125px;
+    font-size: 3rem;
+
+}
+.single_service .card-shadow {
+    height: 110px;
+}
+
+.service_right p {
+    margin-bottom: 10px;
+  
+}
+
+.focci-comp-sol .single_service:before {
+    width: 34%;
+    height: 0px;
+    border-bottom: 5px dotted #fff;
+    -webkit-box-shadow: 0px 1px 1px #fff;
+    -moz-box-shadow: 0px 1px 1px #fff;
+    box-shadow: 0px 1px 1px #383838;
+    position: absolute;
+    top: 42%;
+    content: '';
+    left: 108%;
+    transform: rotate(180deg);
+}
+
+.focci-comp-sol .single_service.single_one::before {
+    width: 23%;
+    top: 126%;
+    left: 78%;
+    transform: rotate(238deg);
+}
+
+.focci-comp-sol .single_service.single_three::before {
+    width: 23%;
+    top: -36%;
+    left: 75%;
+    transform: rotate(121deg);
+}
+
+.focci-comp-sol .single_service.single_five::before {
+    left: -35%;
+    width: 30%;
+}
+
+.focci-comp-sol .single_service.single_six::before {
+    width: 25%;
+    top: -37%;
+    content: '';
+    left: 8%;
+    transform: rotate(240deg);
+}
+
+.focci-comp-sol .single_service.single_four::before {
+    width: 25%;
+    top: 131%;
+    content: '';
+    /* margin-top: 35px; */
+    left: -1%;
+    transform: rotate(121deg);
+
+}
+
+@media (min-width: 768px) and (max-width: 834px) {
+
+    .focci-comp-sol .cro-card p {
+        font-size: 13px;
+    }
+
+    .focci-comp-sol .cro-card .image,
+    .cro-card .image {
+        margin-left: 15px;
+    }
+
+
+}
+
+@media (max-width: 835px) {
+
+
+    .faq-answer {
+        padding-right: 70px;
+    }
+
+    .cro-card p {
+        font-size: 12px;
+    }
+
+    .cro-card .image {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .faq-answer {
+        padding-right: 0;
+    }
+
+    .cro-card .image {
+        width: 65px;
+        height: 60px;
+    }
+
+    .cro-card p {
+        font-size: 14px;
+    }
+
+    .faq-singular .faq-question:before {
+        right: 0;
+    }
+
+    .faq-singular {
+        padding: 0 20px 0 20px;
+    }
+
+    .focci-comp-sol .single_service:before {
+        display: none;
+    }
+
+    .service_right:nth-child(1),
+    .service_right:nth-child(3),
+    .single_service:nth-child(1),
+    .single_service:nth-child(3) {
+        right: 0;
+    }
+
+    .focci-comp-sol {
+        margin-top: 20px;
+    }
+
+    .single_service.service_right img {
+        right: inherit;
+        left: -12px;
+        margin-left: 0;
+    }
+
+    .single_service.service_right {
+        width: 97%;
+        padding-right: 0;
+        padding-left: 44px;
+    }
+}

@@ -1,0 +1,99 @@
+.neumar-header-btn {
+    color: #fff;
+    border-radius: 12px;
+    background: none;
+    padding: 10px 24px;
+    box-shadow: none;
+    display: block;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+    align-items: center;
+    box-shadow: 0 4px 10px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    text-align: center;
+    width: 210px !important;
+    margin-right: 2rem;
+}
+
+.neumar-header-btn:hover {
+    color: #C21E55;
+    text-decoration: none;
+    box-shadow: 0 4px 10px 4px rgb(22 22 22 / 32%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.neumar-know-more-btn {
+    color: white;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(165.35deg, #265b97 0%, #264897 100%) !important;
+    padding: 10px 25px;
+    box-shadow: none;
+    height: 45px;
+    box-shadow: 0 4px 10px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border: 0;
+    width: 240px;
+}
+
+#zIndex {
+    z-index: 0;
+}
+
+
+
+/* .popup-bg {
+    background: rgb(28 28 28 / 59%);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    backdrop-filter: blur(2px);
+    overflow-y: hidden;
+} */
+/* 
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: auto;
+}
+
+.popup-content video {
+    box-shadow: 4px 5px 7px #000000ba;
+}
+
+@media (max-width: 480px) {
+    .popup-content {
+        width: 96%;
+    }
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 998;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #ddd;
+    line-height: 25px;
+    color: #155a6a;
+} */

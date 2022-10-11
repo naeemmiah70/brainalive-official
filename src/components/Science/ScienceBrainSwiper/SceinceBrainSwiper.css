@@ -1,0 +1,71 @@
+.swipersection-bg {
+    font-family: Galano-Grotesque, Montserrat, sans-serif;
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+}
+
+.brain-angle-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: Galano-Grotesque;
+}
+
+.brain-angle-view-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.brain-angle-view-div:hover .brain-angle-title {
+    color: orange;
+}
+
+.brain-angle-view-div:active .brain-angle-title {
+    color: orange;
+}
+
+/* .angle-img {
+    height: 350px;
+    width: 350px;
+} */
+
+.swiper-image {
+    height: 350px;
+    width: 480px
+}
+
+.view1 {
+    background: url("../../../resource/Image1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: top;
+    background-size: 80% 80%;
+}
+
+.view2 {
+    background: url("../../../resource/image2.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 90% 70%;
+}
+
+.view3 {
+    background: url("../../../resource/Image3.png");
+    background-repeat: no-repeat;
+    background-position-x: -20px;
+    background-position-y: top;
+    background-size: 80% 80%;
+}
+
+.view4 {
+    background: url("../../../resource/Image4.png");
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position-x: -50px;
+    background-position-y: bottom;
+}

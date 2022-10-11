@@ -1,0 +1,35 @@
+.opeining-section {
+    background-color: #212121;
+}
+.oppening-text{
+    color: #fff;
+    font-family: Galano-Grotesque;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -.1rem;
+    margin-top: 7rem;
+}
+.opening-div {
+    height: 600px;
+    border-radius: 15px;
+
+}
+
+.opening-text {
+    background-color: rgba(0, 0, 0, 0.33);
+    height: 100%;
+    border-radius: 15px;
+    padding: 3rem;
+}
+
+.job-des-btn {
+    border: 0;
+    background: none;
+    color: white;
+    margin-top: 2.5rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.opening-title{
+    color: white;
+}

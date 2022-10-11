@@ -1,0 +1,57 @@
+.interest-bg {
+    background-image: url("../../../resource/BG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #212121;
+}
+
+.interest-heading {
+    text-transform: capitalize;
+    font-family: inherit;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.interest-image {
+    border-radius: 25px;
+}
+
+.interest-card {
+    padding: 30px 25px 25px;
+    width: 88%;
+    box-shadow: 4px 5px 7px #0000008f;
+    color: #fff;
+    border-radius: 25px;
+    background: transparent;
+}
+
+.interest-header {
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: .22px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 150%;
+    position: relative;
+    padding-left: 6%;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.interest-text {
+    font-size: 15px;
+    color: #FAFAFA;
+    margin-bottom: 20px;
+    line-height: 150%;
+    padding-left: 1rem;
+    font-weight: 300;
+	font-family: Galano-Grotesque;
+    opacity: .8;
+
+}
+
+.interest-check-icon {
+    padding-left: 6%;
+}

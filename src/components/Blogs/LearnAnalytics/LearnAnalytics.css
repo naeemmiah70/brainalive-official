@@ -1,0 +1,129 @@
+.learn-analytics-bg {
+
+    height: 370px;
+    background: url('https://braina.live/blog/wp-content/uploads/2021/11/business-presentation-laptop-screen-1-1-1024x576.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+
+}
+
+.blog-header-center-text {
+    color: #fff !important;
+    font-weight: 700;
+    font-family: Galano-Grotesque;
+    line-height: 1.4;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    text-align: center;
+}
+
+.blog-big-img {
+    border-radius: 25px;
+}
+
+.main-blog-container {
+    width: 85%;
+}
+
+.main-blog-text {
+    font-size: 16px;
+    line-height: 1.618;
+    color: #F6F6F6;
+    font-weight: 300;
+    margin-top: 15px;
+    opacity: 0.8;
+
+}
+
+.main-blog-color-heading {
+    color: #C21E7E;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Galano-Grotesque;
+    margin-top: 14px;
+}
+
+.share-via {
+    color: #fff;
+    font-family: Galano-Grotesque;
+    opacity: 0.9;
+
+}
+
+.facebook-share-icon {
+    background: #1876f2c9;
+    height: 35px;
+    width: 35px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+
+}
+
+.facebook-text {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.fb-share-text-bg {
+    background: #1877f2;
+    height: 35px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.twitter-share-icon{
+    background-color: #1da0f2d4;
+    height: 35px;
+    width: 35px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+.twitter-share-text-bg {
+    background-color: #1da1f2;
+    height: 35px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.linkedIn-share-icon{
+    background-color: #2866b2d0;
+    height: 35px;
+    width: 35px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+.linkedIn-share-text-bg {
+    background-color: #2867b2;
+    height: 35px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.Plus-share-icon{
+    background-color: rgba(255, 255, 255, 0.813);
+    height: 35px;
+    width: 35px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+.plus-share-text-bg{
+    background-color: white;
+    height: 35px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

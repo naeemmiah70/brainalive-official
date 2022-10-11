@@ -1,0 +1,16 @@
+.review-profile-Img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.reviews-description{
+    font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+    color: rgba(255, 255, 255, 0.899);
+}
+.reviewrs-name{
+    color: #FCFCFC;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

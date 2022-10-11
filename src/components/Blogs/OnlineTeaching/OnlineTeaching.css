@@ -1,0 +1,23 @@
+.online-teaching-bg{
+    height: 370px;
+    background: url('https://braina.live/blog/wp-content/uploads/2021/09/Downloader.la-6110efaa0db32.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+
+}
+#teaching-header-text {
+    position: absolute;
+    left: 25%;
+    font-size: 42px;
+}
+
+@media only screen and (max-width: 620px) {
+    #teaching-header-text{
+        font-size: 27px;
+        position: absolute;
+        left: 5%;
+        top: 40%;
+    }
+}

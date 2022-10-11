@@ -1,0 +1,70 @@
+.sidebar-width1 {
+    width: 50px;
+    background: black;
+    position: fixed;
+    top: 40%;
+    left: 0;
+}
+
+.sidebar-feeback {
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    background: #f4364c;;
+    position: fixed;
+    top: 50%;
+    right: -30px;
+    transform: rotate(-90deg);
+}
+.feedback-text{
+    position: relative;
+    bottom: 5px;
+}
+
+.sidebar-social-icon {
+    color: white;
+    height: 20px;
+   
+}
+
+.facebook-icon-div {
+    background-color: #1877f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: -9px;
+    border-top-right-radius: 7px;
+}
+
+.twitter-icon-div {
+    background-color: #1da1f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: -9px;
+}
+
+.linkedIn-icon-div {
+    background-color: #2867b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: -9px;
+}
+
+.plus-icon-div {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: -9px;
+    border-bottom-right-radius: 7px;
+}

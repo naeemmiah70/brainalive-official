@@ -1,0 +1,143 @@
+.scince-head {
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+    padding: 2rem;
+}
+
+.sceince-header-text {
+    color: #fff;
+    text-align: right;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-size: 85px;
+    text-align: right;
+    width: 100%;
+    font-weight: 800;
+    font-family: Zefani_Uppercase_Demo-Regular;
+    line-height: 1.1;
+}
+
+.science-header-description {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.52;
+}
+
+@media (min-width: 1800px) and (max-width: 4000px) {
+
+    .sceince-header-text {
+        font-size: 150px;
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+
+    .header-text-div {
+        margin-top: 4rem;
+    }
+
+}
+
+@media (max-width: 1195px) {
+
+    .sceince-header-text {
+        font-size: 80px;
+    }
+
+}
+
+@media (max-width: 835px) {
+
+    .sceince-header-text {
+        font-size: 55px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+
+    .sceince-header-text {
+        width: 100%;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+@media (min-width: 767px) {
+
+
+    .science-header-description {
+        position: relative;
+        left: 45%;
+        padding: 3rem;
+    }
+
+    .header-bran-img {
+        width: 65%;
+    }
+
+    .header-bottom-text {
+        width: 85%;
+    }
+}
+
+.science-header-description {
+    color: #fff;
+}
+
+.header-bottom-text {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.52;
+}
+@media (max-width: 520px) {
+    .header-bottom-text {
+      margin-top: 100px;
+    }
+
+}
+
+
+/* .scince-head::after {
+    content: url(../../../resource/line.png);
+    opacity: 0.1;
+    display: inline-block;
+    -webkit-transform: rotate(23deg);
+    -moz-transform: rotate(23deg);
+    -o-transform: rotate(23deg);
+    transform: rotate(-50deg);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 80%;
+    top: -19%;
+} */
+/* .bg-line::after {
+    content: url(../../../resource/line.png);
+    opacity: 0.1;
+    display: inline-block;
+    -webkit-transform: rotate(23deg);
+    -moz-transform: rotate(23deg);
+    -o-transform: rotate(23deg);
+    transform: rotate(-48deg);
+    left: -15%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+} */
+.bg-line{
+    margin-top: 2rem;
+    height: 90vh;
+}

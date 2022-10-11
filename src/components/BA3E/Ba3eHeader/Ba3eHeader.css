@@ -1,0 +1,49 @@
+.ba3e-header {
+    height: 93vh;
+    background: url("../../../resource//ba3e/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+.ba3e-header-text {
+    font-size: 50px;
+    letter-spacing: -.1rem;
+    font-family: Galano-Grotesque;
+    color: #fff;
+    font-weight: normal;
+}
+
+.ba3e-description {
+    font-size: 16px;
+    font-family: Galano-Grotesque;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 80%;
+}
+
+.swiper-section {
+    height: 120px;
+    background-color: black;
+}
+
+.swiper-text {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .22px;
+    line-height: 1.6;
+}
+
+.swiper-button-next {
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.swiper-button-prev {
+    color: rgba(255, 255, 255, 0.437);
+
+}

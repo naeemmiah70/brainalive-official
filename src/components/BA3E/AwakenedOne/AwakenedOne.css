@@ -1,0 +1,25 @@
+.awakened-one-section {
+    background: url("../../../resource/ba3e/back1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+.awekened-header{
+    font-family: Galano-Grotesque;
+    color: white;
+    font-size: 36px;
+    padding-top: 3rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.awekened-div-feature{
+    width: 230px;
+    margin-bottom: 3rem;
+}
+.awekend-features{
+    color: #fff;
+    opacity: 0.9;
+    font-weight: 300;
+}

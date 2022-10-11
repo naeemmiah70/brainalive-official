@@ -1,0 +1,29 @@
+.insight-top{
+    padding-top: 6rem;
+}
+.insight-heading{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -.51px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: inherit;
+}
+.advantage-heading{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: -.51px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: inherit;
+}
+.advantage-deatils{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -.51px;
+    line-height: 150%;
+    color: #fff;
+    font-family: inherit;
+}

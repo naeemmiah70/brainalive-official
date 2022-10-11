@@ -1,0 +1,42 @@
+.aboutBa3e-bg {
+    background: black;
+}
+.about-ba3e{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+}
+.ultimate-couch{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.ba3e-title{
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    color: white;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    
+}
+.ba3e-details{
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
