@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import "../../FOCCI/FociiEvents/FociiEvents.css";
 
 const TeachingAssistent = () => {
   useEffect(() => {
@@ -32,24 +33,24 @@ const TeachingAssistent = () => {
           <div className="col-md-6 d-flex align-items-center justify-content-end p-4">
             <img
               data-aos="fade-up"
-              className="img-fluid"
+              className="img-fluid insight-img"
               src={insight5}
               alt=""
             />
           </div>
         </div>
         {/* section */}
-        <div className="row mt-5">
+        <div className="row Reverse-column mt-5">
           <div className="col-md-6 d-flex align-items-center justify-content-start p-4">
             <img
               data-aos="fade-up"
-              className="img-fluid"
+              className="img-fluid "
               src={insight6}
               alt=""
             />
           </div>
-          <div className="col-md-6 d-flex align-items-center">
-            <h3 data-aos="fade-up" className="insight-heading">
+          <div className="col-md-6  d-flex align-items-center">
+            <h3 data-aos="fade-up" className="insight-heading ">
               Attend To Individual Student Disengagement In Real-Time.
             </h3>
           </div>
@@ -57,7 +58,7 @@ const TeachingAssistent = () => {
         {/* section */}
         <div className="row mt-5">
           <div className="col-md-6 d-flex align-items-center p-4">
-            <h3 data-aos="fade-up" className="insight-heading">
+            <h3 data-aos="fade-up" className="insight-heading insight-img">
               Improve Lesson Delivery Through Feedback On Speech Pace And Pitch
               Range.
             </h3>
@@ -65,7 +66,7 @@ const TeachingAssistent = () => {
           <div className="col-md-6 d-flex align-items-center justify-content-end p-4">
             <img
               data-aos="fade-up"
-              className="img-fluid"
+              className="img-fluid insight-img"
               src={insight7}
               alt=""
             />
@@ -79,13 +80,13 @@ const TeachingAssistent = () => {
           <div className="col-md-6 d-flex align-items-center p-4">
             <div data-aos="fade-up">
               <h3 className="advantage-heading">The BrainAlive Advantage</h3>
-              <p style={{opacity:"0.9"}} className="advantage-deatils">
+              <p style={{ opacity: "0.9" }} className="advantage-deatils">
                 We spent half a decade designing and developing the finest
                 neurotech and machine learning algorithms that works with every
                 learner and teacher to truly improve the way the world learns.
               </p>
               <Link to="/ba3e">
-                <button className="know-more-btn">Know more</button>
+                <button className="learn-more-btn">Know more</button>
               </Link>
             </div>
           </div>

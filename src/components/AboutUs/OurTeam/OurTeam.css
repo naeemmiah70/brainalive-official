@@ -1,6 +1,5 @@
 .our-team-div {
-    border: 1px #474747 dotted;
-    ;
+    border: 1px #676464 dotted;
     border-radius: 15px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -35,11 +34,40 @@
 }
 
 .team-designation {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 18px;
     color: #C21E7E;
     margin: 0 0 0 0;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Galano-Grotesque;
+    letter-spacing: .25px;
+}
+
+@media only screen and (max-width: 520px) {
+    .our-team-div {
+        border: 1px #676464 dotted;
+        border-radius: 15px;
+        padding-left: 1.5rem;
+        padding-right: 2rem;
+        width: 400px;
+        height: 155px;
+    }
+    .team-designation {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        font-family: Galano-Grotesque;
+       
+    }
+}
+@media only screen and (max-width: 320px) {
+    .our-team-div {
+        border: 1px #676464 dotted;
+        border-radius: 15px;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        width: 400px;
+        height: 155px;
+    }
 }

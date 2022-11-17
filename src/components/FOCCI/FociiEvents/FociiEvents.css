@@ -1,32 +1,35 @@
-.focii-event-title{
+.focii-event-title {
     color: #fff;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400 !important;
     line-height: 1.1;
     font-family: Galano-Grotesque;
 }
-.focii-event-description{
+
+.focii-event-description {
     color: #fff;
     font-size: 14px;
     line-height: 150%;
-    letter-spacing: 0;
-    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-weight: 400 !important;
     opacity: 0.9;
     font-family: Galano-Grotesque;
 }
-.learn-more-btn{
+
+.learn-more-btn {
     border: 0;
     border-radius: 7px;
-    padding: 4px 25px;
-    padding-bottom: 10px;
+    padding: 0px 25px;
+    padding-bottom: 8px;
     color: #337ab7;
     background: none;
-    font-weight: bolder;
+    font-weight: normal;
     font-size: larger;
     box-shadow: 1px 4px 5px 3px #265b97;
     margin-bottom: 3rem;
     margin-top: 1rem;
 }
+
 .learn-more-btn:hover {
     text-decoration: none;
     -ms-transition: all 300ms ease-in;
@@ -38,4 +41,91 @@
     background: #265b97;
     color: #fff;
     box-shadow: 2px 2px 12px 0 rgb(38 91 151 / 55%);
+}
+
+.ai-sdk {
+    position: relative;
+    bottom: 7px;
+}
+
+.focii-ai {
+    position: relative;
+    top: 22px;
+}
+
+@media only screen and (min-width: 521px) and (max-width: 1024px) {
+    .events-card {
+        padding: 0rem;
+    }
+
+    .focii-event-description {
+        color: #fff;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        font-weight: 400 !important;
+        opacity: 0.9;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        height: 100px;
+    }
+
+    .ai-sdk {
+        position: relative !important;
+        top: 20px !important;
+    }
+
+    .focii-ai {
+        position: relative;
+        top: 2px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .events-card {
+        padding: 2rem;
+        margin-top: -70px;
+    }
+    .focci-event-card-margin{
+        margin-top: 4rem;
+    }
+    .focii-ai {
+        position: relative;
+        top: 0px;
+    }
+
+    .events-card img {
+        width: 45%;
+    }
+
+    .learn-more-btn {
+        border: 0;
+        border-radius: 7px;
+        padding: 3px 20px;
+        padding-bottom: 7px;
+        color: #337ab7;
+        background: none;
+        font-weight: 300;
+        font-size: 1rem;
+        box-shadow: 1px 4px 5px 3px #265b97;
+        margin-bottom: 3rem;
+        margin-top: .5rem;
+    }
+
+    .focii-event-title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400 !important;
+        line-height: 1.1;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+    }
+
+    .focii-event-description {
+        color: #fff;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        font-weight: 400 !important;
+        opacity: 0.9;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+    }
 }

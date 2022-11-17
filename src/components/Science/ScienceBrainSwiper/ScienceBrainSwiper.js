@@ -26,12 +26,20 @@ import feet4 from "../../../resource/brain-img/feet4.png";
 import feet5 from "../../../resource/brain-img/feet5.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y, Autoplay, Thumbs } from "swiper";
+import {
+  Navigation,
+  Pagination,
+  A11y,
+  Autoplay,
+  Thumbs,
+  FreeMode,
+} from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
 import "swiper/scss/effect-creative";
+import "swiper/css/thumbs";
 import { useState } from "react";
 
 const ScienceBrainSwiper = () => {
@@ -128,7 +136,7 @@ const ScienceBrainSwiper = () => {
       img: feet5,
     },
   ];
-
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <section className="swipersection-bg">
       <div className="container">
@@ -140,43 +148,44 @@ const ScienceBrainSwiper = () => {
           >
             <div
               onMouseOver={() => setBrainImgType("maths")}
-              className="brain-angle-view-div "
+              className="brain-angle-view-div text-center"
             >
-              <h2 className="brain-angle-title text-center">
-                Mathematics and Logic
+              <h2 className="brain-angle-title">
+                Mathematics and  Logic
               </h2>
             </div>
             <div
               onMouseOver={() => setBrainImgType("lang")}
               className="brain-angle-view-div "
             >
-              <h2 className="brain-angle-title text-center">
+              <h2 className="brain-angle-title text-center reading-and-language">
                 Reading and Language Acquisition
               </h2>
             </div>
           </div>
-          <div className="col-md-4 ">
-            <div>
+          <div className="col-md-4 p-3 swiper-images-div align-items-center">
+            <main>
               <Swiper
-                modules={[Navigation, Pagination, A11y, Autoplay, Thumbs]}
-                spaceBetween={1}
-                slidesPerView={1}
-                autoplay={{ delay: 2000 }}
-                thumbs={{ swiper: activeThumb }}
+                modules={[
+                  Navigation,
+                  Pagination,
+                  A11y,
+                  Autoplay,
+                  Thumbs,
+                  FreeMode,
+                ]}
+                autoplay={{ delay: 3000 }}
+                thumbs={{
+                  swiper:
+                    thumbsSwiper && !thumbsSwiper.destroyed
+                      ? thumbsSwiper
+                      : null,
+                }}
                 loop
-                // pagination={{
-                //   clickable: true,
-                //   renderBullet: function (index, className) {
-                //     return (
-                //       '<div class="' +
-                //       className +
-                //       '"><img src={maths1} class="pagination-bullet"/></div>'
-                //     );
-                //   },
-                // }}
-                onSwiper={(swiper) => console.log("")}
-                onSlideChange={() => console.log("")}
                 breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                  },
                   480: {
                     slidesPerView: 1,
                   },
@@ -220,7 +229,7 @@ const ScienceBrainSwiper = () => {
                       <SwiperSlide>
                         <div
                           key={data.id}
-                          className="d-flex align-items-center"
+                          className="d-flex align-items-center justify-content-center"
                         >
                           <div>
                             <img
@@ -240,7 +249,7 @@ const ScienceBrainSwiper = () => {
                       <SwiperSlide>
                         <div
                           key={data.id}
-                          className="d-flex align-items-center"
+                          className="d-flex align-items-center justify-content-center"
                         >
                           <div>
                             <img
@@ -260,7 +269,7 @@ const ScienceBrainSwiper = () => {
                       <SwiperSlide>
                         <div
                           key={data.id}
-                          className="d-flex align-items-center"
+                          className="d-flex align-items-center justify-content-center"
                         >
                           <div>
                             <img
@@ -275,38 +284,117 @@ const ScienceBrainSwiper = () => {
                   </div>
                 )}
               </Swiper>
-            </div>
-            <div className="col-md-4"></div>
-            <div className="mt-5 d-flex justify-content-between">
-              {brainImgType === "maths" && (
-                <div>
-                  {mathsDetails.map((data) => (
-                    <img width="70px" src={data.img} alt="" />
-                  ))}
-                </div>
-              )}
-              {brainImgType === "lang" && (
-                <div>
-                  {langDetails.map((data) => (
-                    <img width="70px" src={data.img} alt="" />
-                  ))}
-                </div>
-              )}
-              {brainImgType === "hand" && (
-                <div>
-                  {handDetails.map((data) => (
-                    <img width="70px" src={data.img} alt="" />
-                  ))}
-                </div>
-              )}
-              {brainImgType === "feet" && (
-                <div>
-                  {feetDetails.map((data) => (
-                    <img width="70px" src={data.img} alt="" />
-                  ))}
-                </div>
-              )}
-            </div>
+              {/* Thumbs */}
+              <Swiper
+                modules={[Thumbs]}
+                onSwiper={setThumbsSwiper}
+                freeMode={true}
+                watchSlidesProgress={true}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 5,
+                  },
+                  480: {
+                    slidesPerView: 5,
+                  },
+                  768: {
+                    slidesPerView: 5,
+                  },
+                  1024: {
+                    slidesPerView: 5,
+                  },
+                  1440: {
+                    slidesPerView: 5,
+                  },
+                  2560: {
+                    slidesPerView: 5,
+                  },
+                }}
+              >
+                {brainImgType === "maths" && (
+                  <div>
+                    {mathsDetails.map((data, index) => (
+                      <SwiperSlide key={index}>
+                        <div
+                          key={data.id}
+                          className="d-flex align-items-center justify-content-center"
+                        >
+                          <div>
+                            <img
+                              className="swiper-pagination-image"
+                              src={data.img}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </div>
+                )}
+                {brainImgType === "lang" && (
+                  <div>
+                    {langDetails.map((data) => (
+                      <SwiperSlide>
+                        <div
+                          key={data.id}
+                          className="d-flex align-items-center justify-content-center"
+                        >
+                          <div>
+                            <img
+                              className="swiper-pagination-image"
+                              src={data.img}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </div>
+                )}
+                {brainImgType === "hand" && (
+                  <div>
+                    {handDetails.map((data) => (
+                      <SwiperSlide>
+                        <div
+                          key={data.id}
+                          className="d-flex align-items-center justify-content-center"
+                        >
+                          <div>
+                            <img
+                              className="swiper-pagination-image"
+                              src={data.img}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </div>
+                )}
+                {brainImgType === "feet" && (
+                  <div>
+                    {feetDetails.map((data) => (
+                      <SwiperSlide>
+                        <div
+                          key={data.id}
+                          className="d-flex align-items-center justify-content-center"
+                        >
+                          <div>
+                            <img
+                              className="swiper-pagination-image"
+                              src={data.img}
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </div>
+                )}
+              </Swiper>
+            </main>
+
+           
           </div>
           <div
             className={`col-md-4 ${brainImgType === "hand" && "view3"} ${
@@ -318,12 +406,12 @@ const ScienceBrainSwiper = () => {
               className="brain-angle-view-div "
             >
               <h2 className="brain-angle-title text-center">
-                Motor Movenment - Hands
+                Motor Movement - Hands
               </h2>
             </div>
             <div
               onMouseOver={() => setBrainImgType("feet")}
-              className="brain-angle-view-div"
+              className="brain-angle-view-div text-center"
             >
               <h2 className="brain-angle-title">Motor Movement - Feet</h2>
             </div>

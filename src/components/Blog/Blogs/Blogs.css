@@ -2,6 +2,16 @@
     height: 185px;
     width: auto;
     border-radius: 25px;
+    transition: 1.5s all ease-in-out;
+}
+
+.blog-card-img-overflow {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.blog-card-img:hover {
+    transform: scale(1.5);
 }
 
 .blog-title-text {
@@ -41,24 +51,105 @@
     font-weight: 300;
     color: #89229b;
 }
+
 #color-2 {
     font-weight: 300;
     color: #00bcd4;
 }
+
 #color-3 {
     font-weight: 300;
     color: #f44336;
 }
+
 #color-4 {
     font-weight: 300;
     color: #ff9800;
 }
 
+.blogs-margin-top {
+    margin-top: 3rem;
+}
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 521px) and (max-width: 1024px) {
+    .main-blog-card-text {
+        padding-left: 2rem;
+    }
+}
+
+@media only screen and (min-width: 520px) {
     .blog-card-text {
         padding-left: 3rem;
         padding-right: 2rem;
         width: 90%;
+    }
+
+    .blog-title-text {
+
+        font-size: 26px;
+
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    .blog-card-text {
+        width: 100%;
+    }
+
+    .blog-card-img {
+        height: 185px;
+        width: 400px;
+        border-radius: 25px;
+    }
+
+    .blogs-margin-top {
+        margin-top: 0rem;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 400px) {
+    .blog-card-text {
+        width: 100%;
+    }
+
+    .blog-card-img {
+        height: 185px;
+        width: 360px;
+        border-radius: 25px;
+    }
+
+    .blogs-margin-top {
+        margin-top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .blog-card-text {
+
+        width: 100%;
+    }
+
+    .blog-card-img {
+        height: 185px;
+        width: 350px;
+        border-radius: 25px;
+    }
+
+    .blog-title-text {
+
+        font-size: 25px;
+
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .blog-card-text {
+
+        width: 100%;
+    }
+
+    .blog-card-img {
+        height: 185px;
+        width: auto;
+        border-radius: 25px;
     }
 }

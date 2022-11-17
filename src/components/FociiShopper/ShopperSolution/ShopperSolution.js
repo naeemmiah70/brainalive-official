@@ -5,10 +5,10 @@ import Video from "../../../resource/our-solution.m4v";
 const ShopperSolution = () => {
   return (
     <div className="focci-sdk-bg">
-      <div className="focci-sdk-container my-5">
-        <div className="row shopper-bg p-3">
+      <div className="focci-sdk-container m-4">
+        <div className="row shopper-bg p-2">
           <div className="col-md-7 d-flex justify-content-center align-items-center">
-            <div style={{ width: "80%" }}>
+            <div className="solution-description">
               <h2 className="buying-header">Our Solution</h2>
               <p className="shopping-text mt-5">
                 FOCII provides you insights on consumer behavior by letting you
@@ -28,8 +28,8 @@ const ShopperSolution = () => {
           <h5 className="shopper-bottom-text">
             Do you want to improve your user conversion?
           </h5>
-          <div className="d-flex justify-content-center">
-            <div class="neumar-header-btn hovertext-container">
+          <div className="d-flex justify-content-center ">
+            <div class="neumar-header-btn hovertext-container shopper-bottom-btn focii_shopper-bottom-btn">
               <p class="hovertext-p1">Try it for free</p>
               <p class="hovertext-p2" style={{ color: "#fff" }}>
                 Coming Soon

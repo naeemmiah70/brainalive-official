@@ -1,5 +1,5 @@
-.Career-header-bg{
-    height: 100vh;
+.Career-header-bg {
+    height: 93vh;
     width: 100%;
     background-image: url("../../../resource/img/Hiring.jpg");
     background-position: center;
@@ -7,26 +7,114 @@
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.625);
 }
-.Career-header-text{
+
+.Career-header-text {
     background-color: rgba(0, 0, 0, 0.33);
-    width: 100%;
-    height: 100vh;
+    width: 101.6% !important;
+    height: 93vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.we-are-hiring{
+
+.we-are-hiring {
     font-weight: 700;
     font-size: 4rem;
     line-height: 1.1;
     color: #fff;
 }
-.header-hiring-details{
+
+.header-hiring-details {
     line-height: 35px;
     font-size: 25px;
     color: #fff;
     text-transform: capitalize;
     font-family: inherit;
     font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Galano-Grotesque;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 520px) {
+    .we-are-hiring {
+        font-weight: 700;
+        font-size: 2.9rem;
+        line-height: 1.1;
+        color: #fff;
+    }
+
+    .header-hiring-details {
+        line-height: 30px;
+        font-size: 20px;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: inherit;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        margin-top: 1.5rem;
+        padding: .5rem;
+    }
+
+    .Career-header-bg {
+        height: 97vh;
+        width: 100%;
+        background-image: url("../../../resource/img/Hiring.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.625);
+    }
+
+    .Career-header-text {
+        background-color: rgba(0, 0, 0, 0.33);
+        width: 100%;
+        height: 97vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .we-are-hiring {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.1;
+        color: #fff;
+
+    }
+
+    .header-hiring-details {
+        line-height: 30px;
+        font-size: 18px;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: inherit;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        margin-top: 1.5rem;
+        padding: .5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .we-are-hiring {
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 1.1;
+        color: #fff;
+
+    }
+
+    .header-hiring-details {
+        line-height: 25px;
+        font-size: 16px;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: inherit;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        margin-top: 1rem;
+        padding: .5rem;
+    }
 }

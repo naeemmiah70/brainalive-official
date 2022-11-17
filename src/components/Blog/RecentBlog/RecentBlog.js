@@ -12,12 +12,12 @@ const RecentBlog = () => {
     setBlogs(blogData);
   }, []);
   return (
-    <div style={{ position: "sticky", top: "50px" }}>
+    <div style={{ position: "sticky", top: "80px" }}>
       <div>
-        <p className="recent-post-heading mt-5">Recent Posts</p>
+        <p className="recent-post-heading blogs-margin-top">Recent Posts</p>
         {blogs.map((data) => (
-          <div className="row d-flex text-white recent-blog-div py-3">
-            <div className="col-md-7">
+          <div className="row text-white recent-blog-div py-3">
+            <div className="col-md-7 col-7">
               <Link to={data.link} style={{ textDecoration: "none" }}>
                 {" "}
                 <p className="recent-blog-title">{data.title}</p>
@@ -25,7 +25,7 @@ const RecentBlog = () => {
               <p className="recent-gray-text">{data.postedBy}</p>
               <p className="recent-gray-text">{data.fullDate}</p>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-5 col-5">
               <Link to={data.link} style={{ textDecoration: "none" }}>
                 <img className="recent-img-blog" src={data.img} alt="" />
               </Link>

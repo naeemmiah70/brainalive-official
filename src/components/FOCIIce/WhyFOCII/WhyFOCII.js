@@ -69,13 +69,13 @@ const WhyFOCII = () => {
           </div>
           <div className="row">
             {details.map((data) => (
-              <div data-aos="fade-up" className="col-md-4 d-flex text-white mt-5">
+              <div data-aos="fade-up" className="col-lg-4 col-md-6 d-flex why-focii-card-padding">
                 <div className="d-flex align-items-center p-1">
                   <img className="sdk-icon" src={data.icon} alt="" />
                 </div>
                 <div className="p-3 m-2 sdk-text-div">
-                  <h4>{data.title}</h4>
-                  <small>{data.description}</small>
+                  <h4 className="sdk-card-title">{data.title}</h4>
+                  <small className="sdk-card-description">{data.description}</small>
                 </div>
               </div>
             ))}

@@ -40,7 +40,6 @@ const Reviews = () => {
         modules={[Navigation, Pagination, A11y]}
         spaceBetween={1}
         slidesPerView={1}
-        // navigation
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
@@ -64,7 +63,7 @@ const Reviews = () => {
       >
         {reviewsData.map((details) => (
           <SwiperSlide>
-            <div className="row div-padding">
+            <div className="row review-div-padding">
               <div className="col-md-6 d-flex justify-content-center align-items-center">
                 <div>
                   <img
@@ -79,7 +78,9 @@ const Reviews = () => {
                 <div data-aos="fade-up">
                   <p className="reviews-description">{details.description}</p>
                   <h4 className="reviewrs-name">{details.name}</h4>
-                  <h6 className="reviews-description">{details.designation}</h6>
+                  <h6 className="reviewers-designation">
+                    {details.designation}
+                  </h6>
                 </div>
               </div>
             </div>

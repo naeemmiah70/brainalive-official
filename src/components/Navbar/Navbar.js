@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <nav id="header-desktop" className="navbar navbar-expand-lg home-header">
         <div className="header-menu">
-          <Link className="logo" to="https://braina.live/" aria-label="logo">
+          <Link to="/" className="logo" aria-label="logo">
             <img
               src="https://braina.live/images/brainalive.png"
               width="55"
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <FontAwesomeIcon className="down-icon" icon={faChevronDown} />
               </Link>
               <div class="dropdown-content">
-                <Link to="/aboutUs" aria-label="about us" className="nav-text">
+                <Link to="/about" aria-label="about us" className="nav-text">
                   About Us
                 </Link>
                 <Link to="/career" aria-label="career" className="nav-text">
@@ -116,7 +116,7 @@ const Navbar = () => {
               ></path>
             </g>
           </svg>
-          <span className="header-menu-text d-color-white">Menu</span>
+          <span className="header-menu-text">Menu</span>
         </label>
         <label for="burger-check" className="close-menu">
           <svg
@@ -189,7 +189,7 @@ const Navbar = () => {
               <div className="outline"></div>
             </li>
             <li className="header-link">
-              <Link to="/blog" className="d-menu-link d-color-white">
+              <Link to="/blog" className="d-menu-link d-color-white text-white">
                 Blog
               </Link>
               <div className="outline"></div>

@@ -1,7 +1,8 @@
 .opeining-section {
     background-color: #212121;
 }
-.oppening-text{
+
+.oppening-text {
     color: #fff;
     font-family: Galano-Grotesque;
     font-weight: 700;
@@ -9,10 +10,14 @@
     letter-spacing: -.1rem;
     margin-top: 7rem;
 }
+
 .opening-div {
     height: 600px;
     border-radius: 15px;
+}
 
+.opening-div:hover {
+    box-shadow: 0 0 7px 0 #000;
 }
 
 .opening-text {
@@ -30,6 +35,66 @@
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
-.opening-title{
+
+.opening-title {
     color: white;
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 521px) and (max-width: 768px) {
+
+    .opening-div {
+        height: 250px;
+        width: 100%;
+        border-radius: 15px;
+        margin: .1rem;
+    }
+
+    .job-des-btn {
+        margin-left: -30px;
+    }
+
+    .opening-title {
+        margin-left: -30px;
+    }
+
+    .opening-flex-div {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    .opening-div {
+        height: 500px;
+        border-radius: 15px;
+        margin-left: .5rem !important;
+        margin: 1.5rem;
+        margin-bottom: -2rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .opening-div {
+        height: 460px;
+        border-radius: 15px;
+        margin-left: .5rem !important;
+        margin: 1.5rem;
+        margin-bottom: -2rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .opening-div {
+        height: 370px;
+        border-radius: 15px;
+        margin-left: 2.4rem !important;
+        margin: 2rem;
+        margin-bottom: -2rem;
+        width: 75%;
+    }
 }

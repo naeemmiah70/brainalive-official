@@ -42,7 +42,7 @@ const MakesSpecial = () => {
     >
       <div className="focci-sdk-container">
         <h2 className="makes-speacial">What Makes Us Special</h2>
-        <div className="row mt-5">
+        <div className="row my-5">
           {details.map((data) => (
             <div data-aos="fade-up" key={data.id} className="col-md-6 d-flex">
               <div>

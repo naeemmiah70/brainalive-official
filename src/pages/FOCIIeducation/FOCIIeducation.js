@@ -9,6 +9,7 @@ import MakesSpecial from "../../components/FOCIIeducation/MakesSpeacial/MakesSpe
 import OurOffers from "../../components/FOCIIeducation/OurOffers/OurOffers";
 import TeachingAssistent from "../../components/FOCIIeducation/TeachingAssistant/TeachingAssistent";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 const FOCIIeducation = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const FOCIIeducation = () => {
       <MakesSpecial />
       <LearnHow />
       <BrainAlivePlateform />
+      <Footer></Footer>
     </>
   );
 };

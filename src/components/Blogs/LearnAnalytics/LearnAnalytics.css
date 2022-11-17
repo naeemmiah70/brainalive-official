@@ -1,12 +1,15 @@
 .learn-analytics-bg {
-
-    height: 370px;
+    height: 360px;
     background: url('https://braina.live/blog/wp-content/uploads/2021/11/business-presentation-laptop-screen-1-1-1024x576.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
+}
 
+.blog-hero-text-bg {
+    height: 100%;
+    width: 100%;
+    background-color: #0c0b0b91;
 }
 
 .blog-header-center-text {
@@ -14,10 +17,12 @@
     font-weight: 700;
     font-family: Galano-Grotesque;
     line-height: 1.4;
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    text-align: center;
+    position: relative;
+    bottom: 2rem;
+}
+
+.more-share-div {
+    cursor: pointer;
 }
 
 .blog-big-img {
@@ -28,6 +33,10 @@
     width: 85%;
 }
 
+.blog-spacing-right {
+    width: 90%;
+}
+
 .main-blog-text {
     font-size: 16px;
     line-height: 1.618;
@@ -36,6 +45,25 @@
     margin-top: 15px;
     opacity: 0.8;
 
+}
+
+.blog-category-btn {
+    color: white;
+    text-decoration: none;
+    background: #e91e63;
+    padding: 3px 15px;
+    border-radius: 11px;
+    margin-left: 10px;
+    font-size: 11px;
+    height: 25px;
+    position: relative;
+    top: 4px;
+}
+.blog-category-btn:hover {
+    color: white;
+    text-decoration: none;
+    background: #e91e63;
+   
 }
 
 .main-blog-color-heading {
@@ -72,6 +100,10 @@
     opacity: 1;
 }
 
+a {
+    cursor: pointer;
+}
+
 .fb-share-text-bg {
     background: #1877f2;
     height: 35px;
@@ -79,7 +111,8 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-.twitter-share-icon{
+
+.twitter-share-icon {
     background-color: #1da0f2d4;
     height: 35px;
     width: 35px;
@@ -88,6 +121,7 @@
     padding-left: 8px;
     padding-top: 3px;
 }
+
 .twitter-share-text-bg {
     background-color: #1da1f2;
     height: 35px;
@@ -95,7 +129,8 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-.linkedIn-share-icon{
+
+.linkedIn-share-icon {
     background-color: #2866b2d0;
     height: 35px;
     width: 35px;
@@ -104,6 +139,7 @@
     padding-left: 8px;
     padding-top: 3px;
 }
+
 .linkedIn-share-text-bg {
     background-color: #2867b2;
     height: 35px;
@@ -111,7 +147,8 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-.Plus-share-icon{
+
+.Plus-share-icon {
     background-color: rgba(255, 255, 255, 0.813);
     height: 35px;
     width: 35px;
@@ -120,10 +157,65 @@
     padding-left: 8px;
     padding-top: 3px;
 }
-.plus-share-text-bg{
+
+.plus-share-text-bg {
     background-color: white;
     height: 35px;
+    width: 80px;
     padding-top: 7px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+}
+
+.bottom-social-icon {
+    color: white;
+    height: 20px;
+}
+
+.tag-texts {
+    text-decoration: none;
+    font-weight: 300;
+    color: #e91e63;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 3px;
+    font-family: Galano-Grotesque !important;
+    cursor: pointer;
+}
+@media only screen and (min-width: 521px) and (max-width: 1024px)  {
+    .blog-spacing-right {
+        width: 100%;
+    }
+} 
+@media only screen and (max-width: 520px) {
+    .blog-spacing-right {
+        width: 100%;
+    }
+    .learn-analytics-bg {
+        height: 300px;
+    }
+
+    .blog-header-center-text {
+        color: #fff !important;
+        font-size: 1.6rem;
+        font-weight: 700;
+        font-family: Galano-Grotesque;
+        line-height: 1.2;
+        position: relative;
+        bottom: 0rem;
+    }
+
+    .more-share-div {
+        position: relative;
+        right: 6px;
+    }
+
+    .main-blog-color-heading {
+        color: #C21E7E;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-family: Galano-Grotesque;
+        margin-top: 14px;
+    }
 }

@@ -6,25 +6,18 @@
     left: 0;
 }
 
-.sidebar-feeback {
-    width: auto;
-    height: 40px;
-    padding: 10px;
-    background: #f4364c;;
-    position: fixed;
-    top: 50%;
-    right: -30px;
-    transform: rotate(-90deg);
+a {
+    cursor: pointer !important;
 }
-.feedback-text{
-    position: relative;
-    bottom: 5px;
-}
+
 
 .sidebar-social-icon {
     color: white;
     height: 20px;
-   
+    position: relative;
+    left: 15px;
+    top: 10px;
+
 }
 
 .facebook-icon-div {
@@ -36,6 +29,7 @@
     height: 50px;
     margin-left: -9px;
     border-top-right-radius: 7px;
+    border: 0;
 }
 
 .twitter-icon-div {
@@ -67,4 +61,198 @@
     height: 50px;
     margin-left: -9px;
     border-bottom-right-radius: 7px;
+}
+
+.toltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.toltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: rgba(56, 70, 84, .85);
+    color: rgba(255, 255, 255, .9);
+    text-align: center;
+    padding: 5px 0px;
+    padding-bottom: 7px;
+    position: absolute;
+    left: 60px;
+    z-index: 1;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 2px;
+    z-index: 2;
+
+}
+
+.toltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Modal */
+
+.sharing-modal {
+    background-color: white;
+    border-radius: 2px;
+    max-width: 90%;
+    max-height: 90%;
+    width: 730px;
+    height: auto;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.modal-share-heading {
+    font-size: 18px;
+    font-weight: 300;
+    color: #323b43;
+    line-height: 58px;
+    font-family: Galano-Grotesque;
+}
+
+.modal-header-border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.821);
+    position: relative;
+    bottom: 15px;
+}
+
+.close-btn {
+    color: gray;
+    position: relative;
+    top: 20px;
+}
+
+
+.modal-facebook-share-icon {
+    background: #1876f2c9;
+    height: 40px;
+    width: 40px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+
+}
+
+.modal-facebook-text {
+    color: #fff;
+    font-size: 13px;
+    padding-top: 2px;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.modal-fb-share-text-bg {
+    background: #1877f2;
+    height: 40px;
+    width: 150px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.modal-twitter-share-icon {
+    background-color: #1da0f2d4;
+    height: 40px;
+    width: 40px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+
+.modal-twitter-share-text-bg {
+    background-color: #1da1f2;
+    height: 40px;
+    width: 150px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.modal-linkedIn-share-icon {
+    background-color: #2866b2d0;
+    height: 40px;
+    width: 40px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+
+.modal-linkedIn-share-text-bg {
+    background-color: #2867b2;
+    height: 40px;
+    width: 150px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.modal-bottom-social-icon {
+    color: white;
+    height: 20px;
+}
+
+.modal-mix-share-icon {
+    background-color: rgb(218, 93, 4);
+    height: 40px;
+    width: 40px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+
+.modal-mix-share-text-bg {
+    background-color: rgba(255, 105, 0, 1);
+    height: 40px;
+    width: 150px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.modal-others-share-icon {
+    background-color: #252729;
+    height: 40px;
+    width: 40px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+
+.modal-others-share-text-bg {
+    background-color: #323b43;
+    height: 40px;
+    width: 150px;
+    padding-top: 7px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.snap-icon {
+    height: 14px;
+    color: #557ceb;
+    fill: currentColor;
+    font-weight: 300;
+    position: relative;
+    bottom: 5px;
+}
+
+.snap-text {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.print-text {
+    position: relative;
+    right: 37px;
 }

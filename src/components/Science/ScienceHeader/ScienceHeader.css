@@ -1,6 +1,13 @@
 .scince-head {
     background: linear-gradient(to left, #212121, #292929, #1c1c1c);
     padding: 2rem;
+    height: auto;
+}
+
+.bg-line {
+    margin-top: 2rem;
+    height: 100vh;
+    position: relative;
 }
 
 .sceince-header-text {
@@ -26,21 +33,67 @@
     line-height: 1.52;
 }
 
-@media (min-width: 1800px) and (max-width: 4000px) {
+.header-bottom-text {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.52;
+}
 
+@media only screen and (min-width: 521px) and (max-width: 1024px) {
+    .bg-line {
+        margin-top: 2rem;
+        height: 100vh;
+    }
+
+    .line-1 {
+        position: absolute;
+        rotate: -50deg;
+        left: -35%;
+        opacity: .1;
+        /* display: none; */
+    }
+
+    .line-2 {
+        position: absolute;
+        top: 30%;
+        rotate: -50deg;
+        left: 35%;
+        opacity: .1;
+        display: none;
+    }
+}
+
+@media (min-width: 790px) {
+    .line-1 {
+        position: absolute;
+        rotate: -50deg;
+        left: -15%;
+        opacity: .1;
+    }
+
+    .line-2 {
+        position: absolute;
+        top: 30%;
+        rotate: -50deg;
+        right: -25%;
+        opacity: .1;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 4000px) {
     .sceince-header-text {
         font-size: 150px;
         text-align: left;
     }
-
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {
-
     .header-text-div {
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
-
 }
 
 @media (max-width: 1195px) {
@@ -48,7 +101,6 @@
     .sceince-header-text {
         font-size: 80px;
     }
-
 }
 
 @media (max-width: 835px) {
@@ -64,20 +116,22 @@
 
     .sceince-header-text {
         width: 100%;
-        margin: auto;
         text-align: left;
     }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width:1800px) {
 
 
     .science-header-description {
+        padding-top: 1rem;
+        width: 430px;
         position: relative;
-        left: 45%;
-        padding: 3rem;
+        left: 40px;
     }
+}
 
+@media (min-width: 767px) {
     .header-bran-img {
         width: 65%;
     }
@@ -87,57 +141,98 @@
     }
 }
 
-.science-header-description {
-    color: #fff;
-}
 
-.header-bottom-text {
-    color: #fff;
-    margin-bottom: 20px;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 22px;
-    line-height: 1.52;
-}
+
+
+
 @media (max-width: 520px) {
-    .header-bottom-text {
-      margin-top: 100px;
+    .bg-line {
+        height: 100%;
     }
 
+    .header-bran-img {
+        width: 85%;
+        margin-top: 2rem;
+    }
+
+    .sceince-header-text {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .science-header-description {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 1rem;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        line-height: 1.52;
+    }
+
+    .header-bottom-text {
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 300 !important;
+        text-align: justify;
+        font-size: 13px;
+        line-height: 1.5;
+        /* position: relative;
+        top: 10%; */
+        margin-top: 0rem;
+    }
+
+    .line-1 {
+        position: relative;
+        display: none;
+    }
+
+    .line-2 {
+        position: relative;
+        display: none;
+    }
+
+    .line-display-none {
+        display: none;
+    }
 }
 
 
-/* .scince-head::after {
-    content: url(../../../resource/line.png);
-    opacity: 0.1;
-    display: inline-block;
-    -webkit-transform: rotate(23deg);
-    -moz-transform: rotate(23deg);
-    -o-transform: rotate(23deg);
-    transform: rotate(-50deg);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    right: 0;
-    left: 80%;
-    top: -19%;
-} */
-/* .bg-line::after {
-    content: url(../../../resource/line.png);
-    opacity: 0.1;
-    display: inline-block;
-    -webkit-transform: rotate(23deg);
-    -moz-transform: rotate(23deg);
-    -o-transform: rotate(23deg);
-    transform: rotate(-48deg);
-    left: -15%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-} */
-.bg-line{
-    margin-top: 2rem;
-    height: 90vh;
+@media (max-width: 390px) {
+    .bg-line {
+        height: 100%;
+    }
+
+    .header-bran-img {
+        width: 85%;
+        margin-top: 2rem;
+    }
+
+    .sceince-header-text {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .science-header-description {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 1rem;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-style: normal;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        line-height: 1.52;
+    }
+
+    .header-bottom-text {
+        position: relative;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 300 !important;
+        text-align: justify;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
 }

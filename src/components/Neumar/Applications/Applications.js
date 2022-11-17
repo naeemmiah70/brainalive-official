@@ -4,6 +4,9 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import application1 from "../../../resource/application-1.jpg";
 import application2 from "../../../resource/application-2.jpg";
+import "../../Home/OurSolutions/OurSolutions.css";
+import "./Applications.css";
+
 const Applications = () => {
   const solutionsData = [
     {
@@ -36,26 +39,24 @@ const Applications = () => {
         </div>
         <div className="row d-flex justify-content-center mb-5">
           {solutionsData.map((data) => (
-            <div className="col-md-5 d-flex justify-content-center px-2 py-3 hovered-div">
-              <Link to={data.link} style={{ textDecoration: "none" }}>
-                <div
-                  style={{
-                    backgroundImage: `url(${data.imgURL})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                  }}
-                  className="solution-div-bg"
-                >
-                  <div className="card-text d-flex align-items-center justify-content-center">
-                    <div className="text-center">
-                      <h3 className="text-white mt-2">{data.title}</h3>
-                      <p className="text-white hide-card-text">
-                        {data.description}
-                      </p>
+            <div class="col-xs-12 col-sm-6 col-md-5">
+              <div class="project-block item box-1">
+                <Link to={data.link} aria-label="neumar">
+                  <div class="image-box">
+                    <figure class="image application-image">
+                      <img src={data.imgURL} alt="student" />
+                    </figure>
+
+                    <div class="caption-box1">
+                      <h3>{data.title}</h3>
+
+                      <div class="text">
+                        <p>{data.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
           ))}
         </div>

@@ -9,8 +9,9 @@
     color: #fff;
     letter-spacing: .22px;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
+    line-height: 1;
 }
 
 .application-icon {
@@ -38,18 +39,64 @@
     font-weight: 700;
     width: 90%;
 }
+.dotted-border {
+    border-right: 2px dotted rgba(255, 255, 255, 0.613);
+}
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 520px) {
     .ready-to-cut-text {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: Galano-Grotesque, Montserrat, sans-serif;
+        font-weight: 700;
+        width: 85%;
+        margin-left: 5%;
+        line-height: 1.4;
+    }
+    .apiPng-icon {
+        height: 23px;
+        width: 23px;
+        margin-right: 10px;
+    }
+    
+    .application-icon {
+        height: 25px;
+        width: 30px;
+        margin-right: 10px;
+        color: #C21E7E;
+    }
+    .webex-icon {
+        height: 35px;
+        width: 85px;
+        margin-right: 10px;
+        color: #C21E7E;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .ready-to-cut-text {
+        font-size: 1.35rem;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: Galano-Grotesque, Montserrat, sans-serif;
+        font-weight: 700;
+        width: 95%;
+        margin-left: 5%;
+        line-height: 1.5;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .ready-to-cut-text {
+        font-size: 1.3rem;
         color: #fff;
         text-transform: capitalize;
         font-family: Galano-Grotesque, Montserrat, sans-serif;
         font-weight: 700;
         width: 90%;
+        margin-left: 5%;
+        line-height: 1.4;
     }
-}
-
-.dotted-border {
-    border-right: 2px dotted rgba(255, 255, 255, 0.613);
+    
 }

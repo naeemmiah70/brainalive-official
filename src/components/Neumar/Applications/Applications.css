@@ -1,0 +1,45 @@
+.application-image img {
+    height: 320px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+    .application-image img {
+        height: 320px;
+        width: 380px;
+        border-radius: 10px;
+    }
+}
+
+.project-block .application-image {
+    position: relative;
+    display: block;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+    text-align: center
+}
+
+.project-block:hover .application-image {
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    -o-transform: translateY(-10%);
+    transform: translateY(-10%)
+}
+
+.project-block .application-image:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: #000;
+    opacity: .60;
+    z-index: 1;
+    border-radius: 8px
+}

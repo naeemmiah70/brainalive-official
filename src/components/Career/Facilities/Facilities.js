@@ -12,11 +12,11 @@ const Facilities = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <section className="">
+    <section className="my-4 row">
       <section className="d-flex justify-content-center">
         <div className="facilities-container">
-          <div className="row">
-            <div className="col-md-6 d-flex justify-content-center align-items-center facilities-div-padding">
+          <div className="row ">
+            <div className="col-lg-6 d-flex justify-content-center align-items-center facilities-div-padding">
               <div data-aos="fade-right" className="">
                 <h1 className="facilities-title">NEXT-GEN TECHNOLOGY</h1>
                 <p className="facilities-description mt-3">
@@ -25,8 +25,11 @@ const Facilities = () => {
                 </p>
               </div>
             </div>
-            <div data-aos="fade-left" className="col-md-6 facilities-div-padding">
-              <div>
+            <div
+              data-aos="fade-left"
+              className="col-lg-6 facilities-div-padding"
+            >
+              <div className="image-overflow">
                 <img className="img-fluid facilities-image" src={why1} alt="" />
               </div>
             </div>
@@ -36,13 +39,20 @@ const Facilities = () => {
 
       <section className="d-flex justify-content-center">
         <div className="facilities-container">
-          <div className="row">
-            <div data-aos="fade-right" className="col-md-6 facilities-div-padding">
-              <div>
-                <img className="img-fluid w-100 facilities-image" src={why2} alt="" />
+          <div className="row Reverse-column tab-reverse-column ">
+            <div
+              data-aos="fade-right"
+              className="col-lg-6 facilities-div-padding"
+            >
+              <div className="image-overflow">
+                <img
+                  className="img-fluid w-100 facilities-image"
+                  src={why2}
+                  alt=""
+                />
               </div>
             </div>
-            <div className="col-md-6 d-flex justify-content-center align-items-center facilities-div-padding">
+            <div className="col-lg-6 d-flex justify-content-center align-items-center facilities-div-padding">
               <div data-aos="fade-left" className="">
                 <h1 className="facilities-title">
                   LEARNING DRIVEN WORK CULTURE
@@ -60,7 +70,7 @@ const Facilities = () => {
       <section className="d-flex justify-content-center">
         <div className="facilities-container">
           <div className="row">
-            <div className="col-md-6 d-flex justify-content-center align-items-center facilities-div-padding">
+            <div className="col-lg-6 d-flex justify-content-center align-items-center facilities-div-padding">
               <div data-aos="fade-right" className="">
                 <h1 className="facilities-title">
                   EXCEPTIONAL WORK LIFE BALANCE
@@ -87,8 +97,8 @@ const Facilities = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6 facilities-div-padding">
-              <div data-aos="fade-left">
+            <div className="col-lg-6 facilities-div-padding">
+              <div className="image-overflow" data-aos="fade-left">
                 <img className="img-fluid facilities-image" src={why3} alt="" />
               </div>
             </div>

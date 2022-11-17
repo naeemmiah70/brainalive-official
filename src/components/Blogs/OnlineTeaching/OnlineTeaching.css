@@ -4,20 +4,21 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%);
 
 }
-#teaching-header-text {
-    position: absolute;
-    left: 25%;
-    font-size: 42px;
+
+.blog-spacing-right{
+    width: 90%;
 }
 
-@media only screen and (max-width: 620px) {
-    #teaching-header-text{
-        font-size: 27px;
-        position: absolute;
-        left: 5%;
-        top: 40%;
+@media only screen and (min-width: 521px) and (max-width: 1024px)  {
+    .blog-spacing-right {
+        width: 100%;
     }
+} 
+@media only screen and (max-width: 520px) {
+    .online-teaching-bg{
+        height: 300px;
+    
+    }  
 }

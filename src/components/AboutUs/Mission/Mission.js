@@ -2,22 +2,25 @@ import React, { useEffect } from "react";
 import MissionImg from "../../../resource/mission.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "./Mission.css";
 
 const Mission = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
- 
-      <section className=" row about-bg-color mission-margin-top">
-      <div data-aos="fade-right" className="col-md-6 div-padding">
+    <section className="row about-bg-color Reverse-column tab-reverse-column">
+      <div data-aos="fade-right" className="col-lg-6 div-padding">
         <div>
-          <img className="img-fluid about-image" src={MissionImg} alt="" />
+          <img className="img-fluid about-image " src={MissionImg} alt="" />
         </div>
       </div>
-      <div data-aos="fade-up" className="col-md-6 d-flex justify-content-center align-items-center div-padding">
-        <div >
-          <h1 className="about-title">Mission</h1>
+      <div
+        data-aos="fade-up"
+        className="col-lg-6 d-flex justify-content-center align-items-center div-padding mission-image"
+      >
+        <div>
+          <h1 className="about-title mission-margin-top">Mission</h1>
           <p className="about-descriptions">
             Our mission at BrainAlive is to champion human potential by truly
             understanding the user state of mind and intent through the lens of
@@ -29,7 +32,6 @@ const Mission = () => {
         </div>
       </div>
     </section>
- 
   );
 };
 

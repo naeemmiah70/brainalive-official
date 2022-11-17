@@ -8,7 +8,7 @@ import shopping6 from "../../../resource/shopping6.png";
 import cart from "../../../resource/cart.png";
 import laptop from "../../../resource/laptop.png";
 import "./YourQuestions.css";
-
+import '../../FOCIIce/FOCIISDK/FOCCISDK.css'
 const YourQuestions = () => {
   return (
     <section className="focci-sdk-bg">
@@ -20,7 +20,7 @@ const YourQuestions = () => {
           <div className="bar"></div>
         </div>
 
-        <div className="row shp mt-40" data-aos="zoom-in">
+        <div className="row shp mt-40 get-unbiased-section" data-aos="zoom-in">
           <div className="col-sm-5 pr-6">
             <div
               className="card-shadow data-card first-card mr-0"
@@ -85,6 +85,7 @@ const YourQuestions = () => {
                 top: "100px",
                 right: "50px",
               }}
+              className="laptop-none"
               alt="shopping-icon"
               data-aos="fade-up"
               data-aos-duration="1500"

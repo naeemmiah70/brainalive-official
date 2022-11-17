@@ -8,7 +8,7 @@ const AbhaHeader = () => {
       <div class="bg-box col-xxl-4 col-xl-5 col-lg-6 col-md-8">
         <div class="caption-box text-center">
           <h1>
-            <span>The neurological rehabilitation of tomorrow</span>
+            <span>The Neurological Rehabilitation of Tomorrow</span>
           </h1>
         </div>
 

@@ -39,7 +39,7 @@ const Ba3eHeader = () => {
   return (
     <>
       <section className="ba3e-header d-flex align-items-center">
-        <div className="col-md-5 p-5">
+        <div className="col-lg-5 ba3e-bg">
           <h1 className="ba3e-header-text">Making the Intangible Tangible</h1>
           <p className="ba3e-description">
             Your brain behavior demystified for you. With BA3E we give a peek
@@ -48,7 +48,10 @@ const Ba3eHeader = () => {
           </p>
         </div>
       </section>
-      <section className="swiper-section d-flex align-items-center">
+      <section
+        id="ba3e-gap"
+        className="swiper-section d-flex align-items-center"
+      >
         <Swiper
           modules={[Navigation, Pagination, A11y, Autoplay]}
           autoplay={{ delay: 3000 }}
@@ -78,9 +81,7 @@ const Ba3eHeader = () => {
           {data.map((details) => (
             <SwiperSlide>
               <div className="swiper-div">
-                <div>
-                  <p className="swiper-text text-center">{details.details}</p>
-                </div>
+                <p className="swiper-text text-center">{details.details}</p>
               </div>
             </SwiperSlide>
           ))}

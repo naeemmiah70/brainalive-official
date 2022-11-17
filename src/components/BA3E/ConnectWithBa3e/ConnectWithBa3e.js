@@ -57,18 +57,18 @@ const ConnectWithBa3e = () => {
     <section>
       <div className="row connect-bg p-4">
         <div className="col-md-6 d-flex align-items-center justify-content-center">
-          <h1 className="connect-text">Connect with BA3E</h1>
+          <h1 className="connect-text">Connect with BA<span className="threee">3</span>E</h1>
         </div>
         <div className="col-md-6">
           <img className="img-fluid" src={connect} alt="" />
         </div>
       </div>
       <div className="features-bg">
-        <div className="row">
+        <div className="row connect-with-space">
           {details.map((data) => (
-            <div className="col-md-3 text-center text-white p-5">
+            <div className="col-md-3 text-center text-white p-5 connect-methods-card ">
               <img src={data.icon} alt="" />
-              <p className="mt-4 feature-title">{data.name}</p>
+              <p className="mt-3  feature-title">{data.name}</p>
             </div>
           ))}
         </div>

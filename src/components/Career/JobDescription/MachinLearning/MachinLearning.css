@@ -1,0 +1,88 @@
+.Machine-header {
+    height: 600px;
+    background: url("../../../../resource/img/opening1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.embedded-header {
+    height: 600px;
+    background: url("../../../../resource/img/embedded-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hardware-header {
+    height: 600px;
+    background: url("../../../../resource/img/hardware-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.descriptio-header-dark {
+    background: #1c1c1c80;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.job-title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 72px;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+.description-bg {
+    background-color: #262626;
+}
+
+.job-bg {
+    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+}
+
+.job-description-container {
+    width: 800px;
+}
+
+.heading-about {
+    margin-top: 5rem;
+    color: #fff;
+}
+
+.about-brainalive {
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    line-height: 28px;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    letter-spacing: .22px;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 520px) {
+    .heading-about {
+        margin-top: 3rem;
+        color: #fff;
+    }
+    .about-brainalive {
+        margin-top: 1rem;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque !important;
+        color: #fff;
+        font-size: 12.5px;
+        line-height: 28px;
+        margin-bottom: 0.25rem;
+        font-weight: 500;
+        letter-spacing: .22px;
+        margin-bottom: 3rem;
+    }
+
+}

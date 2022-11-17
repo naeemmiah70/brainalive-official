@@ -6,7 +6,6 @@ import Sarthak from "../../../resource/team/Sarthak.JPEG";
 import Shorya from "../../../resource/team/shourya.jpg";
 import Sonal from "../../../resource/team/Sonal.png";
 import Hritik from "../../../resource/team/hritik.jpeg";
-import Yadevendra from "../../../resource/team/yadavendra.jpg";
 import Mujjasam from "../../../resource/team/noore-mujjasam.jpeg";
 import Reshul from "../../../resource/team/reshul.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,7 +20,7 @@ const OurTeam = () => {
       id: 1,
       imageUrl: Gaurab,
       linkedInUrl: "https://www.linkedin.com/in/gauravgarg4/",
-      name: "Dr. Gaurab Garg",
+      name: "Dr. Gaurav Garg",
       designation: "Machine Learning",
     },
     {
@@ -42,7 +41,7 @@ const OurTeam = () => {
       id: 4,
       imageUrl: Sarthak,
       linkedInUrl: "https://www.linkedin.com/in/sarthak-malik-582666126/",
-      name: "Sarhtak Malik",
+      name: "Sarthak Malik",
       designation: "Embedded Firmware",
     },
     {
@@ -67,13 +66,6 @@ const OurTeam = () => {
       designation: "Report Executive",
     },
     {
-      id: 8,
-      imageUrl: Yadevendra,
-      linkedInUrl: "https://www.linkedin.com/in/dr-yadavendra-yadav-b854561ba/",
-      name: "Yadavendra Yadav",
-      designation: "Machine Learning",
-    },
-    {
       id: 9,
       imageUrl: Mujjasam,
       linkedInUrl: "https://www.linkedin.com/in/noor-s-elearning-18b8871a1/",
@@ -96,9 +88,9 @@ const OurTeam = () => {
       <h1 data-aos="fade-up" className="advisory-team">
         Our Team
       </h1>
-      <div className="row d-flex">
+      <div className="row d-flex mb-5">
         {advisoryDetails.map((details) => (
-          <div className="col-md-4 d-flex justify-content-center advisory-div ">
+          <div className="col-lg-4 col-md-6 d-flex justify-content-center advisory-div ">
             <div className="d-flex align-items-center our-team-div">
               <div>
                 <div>

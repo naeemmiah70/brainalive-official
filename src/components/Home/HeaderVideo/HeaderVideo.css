@@ -1,6 +1,5 @@
-
-@media only screen and (max-width: 620px) {
-    .video-height{
-        margin-top: 80px;
+@media only screen and (max-width: 520px) {
+    .video-height {
+        margin-top: 60px;
     }
 }

@@ -21,7 +21,7 @@ const AwakenedOne = () => {
     {
       id: 4,
       title: "<5uv",
-      details: "System noise(RFI)",
+      details: "System Noise(RFI)",
     },
     {
       id: 5,
@@ -34,15 +34,18 @@ const AwakenedOne = () => {
       <div className="text-center">
         <h1 className="awekened-header">Be The Awakened One</h1>
         <img
-          className="img-fluid"
+          className="img-fluid awekend-one-img"
           src="https://braina.live/images/ba3e/exploded.png"
           alt=""
         />
       </div>
       <div className="row d-flex justify-content-around">
         {details.map((details) => (
-          <div key={details.id} className="text-center awekened-div-feature">
-            <h4 className="text-white">{details.title}</h4>
+          <div
+            key={details.id}
+            className="text-center awekened-div-feature"
+          >
+            <h4 className="awekend-features-title">{details.title}</h4>
             <small className="awekend-features">{details.details}</small>
           </div>
         ))}

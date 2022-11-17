@@ -1,6 +1,7 @@
 import React from "react";
 import "./Subscribe.css";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 const Subscribe = () => {
   const {
@@ -9,41 +10,63 @@ const Subscribe = () => {
     reset,
     formState: { errors },
   } = useForm();
+
+  const [subscribed, setSubscribed] = useState(false);
+
   const onSubmit = (data) => {
     console.log(data);
     reset();
+    setSubscribed(true);
   };
   return (
     <div>
-      <h5 className="subscribe-now-heading">Subsribe Now</h5>
+      <h5 className="subscribe-now-heading">Subscribe Now</h5>
       <div className="subscribe-form">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        {subscribed ? (
           <div>
-            <p className="form-label">
-              Name <span className="star-icon">*</span>
+            <p className="get-in-touch-text">
+              Thanks for contacting us! We will be in touch with you shortly.
             </p>
-            <input
-              className="subscribe-input"
-              type="text"
-              {...register("name")}
-            />
           </div>
-          <div>
-            <p className="form-label mt-3">
-              Email <span className="star-icon">*</span>
-            </p>
-            <input
-              className="subscribe-input"
-              type="email"
-              {...register("email")}
-            />
-          </div>
-          <div className="text-center">
-            <button type="submit" className="subscribe-submit-btn">
-              Submit
-            </button>
-          </div>
-        </form>
+        ) : (
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div>
+              <p className="form-label">
+                Name <span className="star-icon">*</span>
+              </p>
+              <input
+                className="subscribe-input"
+                type="text"
+                {...register("name", { required: true })}
+              />
+              {errors.name && (
+                <span className="subscribe-required">
+                  This field is required
+                </span>
+              )}
+            </div>
+            <div>
+              <p className="form-label mt-3">
+                Email <span className="star-icon">*</span>
+              </p>
+              <input
+                className="subscribe-input"
+                type="email"
+                {...register("email", { required: true })}
+              />
+              {errors.email && (
+                <span className="subscribe-required">
+                  This field is required
+                </span>
+              )}
+            </div>
+            <div className="text-center">
+              <button type="submit" className="subscribe-submit-btn">
+                Submit
+              </button>
+            </div>
+          </form>
+        )}
       </div>
     </div>
   );

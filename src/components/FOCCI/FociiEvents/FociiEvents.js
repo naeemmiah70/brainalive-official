@@ -29,11 +29,12 @@ const FociiEvents = () => {
     },
   ];
   return (
-    <section className="focii-bg">
+    <section className="row">
+      <div className="focii-bg">
       <div className="container pt-3">
-        <div className="row d-flex justify-content-between">
+        <div className="row d-flex justify-content-between focci-event-card-margin">
           {eventsData.map((data) => (
-            <div className="col-md-3">
+            <div className="col-md-3 events-card">
               <div className="text-center">
                 <img src={data.imgURL} alt="" />
               </div>
@@ -43,12 +44,13 @@ const FociiEvents = () => {
               </div>
               <div className="text-center">
                 <Link to={data.link}>
-                  <button className="learn-more-btn">Learn more</button>
+                  <button className={`learn-more-btn ${data.id === 3 && "ai-sdk"} ${data.id === 1 && "focii-ai"}`}>Learn more</button>
                 </Link>
               </div>
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

@@ -4,11 +4,42 @@
     padding: 12px 0px 20px 100px;
     box-shadow: 4px 5px 7px #000000;
 }
-.solution-div{
+
+.solution-div {
     border-radius: 20px;
 }
-.shopper-bottom-text{
+
+.shopper-bottom-text {
     color: #fff;
     font-weight: 700;
     font-size: 20px;
+}
+
+.solution-description {
+    width: 80%;
+}
+
+.shopper-bottom-btn {
+    margin-top: 2rem;
+    box-shadow: 4px 5px 7px #265b97;
+    padding: 10px 24px;
+}
+
+@media only screen and (max-width: 520px) {
+    .solution-description {
+        width: 100%;
+    }
+
+    .shopper-bg {
+        margin-top: 2rem;
+    }
+
+    .solution-div {
+        border-radius: 10px;
+    }
+
+    .focii_shopper-bottom-btn {
+        margin-top: 1rem !important;
+
+    }
 }

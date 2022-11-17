@@ -2,16 +2,17 @@ import React from "react";
 import './AboutBa3e.css'
 import girl from "../../../resource/girl.png";
 
+
 const AboutBa3e = () => {
   return (
     <section className="row aboutBa3e-bg">
-      <div className="col-md-6">
-        <img className="img-fluid" src={girl} alt="" />
+      <div className="col-lg-5 d-flex justify-content-center">
+        <img className="img-fluid text-center about-ba3e-img" src={girl} alt="" />
       </div>
-      <div className="col-md-6 d-flex align-items-center p-5">
+      <div className="col-lg-7 d-flex align-items-center p-5">
         <div>
           <div>
-            <h1 className="about-ba3e">About BA3E</h1>
+            <h1 className="about-ba3e">About BA<span className="three">3</span>E</h1>
             <h3 className="ultimate-couch">Your Ultimate Coach For A Smarter You</h3>
           </div>
           <div>

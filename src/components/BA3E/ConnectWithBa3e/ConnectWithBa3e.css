@@ -1,9 +1,9 @@
 .connect-bg {
-    background-color: #1D1D1D;
+    background-color: #121212;
 }
 
 .connect-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
     font-size: 36px;
     font-weight: 500;
     line-height: 1.1;
@@ -12,13 +12,52 @@
 }
 
 .features-bg {
-    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
+    background-color: #1D1D1D;
 }
-.feature-title{
+
+.feature-title {
     letter-spacing: .22px;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: Galano-Grotesque;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.927);
+}
+
+.connect-methods-card img {
+    height: 50px;
+}
+
+.threee {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300 !important;
+}
+
+@media only screen and (max-width: 520px) {
+    .connect-text {
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.1;
+        color: white;
+        letter-spacing: 1px;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    .feature-title {
+        letter-spacing: .22px;
+        font-weight: 500;
+        font-size: .8rem;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.927);
+    }
+    .connect-methods-card {
+        margin-top: -3.5rem;
+    }
+    .connect-with-space{
+        padding-top: 4rem;
+    }
+    
 }

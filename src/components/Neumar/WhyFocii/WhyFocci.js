@@ -52,12 +52,12 @@ const WhyFocci = () => {
     <section className="interest-bg d-flex justify-content-center">
       <div className="focci-sdk-container">
         <div className="text-center pt-5">
-          <h2 data-aos="fade-up" className="interest-heading">WHY FOCII</h2>
+          <h2 data-aos="fade-up" className="interest-heading">Why FOCII</h2>
           <div className="bar"></div>
         </div>
         <div className="row">
           {details.map((data) => (
-            <div data-aos="fade-up" className="col-md-4 d-flex align-items-center">
+            <div data-aos="fade-up" className="col-lg-4 col-md-6 d-flex align-items-center why-focii-card">
               <div className="">
                 <img className="why-icon" src={data.icon} alt="" />
               </div>
@@ -69,7 +69,7 @@ const WhyFocci = () => {
           ))}
         </div>
         <div className="my-5">
-          <div data-aos="fade-up" className="bottom-banner mt-5 d-flex  align-items-center">
+          <div data-aos="fade-up" className="bottom-banner  d-flex  align-items-center">
             <div  className="row p-3">
               <div style={{paddingLeft:"10%"}}  className="col-md-8">
                 <h1 className="banner-text">View Your Customer Engagement</h1>

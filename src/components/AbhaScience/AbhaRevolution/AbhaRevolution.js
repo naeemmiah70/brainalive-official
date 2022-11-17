@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AbhaRevolution.css";
 import Typewriter from "typewriter-effect";
+import "../../FOCIIce/FOCIISDK/FOCCISDK.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AbhaRevolution = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <section className="focci-sdk-bg">
+    <section style={{ marginTop: "-35px" }} className="focci-sdk-bg">
       <div className="focci-sdk-container">
         <div>
           <h2 className="remolution-header text-center">
@@ -39,11 +45,50 @@ const AbhaRevolution = () => {
           </div>
         </div>
 
-        <section className="my-5">
+        {/* <div class="">
+          <h1
+            class="d-subtitle text-center para text-white d-color-white"
+            style={{ marginBottom: "0px" }}
+          >
+            ABHA's revolutionary technology uses
+          </h1>
+          <div class="tabs">
+            <div class="tab item line-1 anim-typewriter">
+              Electroencephalography(EEG)
+            </div>
+            <div class="tab item line-1 anim-typewriter">
+              Artificial Intelligence
+            </div>
+            <div class="tab item line-1 anim-typewriter">
+              assistive exoskeleton
+            </div>
+          </div>
+
+          <div class="box big-cover-box">
+            <p class="d-copy text-center para">
+              ABHA monitors your brain signals using EEG to capture the
+              imagination of your motor movement.
+            </p>
+          </div>
+          <div class="box big-cover-box">
+            <p class="d-copy text-center para">
+              ABHA knows to identify if the right zone of the brain is used for
+              imagining the mobility.
+            </p>
+          </div>
+          <div class="box big-cover-box">
+            <p class="d-copy text-center para">
+              ABHA uses an upper limb exoskeleton to assist the mobility when
+              the mental imagination is right.
+            </p>
+          </div>
+        </div> */}
+
+        <section className="my-5 mx-3">
           <h1 className="scientific mb-4">Scientific Publications</h1>
           <div className="row">
-            <div className="col-md-6">
-              <div>
+            <div className="col-lg-6">
+              <div data-aos="fade-up">
                 <strong className="publication-heading mt-3">
                   "Brain Machine interface facilitates neuroplasticity"
                 </strong>{" "}
@@ -63,7 +108,7 @@ const AbhaRevolution = () => {
               </div>
 
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="mt-4">
                 <strong className="publication-heading">
                   "Synchronizing stroke rehabilitation with voluntary neural
                   and/or muscle activity can lead to motor recovery by targeting
@@ -87,7 +132,7 @@ const AbhaRevolution = () => {
               </div>
 
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="mt-4">
                 <strong className="publication-heading">
                   "Findings provide strong support for the reliability and
                   potential rehabilitative application of MI-BCI in a stroke
@@ -110,7 +155,7 @@ const AbhaRevolution = () => {
               </div>
 
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="mt-4">
                 <strong className="publication-heading">
                   "This systematic review suggests that BCI interventions may be
                   a promising rehabilitation approach in subjects with stroke"
@@ -133,7 +178,7 @@ const AbhaRevolution = () => {
                 </small>
               </div>
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="mt-4">
                 <strong className="publication-heading">
                   "This proof-of-principle study suggests that the combination
                   of BCI training with goal-directed, active physical therapy
@@ -157,9 +202,9 @@ const AbhaRevolution = () => {
                 </small>
               </div>
             </div>
-            <div className="col-md-6">
+            <div data-aos="fade-up" className="col-lg-6">
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="">
                 <strong className="publication-heading">
                   "Current evidence suggests that Motor imagery provides
                   additional benefits to conventional physiotherapy or
@@ -181,7 +226,7 @@ const AbhaRevolution = () => {
                 </small>
               </div>
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="mt-4">
                 <strong className="publication-heading">
                   "Majority of stroke patients could use EEG-based motor imagery
                   BCI"
@@ -203,7 +248,7 @@ const AbhaRevolution = () => {
                 </small>
               </div>
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="mt-4">
                 <strong className="publication-heading">
                   "Rehabilitation paradigms that pair cortically-based intent
                   with activation of affected circuits and positive
@@ -225,7 +270,7 @@ const AbhaRevolution = () => {
                 </small>
               </div>
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="mt-4">
                 <strong className="publication-heading">
                   "Targeted Neuroplasticity Induced Through Operant
                   Conditioning-modification of a behavior is induced by the
@@ -246,7 +291,7 @@ const AbhaRevolution = () => {
                 </small>
               </div>
               {/* section */}
-              <div className="mt-4">
+              <div data-aos="fade-up" className="mt-4">
                 <strong className="publication-heading">
                   "The findings support the feasibility and justify the
                   incorporation of home-based motor imagery exercises to improve

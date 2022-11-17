@@ -4,7 +4,7 @@ import "./FociiHeader.css";
 
 const FociiHeader = () => {
   return (
-    <div className="focii-bg">
+    <div className="focii-bg row">
       <div className="container">
         <div className="">
           <h1 className="fw-bold text-center header-heading">
@@ -17,13 +17,13 @@ const FociiHeader = () => {
             </h5>
           </div>
           <div className="text-center">
-            <Link to="/focii_ce"><button className="know-more-btn text-center">Know more</button></Link>
+            <Link to="/focii_ce"><button className="focii-know-more-btn text-center">Know more</button></Link>
           </div>
         </div>
       </div>
       <div>
         <div className="focii-header-bg d-flex align-items-end justify-content-center">
-          <div style={{ marginBottom: "-40px" }} className="text-center">
+          <div  className="text-center focci-banner-img">
             <img
               className="header-img"
               src="https://braina.live/images/focii.png"

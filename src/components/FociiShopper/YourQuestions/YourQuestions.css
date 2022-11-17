@@ -240,4 +240,10 @@
         margin: 40px 0 0;
         width: 85%;
     }
+    .laptop-none{
+        display: none;
+    }
+    .get-unbiased-section{
+        margin-top: -3rem;
+    }
 }

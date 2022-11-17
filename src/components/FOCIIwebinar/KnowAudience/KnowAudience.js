@@ -37,14 +37,20 @@ const KnowAudience = () => {
     <section className="focci-sdk-bg">
       <div className="focci-sdk-container">
         <div className="text-center">
-          <h1 data-aos="fade-up" style={{ paddingTop: "7rem" }} className="focci-ce-title">
+          <h1
+            data-aos="fade-up"
+            className="focci-ce-title know-audience-header"
+          >
             Know Your Audience - <br /> Engaged, Tired, Bored, Confused?
           </h1>
           <div className="bar"></div>
         </div>
         <div className="row d-flex justify-content-center">
           {details.map((data) => (
-            <div data-aos="fade-up" className="col-md-4 text-white p-4 audience-card">
+            <div
+              data-aos="fade-up"
+              className="col-lg-4 col-md-4 text-white audience-card"
+            >
               <div className="d-flex align-items-center">
                 <div>
                   <img className="audience-icon" src={data.icon} alt="" />

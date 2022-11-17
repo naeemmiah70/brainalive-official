@@ -13,7 +13,7 @@ const FOCIISDK = () => {
   return (
     <section className="focci-sdk-bg">
       <div className="focci-sdk-container">
-        <div className="text-center p-4 ">
+        <div className="text-center">
           <h2 data-aos="fade-up" className="focci-ce-title pt-5">Introducing FOCII SDK</h2>
           <div class="bar"></div>
           <div className="d-flex justify-content-center">
@@ -24,9 +24,9 @@ const FOCIISDK = () => {
             </p>
           </div>
         </div>
-        <div className="row p-4 d-flex justify-content-between">
+        <div className="row p-3 d-flex justify-content-between">
           <div data-aos="fade-up" className="col-md-5 text-white">
-            <h3>Video Intelligence</h3>
+            <h3 className="video-intelligence">Video Intelligence</h3>
             <img className="img-fluid my-3" src={videoImg} alt="" />
             <small>
               Computer vision based audience interest and intent decode through
@@ -34,7 +34,7 @@ const FOCIISDK = () => {
             </small>
           </div>
           <div data-aos="fade-up" className="col-md-5 text-white">
-            <h3>Video Intelligence</h3>
+            <h3 className="video-intelligence">Voice Intelligence</h3>
             <img className="img-fluid my-3" src={voiceImg} alt="" />
             <small>
               Computer vision based audience interest and intent decode through

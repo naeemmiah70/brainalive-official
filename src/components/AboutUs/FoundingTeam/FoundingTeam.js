@@ -5,6 +5,8 @@ import Sujit from "../../../resource/team/Sujit.jpg";
 import Adhavan from "../../../resource/team/Adhavan.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import '../AdvisoryBoard/AdvisoryBoard.css'
+import './FoundingTeam.css'
 
 const FoundingTeam = () => {
   const advisoryDetails = [
@@ -12,29 +14,29 @@ const FoundingTeam = () => {
       id: 1,
       imageUrl: Gaurab,
       linkedInUrl: "https://www.linkedin.com/in/gauravdubeyith/",
-      name: "Gaurab Dubey",
-      designation: "Founder | Business strategy",
+      name: "Gaurav Dubey",
+      designation: "Founder | Business Strategy",
     },
     {
       id: 2,
       imageUrl: Abbas,
       linkedInUrl: "https://www.linkedin.com/in/mohammad-abbas-mahdi-a6493286/",
-      name: "Mohammad Abbas Mehedi",
-      designation: "Embedded Tech",
+      name: "Mohammad Abbas Mehdi",
+      designation: "Co-founder | Embedded Tech",
     },
     {
       id: 3,
       imageUrl: Sujit,
-      linkedInUrl: "http://sujitroy.co.in/",
+      linkedInUrl: "https://www.linkedin.com/in/sujit-roy01/",
       name: "Dr. Sujit Roy",
-      designation: "Founding Advisor | Product Engineer",
+      designation: "Founding Advisor | Technology and Operations",
     },
     {
       id: 4,
       imageUrl: Adhavan,
       linkedInUrl: "https://www.linkedin.com/in/adhavanrk/",
       name: "Adhavan RK",
-      designation: "Lead | operations and product",
+      designation: "Lead | Operations and Product",
     },
   ];
   useEffect(() => {
@@ -42,16 +44,22 @@ const FoundingTeam = () => {
   }, []);
   return (
     <section>
-      <h1 data-aos="fade-up" className="advisory-team">Founding Team</h1>
-      <div className="row">
+      <h1 data-aos="fade-up" className="advisory-team">
+        Founding Team
+      </h1>
+      <div className="row founding-team-center">
         {advisoryDetails.map((details) => (
-          <div className="col-md-4 d-flex justify-content-center advisory-div">
+          <div
+            className={`col-lg-4 col-md-6 d-flex justify-content-center advisory-div founding-team-underline ${
+              details.id === 3 && "sujit"
+            }`}
+          >
             <a
               style={{ textDecoration: "none" }}
               href={details.linkedInUrl}
               target="_blank"
             >
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center ">
                 <div>
                   <img className="leader-img" src={details.imageUrl} alt="" />
                 </div>

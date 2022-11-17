@@ -15,7 +15,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 4px;
+    padding: 5px;
     width: 66px;
     height: 65px;
 }
@@ -27,13 +27,14 @@
 .cro-card {
     width: 94%;
     margin: auto;
+    height: 100px;
 }
 
 .cro-card p {
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 150%;
+    line-height: 130%;
 }
 
 .cro-card .image img {
@@ -61,6 +62,7 @@
     color: #fff;
 }
 
+
 .single_service.service_right {
     padding-right: 44px;
     padding-left: 0;
@@ -83,7 +85,8 @@
 }
 
 .single_service:nth-child(2) {
-    margin: 5rem 0;
+    margin: 6rem 0;
+
 }
 
 .single_service img {
@@ -97,8 +100,9 @@
 
 .single_service {
     position: relative;
-    padding-left: 44px;
-    margin-bottom: 15px
+    padding-left: 49px;
+    margin-bottom: 15px;
+
 }
 
 .single_service p {
@@ -114,19 +118,25 @@
     margin-bottom: 0;
     font-size: 18px
 }
-.focii-center-text{
+
+.focii-center-text {
     position: relative;
-    left: 125px;
+    left: 34%;
     font-size: 3rem;
 
 }
+
 .single_service .card-shadow {
     height: 110px;
 }
 
 .service_right p {
     margin-bottom: 10px;
-  
+
+}
+
+.neumar-services-margin-top {
+    margin-top: 6rem;
 }
 
 .focci-comp-sol .single_service:before {
@@ -143,16 +153,21 @@
     transform: rotate(180deg);
 }
 
+.card-shadow {
+    height: 100px !important;
+    position: static;
+}
+
 .focci-comp-sol .single_service.single_one::before {
     width: 23%;
-    top: 126%;
+    top: 136%;
     left: 78%;
     transform: rotate(238deg);
 }
 
 .focci-comp-sol .single_service.single_three::before {
     width: 23%;
-    top: -36%;
+    top: -42%;
     left: 75%;
     transform: rotate(121deg);
 }
@@ -164,7 +179,7 @@
 
 .focci-comp-sol .single_service.single_six::before {
     width: 25%;
-    top: -37%;
+    top: -48%;
     content: '';
     left: 8%;
     transform: rotate(240deg);
@@ -172,12 +187,55 @@
 
 .focci-comp-sol .single_service.single_four::before {
     width: 25%;
-    top: 131%;
+    top: 135%;
     content: '';
-    /* margin-top: 35px; */
     left: -1%;
     transform: rotate(121deg);
 
+}
+
+@media only screen and (min-width: 521px) and (max-width: 1024px) {
+    .card-shadow {
+        height: 120px !important;
+        position: static;
+        width: 200px;
+    }
+
+    .single_one {
+        position: relative;
+        left: 20% !important;
+    }
+
+    .single_four {
+        position: relative;
+        left: -30% !important;
+    }
+
+    .single_three {
+        position: relative;
+        left: 10% !important;
+    }
+
+    .single_two {
+        position: relative;
+        right: 10% !important;
+    }
+
+    .single_six {
+        position: relative;
+        right: 30% !important;
+    }
+
+    .focii-center-text {
+        position: relative !important;
+        left: 20%;
+        font-size: 2.5rem;
+    }
+
+    .single_service img {
+        margin-left: 50px;
+        display: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 834px) {
@@ -188,10 +246,8 @@
 
     .focci-comp-sol .cro-card .image,
     .cro-card .image {
-        margin-left: 15px;
+        margin-left: 25px;
     }
-
-
 }
 
 @media (max-width: 835px) {
@@ -212,6 +268,10 @@
 }
 
 @media (max-width: 480px) {
+    .single_service:nth-child(2) {
+        margin: 3rem 0;
+
+    }
 
     .faq-answer {
         padding-right: 0;
@@ -220,10 +280,12 @@
     .cro-card .image {
         width: 65px;
         height: 60px;
+
     }
 
     .cro-card p {
-        font-size: 14px;
+        font-size: 15px;
+        opacity: .95;
     }
 
     .faq-singular .faq-question:before {
@@ -256,8 +318,68 @@
     }
 
     .single_service.service_right {
-        width: 97%;
+        width: 95%;
         padding-right: 0;
         padding-left: 44px;
     }
+
+    .interest-bg {
+        margin-top: 0px;
+    }
+
+    .neumar-services-margin-top {
+        margin-top: 0rem;
+    }
+
+    .cro-card {
+        margin-top: 0;
+    }
+
+    .single_service img {
+        padding-left: 10px;
+    }
+
+    .single_three {
+        position: relative;
+        left: 0% !important;
+    }
+    .single_four {
+        position: relative;
+        left: 1% !important;
+    }
+    .single_four .card-shadow {
+        position: relative;
+        right: 1% !important;
+    }
+    .single_six .card-shadow {
+        position: relative;
+        right: 1% !important;
+        margin-right: 1%;
+    }
+
+    .single_five {
+        position: relative;
+        left: 4% !important;
+    }
+    .single_five .card-shadow {
+        position: relative;
+        right: 1% !important;
+    }
+
+
+    .single_two {
+        position: relative;
+        left: 2.5%;
+    }
+
+
+    .single_six {
+        position: relative;
+        left: 2%;
+    }
+
+    .single_six .card-shadow {
+        margin-left: -5px !important;
+    }
+
 }

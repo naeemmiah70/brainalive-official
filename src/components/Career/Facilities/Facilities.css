@@ -1,3 +1,7 @@
+.facilities-container {
+    width: 90%;
+}
+
 .facilities-title {
     color: #265B97;
     font-weight: 700;
@@ -10,12 +14,19 @@
 
 .facilities-description {
     font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.6;
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: .22px;
+
 }
+
 .about-bg-color {
     background-color: #212121;
+}
+
+.mission-margin-top {
+    margin-top: -5rem;
 }
 
 .facilities-div-padding {
@@ -23,7 +34,16 @@
 }
 
 .facilities-image {
-    border-radius: 40px;
+    border-radius: 30px;
+    transition: 1.5s all ease-in-out;
+}
+
+.image-overflow {
+    overflow: hidden;
+    border-radius: 30px;
+}
+.facilities-image:hover {
+    transform: scale(1.5);
 }
 
 .about-title {
@@ -44,17 +64,73 @@
     color: #FCFCFC;
     font-family: 'Montserrat', sans-serif;
 }
+@media only screen and (min-width: 521px) and (max-width: 768px) {
 
-@media only screen and (max-width: 620px) {
-
-    .facilities-div-padding {
-        padding: 3rem;
+    .tab-reverse-column {
+        flex-direction: column-reverse;
     }
 }
+@media only screen and (max-width: 520px) {
 
-.mission-margin-top {
-    margin-top: -5rem;
+    .facilities-div-padding {
+        padding: .8rem;
+    }
+
+    .facilities-title {
+        color: #265B97;
+        font-weight: 700;
+        font-size: 1.45rem;
+        line-height: 1.1;
+        letter-spacing: -.08rem;
+        margin-top: 1.5rem;
+        font-family: Galano-Grotesque;
+    }
+
+    .facilities-description {
+        font-weight: 500;
+        font-size: .9rem;
+        line-height: 1.6;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .Reverse-column{
+        flex-direction: column-reverse;
+    }
+    .facilities-image {
+        border-radius: 25px;
+        height: 270px;
+        width: 97%;
+      
+    }
 }
-.facilities-container{
-    width: 90%;
+@media only screen and (max-width: 320px) {
+
+    .facilities-div-padding {
+        padding: .8rem;
+    }
+
+    .facilities-title {
+        color: #265B97;
+        font-weight: 700;
+        font-size: 1.45rem;
+        line-height: 1.1;
+        letter-spacing: -.08rem;
+        margin-top: 1.5rem;
+        font-family: Galano-Grotesque;
+    }
+
+    .facilities-description {
+        font-weight: 500;
+        font-size: .9rem;
+        line-height: 1.6;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .Reverse-column{
+        flex-direction: column-reverse;
+    }
+    .facilities-image {
+        border-radius: 25px;
+        height: 220px;
+        width: 97%;
+      
+    }
 }

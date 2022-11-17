@@ -4,9 +4,11 @@ export const blogData = [
     img: "https://braina.live/blog/wp-content/uploads/2021/11/business-presentation-laptop-screen-1-1-360x240.jpg",
     title: "Learning Analytics",
     postedBy: "BrainAlive",
-    date: "11 months ago",
+    date: "12 months ago",
     fullDate: "November 13, 2021",
     link: "/blog/learn_analytics",
+    tags: ["learning"],
+    tagHeading: "Learning Analytics",
   },
   {
     id: 2,
@@ -14,9 +16,11 @@ export const blogData = [
     title:
       "Is your educational video effectively managing the cognitive load of your viewers?",
     postedBy: "BrainAlive",
-    date: "11 months ago",
+    date: "12 months ago",
     fullDate: "November 11, 2021",
     link: "/blog/video_managing",
+    tags: [],
+    tagHeading: "",
   },
   {
     id: 3,
@@ -26,6 +30,13 @@ export const blogData = [
     date: "1 year ago",
     fullDate: "September 3, 2021",
     link: "/blog/online_teaching",
+    tags: [
+      "content-engagement",
+      "learner-engagement",
+      "new-normal",
+      "onlineteaching",
+    ],
+    tagHeading: "Content Engagement, Learner Engagement",
   },
   {
     id: 4,
@@ -36,5 +47,7 @@ export const blogData = [
     date: "1 year ago",
     fullDate: "September 3, 2021",
     link: "/blog/online_learning",
+    tags: ["online-teaching", "new-normal", "traditional-classroom"],
+    tagHeading: "Online Teaching, New Normal, Traditional Classroom",
   },
 ];

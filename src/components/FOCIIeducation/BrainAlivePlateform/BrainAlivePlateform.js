@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import "../../FOCIIce/FOCIIceHeader/FOCIIceHeader.css";
+import "../../FOCIIce/WhyFOCII/WhyFOCII.css";
 
 const BrainAlivePlateform = () => {
   useEffect(() => {
@@ -45,7 +47,10 @@ const BrainAlivePlateform = () => {
             <h1 style={{ paddingTop: "3rem" }} className="focci-ce-title">
               The BrainAlive Platform
             </h1>
-            <p style={{opacity:"0.9"}} className="text-white text-center my-4">
+            <p
+              style={{ opacity: "0.9" }}
+              className="text-white text-center my-4"
+            >
               From data collection and storage to platform adoption and
               measurable improvement
             </p>
@@ -55,7 +60,7 @@ const BrainAlivePlateform = () => {
               <div
                 data-aos="fade-up"
                 style={{ background: "#fff" }}
-                className="col-md-4 p-4 audience-card"
+                className="col-md-4 p-4 mt-4 audience-card"
               >
                 <div className="d-flex align-items-center">
                   <div>
@@ -75,7 +80,10 @@ const BrainAlivePlateform = () => {
                   >
                     {data.header}
                   </strong>
-                  <p style={{ color: "black" }} className="audience-details">
+                  <p
+                    style={{ color: "black", opacity: 0.7 }}
+                    className="audience-details"
+                  >
                     {data.details}
                   </p>
                 </div>

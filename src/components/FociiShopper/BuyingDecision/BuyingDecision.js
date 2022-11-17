@@ -12,7 +12,7 @@ const BuyingDecision = () => {
   return (
     <section className="focci-sdk-bg">
       <div className="focci-sdk-container">
-        <div className="row">
+        <div className="row ">
           <div className="text-center py-5">
             <h2 data-aos="fade-up" className="buying-header">
               The Driving Factor Behind The Buying Decision

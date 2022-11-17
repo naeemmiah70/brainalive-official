@@ -20,7 +20,7 @@
 
 .interest-card {
     padding: 30px 25px 25px;
-    width: 88%;
+    width: 75%;
     box-shadow: 4px 5px 7px #0000008f;
     color: #fff;
     border-radius: 25px;
@@ -37,21 +37,101 @@
     line-height: 150%;
     position: relative;
     padding-left: 6%;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .interest-text {
-    font-size: 15px;
+    font-size: 14px;
     color: #FAFAFA;
     margin-bottom: 20px;
     line-height: 150%;
     padding-left: 1rem;
-    font-weight: 300;
-	font-family: Galano-Grotesque;
-    opacity: .8;
+    font-weight: 200 !important;
+    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+    opacity: .9;
 
 }
 
 .interest-check-icon {
     padding-left: 6%;
+}
+
+.interet-padding {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+
+}
+
+
+@media only screen and (min-width: 521px) and (max-width: 1024px)  {
+    .tab-reverse-column{
+        flex-direction: column-reverse;
+    }
+    .interest-card {
+        padding: 30px 25px 25px;
+        width: 100%;
+        box-shadow: 4px 5px 7px #0000008f;
+        color: #fff;
+        border-radius: 25px;
+        background: transparent;
+    }
+    .interet-padding {
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+    
+    }
+} 
+
+@media only screen and (max-width: 520px) {
+    .interest-heading {
+        text-transform: capitalize;
+        font-family: inherit;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+
+    .interest-header {
+        color: #fff;
+        margin: 0;
+        font-size: 1.1rem;
+        letter-spacing: .22px;
+        color: #fff;
+        margin-bottom: 20px;
+        line-height: 150%;
+        position: relative;
+        padding-left: 0%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .interet-padding {
+        margin: 1rem 0rem;
+    }
+
+    .interest-card {
+        padding: 30px 25px 25px;
+        width: 97%;
+        box-shadow: 4px 5px 7px #0000008f;
+        background: #212121d4 !important;
+        color: #fff;
+        border-radius: 20px;
+        background: transparent;
+    }
+
+    .interest-image {
+        border-radius: 20px;
+        width: 97%;
+    }
+
+    .interest-check-icon {
+        padding-left: 0%;
+    }
+
+    .Reverse-column {
+        flex-direction: column-reverse;
+    }
 }

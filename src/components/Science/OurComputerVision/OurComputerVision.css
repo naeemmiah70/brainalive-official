@@ -5,17 +5,15 @@
 .vision-details {
     color: #fff;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.52;
-    width: 80%;
+    width: 90%;
     padding-top: 2rem;
     padding-bottom: 4rem;
     margin: 0;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
-    opacity: 0.9;
+    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
 }
 
 .Launch-demo-btn {
@@ -24,15 +22,127 @@
     text-decoration: none;
     border-radius: 30px;
     border: 0;
-    padding: 8px 16px;
+    padding: 5px 16px;
+    padding-bottom: 9px;
     font-size: 15px;
-    font-weight: 550;
+    font-weight: 500;
     color: #212121;
+    opacity: .9;
     margin-bottom: 2rem;
-
+    margin-right: 15px;
 }
 
 .Launch-demo-btn:hover {
     transform: scale(1.1);
     transition: all 300ms ease;
+}
+
+.computer-vision-padding {
+    padding: 3rem;
+}
+
+.dataset-img-break {
+    display: none;
+}
+@media only screen and (min-width: 521px) and (max-width: 1024px)  {
+    #vision-algorithm {
+        text-align: center;
+        font-weight: 900;
+        text-decoration: underline;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 150%;
+        font-family: Galano-Grotesque;
+    }
+    .vision-details {
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 1.52;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        margin: 0;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        opacity: 0.9;
+        width: 100%;
+    }
+    .dataset-img-break {
+        display: block;
+    }
+    .data-set-btn {
+        position: relative;
+        top: .01rem;
+        margin-bottom: 1rem;
+    
+    }
+    .Launch-demo-btn {
+        position: relative;
+        bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    .computer-vision-padding{
+        padding: 1rem;
+    }
+} 
+
+@media only screen and (max-width: 520px) {
+    .computer-vision-padding {
+        padding: 1rem;
+    }
+
+    .vision-details {
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 15px;
+        line-height: 1.52;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        margin: 0;
+        letter-spacing: 1px;
+        font-family: 'Montserrat', sans-serif;
+        opacity: 0.9;
+        width: 90%;
+    }
+
+    #vision-algorithm {
+        text-align: center;
+        font-weight: 900;
+        text-decoration: underline;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 150%;
+        font-family: Galano-Grotesque;
+    }
+
+    .vision-algo-video {
+        margin-top: -50px;
+        border-radius: 3px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .dataset-img-break {
+        display: block;
+    }
+
+    .Launch-demo-btn {
+        position: relative;
+        bottom: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .data-set-btn {
+        position: relative;
+        top: .5rem;
+        margin-top: 2rem !important;
+    }
 }

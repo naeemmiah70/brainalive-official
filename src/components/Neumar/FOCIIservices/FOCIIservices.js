@@ -1,5 +1,6 @@
 import React from "react";
 import "./FOCIIservices.css";
+import '../../FOCIIce/FOCIISDK/FOCCISDK.css'
 import focii1 from "../../../resource/icon/focii-1.png";
 import focii2 from "../../../resource/icon/focii-2.png";
 import focii3 from "../../../resource/icon/focii-3.png";
@@ -16,8 +17,8 @@ const FOCIIservices = () => {
   }, []);
   return (
     <section className="interest-bg d-flex justify-content-center">
-      <div className="focci-sdk-container mt-5">
-        <div class="focci-comp-sol pt-5">
+      <div className="focci-sdk-container neumar-services-margin-top">
+        <div class="focci-comp-sol">
           <div data-aos="fade-up" class="row">
             <div class="col-sm-4">
               <div class="single_service service_right cro-card para single_one">
@@ -51,7 +52,9 @@ const FOCIIservices = () => {
             <div class="col-sm-4 m-auto">
               <div class="focii-text">
                 <div>
-                  <h1 className="fw-bold focii-center-text text-white">FOCII</h1>
+                  <h1 className="fw-bold focii-center-text text-white">
+                    FOCII
+                  </h1>
                   <div class="bar"></div>
                 </div>
               </div>

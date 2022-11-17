@@ -21,9 +21,9 @@ const RegionOfInterest = () => {
             <div className="bar"></div>
           </div>
 
-          <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="m-4">
+          <div className="row d-flex Reverse-column tab-reverse-column">
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="interet-padding">
                 <img
                 data-aos="fade-right"
                   className="img-fluid interest-image"
@@ -32,8 +32,8 @@ const RegionOfInterest = () => {
                 />
               </div>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="interest-card m-4">
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="interest-card interet-padding">
                 <h5 className="interest-header">
                   Augment your understanding of specific regions in the page
                   through getting detailed user engagement feedback on marked
@@ -78,8 +78,8 @@ const RegionOfInterest = () => {
           </div>
 
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="interest-card m-4">
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="interest-card interet-padding">
                 <h5 className="interest-header">
                   Identify which elements attract the maximum visual attention
                   compared to elements that are ignored or overlooked.
@@ -118,8 +118,8 @@ const RegionOfInterest = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="m-4">
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="interet-padding">
                 <img
                 data-aos="fade-left"
                   className="img-fluid interest-image"
@@ -132,7 +132,7 @@ const RegionOfInterest = () => {
         </div>
       </div>
 
-      {/* section */}
+      {/* Reverse section */}
       <div className="d-flex justify-content-center">
         <div className="focci-sdk-container">
           <div className="text-center mt-5">
@@ -140,9 +140,9 @@ const RegionOfInterest = () => {
             <div className="bar"></div>
           </div>
 
-          <div className="row">
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="m-4">
+          <div className="row Reverse-column tab-reverse-column">
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="interet-padding">
                 <img
                 data-aos="fade-right"
                   className="img-fluid interest-image"
@@ -151,8 +151,8 @@ const RegionOfInterest = () => {
                 />
               </div>
             </div>
-            <div className="col-md-6 d-flex align-items-center">
-              <div className="interest-card m-4">
+            <div className="col-lg-6 d-flex align-items-center">
+              <div className="interest-card interet-padding">
                 <h5 className="interest-header">
                   Identify the sequence and duration with which the user gaze
                   point moves across the site

@@ -15,8 +15,9 @@
     border-radius: 13px;
     width: 280px;
     margin-top: 1rem;
-    
+
 }
+
 
 .subscribe-input {
     width: 100%;
@@ -25,11 +26,13 @@
     background: none;
     color: black;
 }
-.subscribe-input:focus{
-  
-       
-        color: black;
-    
+
+.subscribe-input:focus {
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+   
 }
 
 .subscribe-submit-btn {
@@ -46,8 +49,63 @@
     margin-top: 1.3rem;
     margin-bottom: 1rem;
 }
-.subscribe-now-heading{
+
+.subscribe-now-heading {
     color: #fff;
     font-family: Galano-Grotesque;
     margin-top: 3rem;
+}
+.get-in-touch-text{
+    font-size: 16px;
+    padding: 5px 15px;
+    color: rgba(51, 51, 51, 0.849);
+}
+.subscribe-required{
+    color: #990000;
+    font-size: 14px;
+    position: relative;
+    bottom: 7px;
+}
+@media only screen and (min-width: 521px) and (max-width: 1024px)  {
+    .subscribe-form {
+        background: #f2f2f2;
+        padding: 20px 15px 5px;
+        border-radius: 13px;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: .5rem;
+    }
+} 
+
+@media only screen and (max-width: 520px) {
+    .subscribe-form {
+        background: #f2f2f2;
+        padding: 20px 15px 5px;
+        border-radius: 13px;
+        width: 94%;
+        margin-top: 1rem;
+        margin-left: .5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .subscribe-form {
+        background: #f2f2f2;
+        padding: 20px 15px 5px;
+        border-radius: 13px;
+        width: 94%;
+        margin-top: 1rem;
+        margin-left: .5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .subscribe-form {
+        background: #f2f2f2;
+        padding: 20px 15px 5px;
+        border-radius: 13px;
+        width: 94%;
+        margin-top: 1rem;
+        margin-left: .5rem;
+    }
 }

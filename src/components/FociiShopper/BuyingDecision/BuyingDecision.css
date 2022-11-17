@@ -38,3 +38,57 @@
     padding: 5rem 3rem;
     border-radius: 25px;
 }
+
+@media only screen and (max-width: 520px) {
+    .buying-header {
+        text-transform: capitalize;
+        color: #fff;
+        font-family: Galano-Grotesque, Montserrat, sans-serif;
+        font-size: 1.75rem;
+        font-weight: 700;
+    }
+    .shopping-div-text {
+        background: #212121d4;
+        padding: 2rem 2rem;
+        border-radius: 25px;
+        width: 95%;
+        margin-top: -2rem;
+    }
+    .shopping-text {
+        letter-spacing: .50px;
+        font-size: 16px;
+        font-weight: 300 !important;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+        line-height: 1.6;
+        color: #fff;
+        opacity: 0.9;
+    }
+    .seen-div {
+        background: #212121d4;
+        padding: 2rem 2rem;
+        border-radius: 25px;
+        margin-top: -2rem;
+        width: 95%;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .buying-header {
+        text-transform: capitalize;
+        color: #fff;
+        font-family: Galano-Grotesque, Montserrat, sans-serif;
+        font-size: 1.55rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .buying-header {
+        text-transform: capitalize;
+        color: #fff;
+        font-family: Galano-Grotesque, Montserrat, sans-serif;
+        font-size: 1.45rem;
+        font-weight: 700;
+    }
+}

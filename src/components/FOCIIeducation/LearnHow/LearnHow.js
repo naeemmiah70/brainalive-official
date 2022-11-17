@@ -1,5 +1,7 @@
 import React from "react";
 import "./LearnHow.css";
+import "../../../components/FOCIIce/FOCIISDK/FOCCISDK.css";
+import "../../../components/FOCIIwebinar/KnowAudience/KnowAudience.css";
 import teacher from "../../../resource/card-teacher.png";
 import student from "../../../resource/card-student.png";
 import content from "../../../resource/product/content-feedback.png";
@@ -24,7 +26,7 @@ const LearnHow = () => {
           Learn How Educators/Learners Leverage BrainAlive
         </h2>
         <div className="row d-flex justify-content-center">
-          <div data-aos="fade-up" className="col-md-4 learn-div m-5">
+          <div data-aos="fade-up" className="col-lg-3 col-md-5 learn-div">
             <div>
               <img className="img-fluid" src={teacher} alt="" />
               <h5 className="learn-header">
@@ -55,7 +57,7 @@ const LearnHow = () => {
             </div>
           </div>
 
-          <div data-aos="fade-up" className="col-md-4 learn-div m-5">
+          <div data-aos="fade-up" className="col-lg-3 col-md-5 p-3 learn-div">
             <div>
               <img className="img-fluid" src={student} alt="" />
               <h5 className="learn-header">
@@ -77,7 +79,10 @@ const LearnHow = () => {
                   <p className="icon-text">Stress Management</p>
                 </div>
               </div>
-              <div className="icon-width text-center mx-4 ">
+              <div
+                className="icon-width text-center mx-5 "
+                style={{ height: "200px" }}
+              >
                 <img className="card-icon-size" src={digital} alt="" />
                 <p className="icon-text">Digital Fitness</p>
               </div>

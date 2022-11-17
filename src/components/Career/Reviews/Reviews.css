@@ -1,16 +1,128 @@
-.review-profile-Img{
+/* .opeining-section{
+    width: 100% !important;
+} */
+.review-profile-Img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
 }
-.reviews-description{
+
+.reviews-description {
     font-family: 'Montserrat', sans-serif;
-  font-style: italic;
+    font-style: italic;
     color: rgba(255, 255, 255, 0.899);
 }
-.reviewrs-name{
+
+.reviewrs-name {
     color: #FCFCFC;
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+}
+
+.reviewers-designation {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.899);
+}
+
+.review-div-padding {
+    padding: 6rem;
+}
+
+@media only screen and (min-width: 521px) and (max-width: 768px) {
+    .review-profile-Img {
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+    }
+
+    .review-div-padding {
+        padding: 1.1rem;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+
+    }
+
+    .reviewrs-name {
+        color: #FCFCFC;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .reviewers-designation {
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.899);
+        font-size: .9rem;
+        font-weight: 300 !important;
+    }
+
+    .reviews-description {
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.899);
+        margin-top: 2.2rem;
+        font-size: .9rem;
+        font-weight: 300 !important;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .review-profile-Img {
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+    }
+
+    .review-div-padding {
+        padding: 1.1rem;
+        padding-top: 4rem;
+
+    }
+
+    .reviewrs-name {
+        color: #FCFCFC;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .reviewers-designation {
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.899);
+        font-size: .9rem;
+        font-weight: 300 !important;
+    }
+
+    .reviews-description {
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.899);
+        margin-top: 2.2rem;
+        font-size: .9rem;
+        font-weight: 300 !important;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    .review-profile-Img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    .review-profile-Img {
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+    }
+
 }

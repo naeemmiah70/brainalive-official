@@ -23,7 +23,7 @@ const AdvisoryBoard = () => {
       linkedInUrl:
         "https://www.essex.ac.uk/people/chowd32703/anirban-chowdhury",
       name: "Dr. Anirban Chowdhury",
-      designation: "Nural Engineering",
+      designation: "Neural Engineering",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const AdvisoryBoard = () => {
       id: 4,
       imageUrl: Saugat,
       linkedInUrl: "https://saugatbh.github.io/saugat/",
-      name: "Dr. Saughat Bhattacharyya",
+      name: "Dr. Saugat Bhattacharyya",
       designation: "Brain Computer Interfacing",
     },
   ];
@@ -45,16 +45,29 @@ const AdvisoryBoard = () => {
   }, []);
   return (
     <section>
-      <h1 data-aos="fade-up" className="advisory-team">Avdisory Board</h1>
+      <h1 data-aos="fade-up" className="advisory-team">
+        Advisory Board
+      </h1>
       <div className="row">
         {advisoryDetails.map((details) => (
-          <div className="col-md-6 d-flex justify-content-center advisory-div">
+          <div
+            className={`col-md-6 d-flex justify-content-center advisory-div ${
+              details.id === 4 && "saughat-border"
+              
+            }
+            ${details.id === 3 && "atrus"}
+             ${details.id === 2 && "anirban-border"}`}
+          >
             <a
               style={{ textDecoration: "none" }}
               href={details.linkedInUrl}
               target="_blank"
             >
-              <div className="d-flex align-items-center ">
+              <div
+                className={`d-flex align-items-center ${
+                  details.id === 4 && "saughat"
+                } ${details.id === 2 && "anirban"}`}
+              >
                 <div>
                   <img className="leader-img" src={details.imageUrl} alt="" />
                 </div>

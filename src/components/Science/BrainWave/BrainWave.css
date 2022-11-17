@@ -16,6 +16,14 @@
 
 }
 
+.wave-change-div {
+    cursor: pointer;
+}
+
+.text-end-div {
+    text-align: end;
+}
+
 .delta {
     background: url("../../../resource/gif/delta.webp");
     background-position: center;
@@ -58,11 +66,9 @@
 
 .wave-content {
     position: relative;
-    bottom: 400px;
-    margin-bottom: -400px;
+    bottom: 370px;
+    margin-bottom: -370px;
 }
-
-
 
 .wave-title {
     line-height: 2;
@@ -72,12 +78,12 @@
 }
 
 .wave-details {
-    font-size: 19px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.887);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 150%;
-    
+
 }
 
 #wave-amount {
@@ -87,6 +93,109 @@
 
 .wave-change-div:hover .wave-title {
     color: orange;
+}
+
+.wave-imgs {
+
+    display: none;
+}
+
+@media only screen and (max-width: 520px) {
+    .text-end-div {
+        text-align: start;
+    }
+
+    .wave-content {
+        padding: 1rem;
+        margin-top: 400px;
+    }
+
+    .wave-title {
+        font-size: 1.5rem;
+        line-height: 2;
+        font-weight: 700;
+        color: #fff;
+        font-family: Galano-Grotesque;
+    }
+
+    .wave-details {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.887);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .wave-heading {
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.8em !important;
+        text-decoration: underline;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+        font-family: Galano-Grotesque;
+    }
+
+    .wave-imgs {
+        display: block;
+        height: 135px;
+        margin-top: -100px;
+        width: 100%;
+        opacity: .9;
+        margin-top: -2rem;
+    }
+
+    .wave-div-top-space {}
+    .Reverse-column{
+        flex-direction: column-reverse;
+    }
+
+    .delta {
+        background: url("../../../resource/gif/delta.webp");
+        background-position: center;
+        background-size: 50% 80%;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        opacity: 0.3;
+        height: 400px;
+        display: none;
+    }
+
+    .theta {
+        background: url("../../../resource/gif/theta.webp");
+        background-position: center;
+        background-size: 50% 80%;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        opacity: 0.3;
+        height: 400px;
+        display: none;
+    }
+
+    .alpha {
+        background: url("../../../resource/gif/alpha.webp");
+        background-position: center;
+        background-size: 50% 80%;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        opacity: 0.3;
+        height: 400px;
+        display: none;
+    }
+
+    .beta {
+        background: url("../../../resource/gif/beta.webp");
+        background-position: center;
+        background-size: 50% 80%;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        opacity: 0.3;
+        height: 400px;
+        display: none;
+    }
+
 }
 
 .shimmer {

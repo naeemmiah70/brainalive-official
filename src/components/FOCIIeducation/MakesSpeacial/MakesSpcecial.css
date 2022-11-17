@@ -19,5 +19,37 @@
     font-size: 1.1rem;
     color: #212121;
     line-height: 1.6;
-   opacity: 0.9;
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 520px) {
+    .makes-speacial {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+
+    .speacial-text {
+        display: flex;
+        letter-spacing: .22px;
+        font-weight: 300;
+        font-size: .8rem;
+        color: #212121;
+        line-height: 1.6;
+        opacity: 0.9;
+        margin-top: .5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .makes-speacial {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .makes-speacial {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
 }

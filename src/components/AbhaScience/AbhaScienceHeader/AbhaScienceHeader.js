@@ -1,35 +1,33 @@
 import React, { useState } from "react";
 import "./AbhaScienceHeader.css";
 import Modal from "react-modal";
-import popupVideo from '../../../resource/abha/Brainalive.mp4'
+import popupVideo from "../../../resource/abha/Brainalive.mp4";
 
 const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-      width: "500px",
-      height: "400px",
-      background: "none",
-      border: 0,
-    },
-    overlay: {
-      backgroundColor: "rgb(28 28 28 / 59%)",
-    },
-  };
-  Modal.setAppElement("#root");
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    background: "none",
+    border: 0,
+  },
+  overlay: {
+    backgroundColor: "rgb(28 28 28 / 59%)",
+  },
+};
+Modal.setAppElement("#root");
 
 const AbhaScienceHeader = () => {
-    const [modalIsOpen, setIsOpen] = useState(false);
-    function openModal() {
-      setIsOpen(true);
-    }
-    function closeModal() {
-      setIsOpen(false);
-    }
+  const [modalIsOpen, setIsOpen] = useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
   return (
     <div>
       <div class="global-overlay ">
@@ -54,7 +52,12 @@ const AbhaScienceHeader = () => {
                         during the therapy to help achieve a better and quicker
                         recovery
                       </p>
-                      <button onClick={openModal} class="abha-science-popup-btn">Know More</button>
+                      <button
+                        onClick={openModal}
+                        class="abha-science-popup-btn"
+                      >
+                        Know More
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -72,16 +75,25 @@ const AbhaScienceHeader = () => {
         >
           <div class="video-popup">
             <div class="popup-bg"></div>
-            <div class="popup-content">
-              <div class="close-btn text-end text-white">&#10006;</div>
-              <video width="100%" loop autoPlay controls>
-                <source
-                  data-src={popupVideo}
-                  data-mobile-src={popupVideo}
-                  type="video/mp4"
-                  src={popupVideo}
-                />
-              </video>
+            <div className="d-flex justify-content-center">
+              <div class="popup-content">
+                <div>
+                  <div
+                    onClick={closeModal}
+                    class="close-btn text-end text-white"
+                  >
+                    &#10006;
+                  </div>
+                  <video width="100%" loop autoPlay controls>
+                    <source
+                      data-src={popupVideo}
+                      data-mobile-src={popupVideo}
+                      type="video/mp4"
+                      src={popupVideo}
+                    />
+                  </video>
+                </div>
+              </div>
             </div>
           </div>
         </Modal>

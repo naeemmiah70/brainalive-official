@@ -9,10 +9,13 @@ const Blog = () => {
       <div className="blog-container ">
         <div className="container">
           <div className="row">
-            <div className="col-md-9 my-5">
+            <div className="col-lg-9 my-5">
               <Blogs></Blogs>
             </div>
-            <div className="col-md-3 my-5">
+            <div
+              style={{ position: "sticky", top: "0px" }}
+              className="col-lg-3 my-5"
+            >
               <RecentBlog />
             </div>
           </div>

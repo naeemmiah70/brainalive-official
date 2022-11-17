@@ -6,11 +6,34 @@
     background-position: center;
 }
 
-.bg-box {
-    padding: 1.5rem;
+.abha-header-btn {
+    color: white;
+    font-family: Galano-Grotesque;
+    font-weight: 300;
+    border: 0;
+    padding: 7px 25px;
+    padding-bottom: 13px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    margin-top: 1rem;
+    transition: 1s ease-out;
+    transform: scale(1);
+    background: linear-gradient(165.35deg, #265b97 0%, #264897 100%) !important;
 }
 
-.bg-box .caption-box h1 span {
+.abha-header-btn:hover {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+    background: linear-gradient(165.35deg, #264897 0%, #265b97 100%) !important;
+}
+
+.bg-box {
+    padding: 1.3rem;
+    width: 40rem;
+}
+
+.caption-box h1 span {
     color: rgba(201, 19, 19, 0.886);
     font-size: 2.2rem;
 }
@@ -20,7 +43,7 @@
 }
 
 .bg-box:hover .caption-box h1:after {
-    content: 'BCI Driven Neuro-rehabilitative Care for Stroke Survivors';
+    content: 'BCI Driven Neuro-Rehabilitative Care for Stroke Survivors';
     color: #fff;
     font-size: 2rem;
 }
@@ -52,15 +75,11 @@
 .caption-box {
     background: #fff;
     padding: 1rem;
+    border: 0.20rem solid;
     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
     animation: borderRotate var(--d) linear infinite forwards;
 }
 
-@media only screen and (min-width: 620px) {
-    .bg-box {
-        margin-left: 10%;
-    }
-}
 
 .bg-box:nth-child(2) {
     border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
@@ -100,22 +119,96 @@
     }
 }
 
-.abha-header-btn {
-    color: white;
-    font-family: 'Montserrat', sans-serif; 
-    border: 0;
-    padding: 7px 16px;
-    font-size: 16px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-    margin-top: 1rem;
-    transition: 1s ease-out;
-    transform: scale(1);
-    background: linear-gradient(165.35deg, #265b97 0%, #264897 100%) !important;
+
+
+@media only screen and (min-width: 521px) {
+    .bg-box {
+        margin-left: 10%;
+    }
+
 }
 
-.abha-header-btn:hover {
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-    transform: scale3d(1.1, 1.1, 1);
-    background: linear-gradient(165.35deg, #264897 0%, #265b97 100%) !important;
+@media only screen and (max-width: 520px) {
+    .abha-header {
+        height: 400px;
+        background: url("https://braina.live/abha/images/abha.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .caption-box h1 span {
+        color: rgba(201, 19, 19, 0.958);
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+    }
+
+    .bg-box:hover .caption-box h1:after {
+        content: 'BCI Driven Neuro-Rehabilitative Care For Stroke Survivors';
+        text-transform: capitalize !important;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .abha-header {
+        height: 380px;
+
+    }
+
+    .bg-box .caption-box h1 span {
+        color: rgba(201, 19, 19, 0.886);
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: Galano-Grotesque;
+    }
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1400px) {
+    .bg-box {
+        padding: 1.3rem;
+        width: 35rem;
+    }
+
+    .bg-box .caption-box h1 span {
+        color: rgba(201, 19, 19, 0.886);
+        font-size: 1.9rem;
+        font-weight: 500;
+        font-family: Galano-Grotesque;
+    }
+
+    .bg-box:hover .caption-box h1:after {
+        content: 'BCI Driven Neuro-Rehabilitative Care for Stroke Survivors';
+        color: #fff;
+        font-size: 1.9rem;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}
+
+:root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgb(21 90 106);
+    --c2: rgb(21 90 106 / 13%);
 }

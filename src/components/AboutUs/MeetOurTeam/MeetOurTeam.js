@@ -11,7 +11,7 @@ const MeetOurTeam = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <section className="meet-team-section">
+    <section className="meet-team-section p-4">
       <h1 data-aos="fade-up" className="meet-team-title">Meet The Team</h1>
       <div className="d-flex justify-content-center">
         <div className="meet-our-team-section">

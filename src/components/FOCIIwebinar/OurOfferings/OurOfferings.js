@@ -1,5 +1,6 @@
 import React from "react";
 import "./OurOfferings.css";
+import '../../../components/FOCIIce/WhyFOCII/WhyFOCII.css'
 import apiPng from "../../../resource/icon/api.png";
 import gMeet from "../../../resource/icon/g-meet.png";
 import msteam from "../../../resource/icon/ms-team.png";
@@ -25,11 +26,14 @@ const OurOfferings = () => {
             <div className="bar"></div>
           </div>
           <div className="row d-flex justify-content-center">
-            <div data-aos="fade-up" className="col-md-4 text-white p-4 audience-card">
+            <div
+              data-aos="fade-up"
+              className="col-md-4 text-white p-4 audience-card"
+            >
               <div className="">
                 <h5 className="text-center application-type-text">FOCII API</h5>
               </div>
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center mt-3">
                 <img className="apiPng-icon" src={apiPng} alt="" />
                 <p className="offerings-text">Engagement analytics API</p>
               </div>
@@ -50,13 +54,18 @@ const OurOfferings = () => {
                 <p className="offerings-text">Custom API</p>
               </div>
             </div>
-            <div data-aos="fade-up" className="col-md-4 text-white p-4 audience-card">
+            <div
+              data-aos="fade-up"
+              className="col-md-4 text-white p-4 audience-card"
+            >
               <div className="">
-                <h5 className="text-center application-type-text">FOCII APPLICATION</h5>
+                <h5 className="text-center application-type-text">
+                  FOCII APPLICATION
+                </h5>
               </div>
               <div>
-                <p className="offerings-text">Desktop Application</p>
-                <div>
+                <p className="offerings-text mt-3">Desktop Application</p>
+                <div >
                   <FontAwesomeIcon
                     className="application-icon"
                     icon={faWindows}
@@ -90,8 +99,8 @@ const OurOfferings = () => {
         </div>
       </section>
       <section className="bottom-bg">
-        <div className="">
-          <div className="row sdk-bottom-bg d-flex justify-content-center align-items-center ">
+        <div className="pb-4">
+          <div className="row sdk-bottom-bg d-flex justify-content-center align-items-center">
             <div className="col-md-6 text-center p-3 dotted-border">
               <h2 className="sdk-bottom-title"> Are you a host/speaker?</h2>
               <p className="sdk-bottom-details">

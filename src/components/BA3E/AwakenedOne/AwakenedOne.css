@@ -5,7 +5,8 @@
     background-position: right;
     background-attachment: fixed;
 }
-.awekened-header{
+
+.awekened-header {
     font-family: Galano-Grotesque;
     color: white;
     font-size: 36px;
@@ -14,12 +15,39 @@
     font-weight: 400;
     line-height: 1.1;
 }
-.awekened-div-feature{
+
+.awekend-features-title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.awekened-div-feature {
     width: 230px;
     margin-bottom: 3rem;
 }
-.awekend-features{
+
+.awekend-features {
     color: #fff;
     opacity: 0.9;
     font-weight: 300;
+}
+
+.awekend-one-img {
+    width: 65%;
+    margin-bottom: 2rem;
+}
+@media only screen and (min-width: 521px) and (max-width: 1024px)  {
+    .awekened-div-feature {
+        width: 147px !important;
+        margin-bottom: 2rem;
+    }
+} 
+
+@media only screen and (max-width: 520px) {
+    .awekend-one-img {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
 }

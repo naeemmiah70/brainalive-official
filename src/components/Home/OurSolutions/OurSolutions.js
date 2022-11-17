@@ -50,8 +50,8 @@ const OurSolutions = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <section>
-      <div className="container">
+    <section className="d-flex justify-content-center">
+      <div className="solution-card-container">
         <div>
           <h1 data-aos="fade-up" className="solution-header text-center">
             Our Solutions
@@ -59,29 +59,32 @@ const OurSolutions = () => {
         </div>
         <div className="row d-flex justify-content-center mb-5 py-2 px-4">
           {solutionsData.map((data) => (
-            <div className="col-md-5 d-flex justify-content-center px-2 py-3 m-3 hovered-div">
-              <Link to={data.link} style={{ textDecoration: "none" }}>
-                <div
-                  style={{
-                    backgroundImage: `url(${data.imgURL})`,
-                    backgroundRepeat: "no-repeat",
-                    backgroundSize: "cover",
-                  }}
-                  className="solution-div-bg"
-                >
-                  <div className="card-text d-flex align-items-center justify-content-center">
-                    <div className="text-center">
-                      <img className="img-icon" src={data.iconURL} alt="" />
-                      <h3 className="text-white mt-2 card-title">
-                        {data.title}
-                      </h3>
-                      <p className="text-white hide-card-text">
-                        {data.description}
-                      </p>
+            <div class="col-xs-12  col-lg-5 col-md-6">
+              <div class="project-block item box-1">
+                <Link to={data.link} aria-label="neumar">
+                  <div class="image-box">
+                    <figure class="image">
+                      <img src={data.imgURL} alt="student" />
+                    </figure>
+
+                    <div class="caption-box1">
+                      <div class="icon-box">
+                        <img
+                          src={data.iconURL}
+                          width="50"
+                          height="50"
+                          alt="icon"
+                        />
+                      </div>
+                      <h3>{data.title}</h3>
+
+                      <div class="text">
+                        <p>{data.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
           ))}
         </div>

@@ -1,14 +1,15 @@
 import React from "react";
 import "./OurComputerVision.css";
-import Video from '../../../resource/brain.mp4'
+import Video from "../../../resource/brain.mp4";
+
 
 const OurComputerVision = () => {
   return (
     <section className="computer-vision-bg">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 p-5 p-5">
-            <h1 className="wave-heading shimmer">
+          <div className="col-md-6 computer-vision-padding">
+            <h1 id="vision-algorithm" className="wave-heading shimmer">
               Our Computer Vision Algorithm At Work
             </h1>
             <p className="vision-details">
@@ -16,15 +17,25 @@ const OurComputerVision = () => {
               facial features and postures to assess the engagement level in
               real time.
             </p>
-            <a
-              className="Launch-demo-btn"
-              href="https://www.braina.live/tracking/calibration"
-            >
-              Launch Demo
-            </a>
+            <div>
+              <a
+                className="Launch-demo-btn"
+                href="https://www.braina.live/tracking/calibration"
+              >
+                Launch Demo
+              </a>
+              <br className="dataset-img-break" />
+              <a
+                className="Launch-demo-btn data-set-btn"
+                href="https://forms.gle/TgmmefJPxnwJVroG6"
+                target="_blank"
+              >
+                BrainAlive Dataset
+              </a>
+            </div>
           </div>
-          <div className="col-md-6 mt-5 p-5">
-            <video autoPlay loop muted className="w-100">
+          <div className="col-md-6 mt-5 computer-vision-padding">
+            <video autoPlay loop muted className="w-100 vision-algo-video">
               <source src={Video} type="video/mp4" />
             </video>
           </div>

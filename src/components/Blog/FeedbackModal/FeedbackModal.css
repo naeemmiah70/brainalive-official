@@ -1,0 +1,203 @@
+.sidebar-feeback {
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    background: #f4364c;
+    ;
+    position: fixed;
+    top: 50%;
+    right: -30px;
+    transform: rotate(-90deg);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-text {
+    position: relative;
+    bottom: 8px;
+}
+
+.feedback-header {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 17px !important;
+    padding: 10px
+}
+
+.feedback-close-btn {
+    background-color: gray;
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+    font-weight: bolder;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    bottom: 105px;
+    left: 10px;
+    z-index: 15;
+}
+
+.close-side-feedback {
+    background-color: gray;
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+
+.send-btn-active {
+    background-color: #f4364c;
+    color: white !important;
+}
+
+.reaction-div {
+    position: relative;
+    bottom: 50px;
+    margin-bottom: -30px !important;
+}
+
+.reaction-bottom-space {
+    margin-bottom: -20px;
+
+}
+
+.reaction-top-space {
+    margin-top: 20px;
+
+}
+
+.react {
+    border: 0;
+    margin-right: 5px;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgb(233 30 99 / 14%), 0 3px 1px -2px rgb(233 30 99 / 20%), 0 1px 5px 0 rgb(233 30 99 / 12%);
+    cursor: pointer;
+    padding-bottom: 12px;
+    background-color: #fff;
+}
+
+.emoji {
+    height: 40px;
+    width: 40px;
+}
+
+.react:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.react:active {
+    color: red;
+    box-shadow: 0 3px 3px 0 rgba(233, 30, 98, 0.752), 0 5px 2px -1px rgba(233, 30, 98, 0.741), 0 2px 6px 0 rgba(233, 30, 98, 0.678);
+}
+
+.react:focus {
+    color: red;
+}
+
+.react:target {
+    color: red;
+}
+
+
+
+.feedback-text-area {
+    margin-top: -10px;
+    border: 0;
+    background-color: rgba(128, 128, 128, 0.325);
+    margin-left: -20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.feedback-text-area:focus {
+    border: none;
+    outline: none;
+}
+
+.hand-up-text {
+    font-size: 14px;
+    opacity: .9;
+}
+
+.need-help-text {
+    font-size: 13.5px;
+    opacity: .8;
+}
+
+.feedback-btn {
+    border: 0;
+    padding: 3px 10px;
+    border-radius: 5px;
+    padding-bottom: 8px;
+    color: rgb(120, 125, 125);
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+
+.emoji-toltip {
+    position: relative;
+    display: inline-block;
+}
+
+
+.emoji-toltip .emoji-toltip-text {
+    visibility: hidden;
+    color: rgba(255, 255, 255, .9);
+    text-align: center;
+    padding: 5px 0px;
+    padding-bottom: 7px;
+    position: absolute;
+    left: 5px;
+    top: 28px;
+    z-index: 1;
+    color: black;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 2px;
+    z-index: 2;
+
+}
+
+.emoji-toltip:hover .emoji-toltip-text {
+    visibility: visible;
+}
+
+.feedback-img {
+    height: 20px;
+    width: 30px;
+
+}
+.feedback-modal-position{
+    top: 50%;
+    left: 85%;
+    position: fixed;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    width: 320px;
+    z-index: 3;
+    border: 0;
+    overflow: hidden;
+    background: #fff;
+    padding-left: .5rem;
+    padding: 1.1rem;
+}
+
+@media only screen and (max-width: 520px) {
+    .feedback-modal-position {
+        position: absolute;
+        left: 50% !important;
+    }
+}

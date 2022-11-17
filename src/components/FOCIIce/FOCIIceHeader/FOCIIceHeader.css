@@ -37,7 +37,8 @@
     font-size: 20px;
     box-shadow: 0 4px 10px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     border-radius: 12px;
-    padding: 6px 15px;
+    padding: 4px 15px;
+    padding-bottom: 10px;
     width: 220px;
     cursor: initial;
     color: #fff;
@@ -53,57 +54,77 @@
     background: #265b97;
     color: #fff;
 }
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 521px) and (max-width: 1024px)  {
     .ce-text-position {
         position: absolute;
         height: 100%;
-        top: 15%;
+        top: 30%;
         left: 20%;
     }
 
     .ce-video-title {
         font-weight: 700;
         font-size: 2rem;
-        line-height: 1.1;
+        line-height: 1.2;
         letter-spacing: -.1rem;
         font-family: Galano-Grotesque, Montserrat, sans-serif;
     }
 
     .ce-video-description {
-        line-height: 35px;
-        font-size: 15px;
+        line-height: 25px;
+        font-size: 18px;
         color: #fff;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-family: Galano-Grotesque, Montserrat, sans-serif;
+        margin-top: 2rem;
     }
-}
+} 
+
+
 
 @media only screen and (max-width: 520px) {
     .ce-video {
-        height: 500px;
+        height: 420px;
     }
 
     .ce-text-position {
         position: absolute;
         height: 100%;
-        top: 15%;
-        left: 20%;
+        width: 90%;
+        top: 16%;
+        left: 5%;
     }
 
     .ce-video-title {
         font-weight: 700;
-        font-size: 2rem;
-        line-height: 1.1;
+        font-size: 1.35rem;
+        letter-spacing: .3px;
+        line-height: 1.4;
         font-family: Galano-Grotesque, Montserrat, sans-serif;
     }
 
     .ce-video-description {
-        margin-top: 1.5rem;
+        margin-top: 1.3rem;
         line-height: 25px;
-        font-size: 15px;
+        font-size: 13px;
         color: #fff;
         letter-spacing: 1px;
         font-family: Galano-Grotesque, Montserrat, sans-serif;
+    }
+
+    .get-free-demo-btn {
+        background: none;
+        font-weight: 700;
+        font-size: 20px;
+        box-shadow: 0 4px 10px 4px rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        border-radius: 12px;
+        padding: 3px 10px;
+        padding-bottom: 7px;
+        width: 200px !important;
+        cursor: initial;
+        color: #fff;
+        border: 0;
+        opacity: 0.9;
+        margin-top: -10px !important;
     }
 }

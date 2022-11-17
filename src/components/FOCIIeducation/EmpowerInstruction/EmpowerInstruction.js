@@ -35,14 +35,13 @@ const EmpowerInstruction = () => {
     },
   ];
   return (
-    <section style={{ marginTop: "-10px" }} className="focci-sdk-bg">
+    <section  className="focci-sdk-bg">
       <div className="focci-sdk-container">
         <div data-aos="fade-up" className="text-center">
-          <h1 className="focci-ce-title empower-heading-text">
+          <h1 className="focci-ce-title empower-heading-text text-center">
             Empower Instructors With The Finest And Most Accurate Feedback On
             Learner Engagement To Help Create Content That Matters
           </h1>
-          <div className="bar"></div>
         </div>
         <div className="row d-flex justify-content-center">
           {details.map((data) => (

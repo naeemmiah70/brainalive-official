@@ -28,14 +28,20 @@
     color: orange;
 }
 
-/* .angle-img {
-    height: 350px;
-    width: 350px;
-} */
-
 .swiper-image {
-    height: 350px;
-    width: 480px
+    height: 330px;
+    width: 480px;
+    cursor: pointer;
+}
+
+.brain-navigation {
+    margin-top: -1.5rem;
+}
+
+.swiper-pagination-image {
+    height: 40px;
+    width: 65px;
+    cursor: pointer;
 }
 
 .view1 {
@@ -68,4 +74,99 @@
     background-size: 80% 80%;
     background-position-x: -50px;
     background-position-y: bottom;
+}
+
+@media only screen and (min-width: 521px) and (max-width: 768px) {
+    .swiper-image {
+        height: 200px;
+        width: 280px;
+        cursor: pointer;
+    }
+
+    .brain-angle-view-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        text-align: center;
+    }
+
+    .swiper-image {
+        height: 220px;
+        width: 310px;
+        cursor: pointer;
+    }
+
+    .brain-angle-title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-family: Galano-Grotesque;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .brain-angle-view-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        text-align: center;
+    }
+
+    .swiper-image {
+        height: 220px;
+        width: 310px;
+        cursor: pointer;
+    }
+
+    .brain-angle-title {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        cursor: pointer;
+        text-transform: capitalize;
+        font-family: Galano-Grotesque;
+    }
+
+    .swiper-pagination-image {
+        height: 30px;
+        width: 50px;
+    }
+    .view1 {
+        background: url("../../../resource/Image1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: top;
+        background-size: 60% 70%;
+    }
+    
+    .view2 {
+        background: url("../../../resource/image2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: 80% 65%;
+    }
+    
+    .view3 {
+        background: url("../../../resource/Image3.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: 70% 70%;
+    }
+    
+    .view4 {
+        background: url("../../../resource/Image4.png");
+        background-repeat: no-repeat;
+        background-size: 70% 60%;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
 }

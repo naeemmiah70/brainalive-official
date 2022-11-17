@@ -1,5 +1,6 @@
 import React from "react";
 import "./Insight.css";
+import '../../../components/FOCIIwebinar/OurOfferings/OurOfferings.css'
 import insight1 from "../../../resource/product/insight1.png";
 import insight2 from "../../../resource/product/insight2.png";
 import insight3 from "../../../resource/product/insight3.png";
@@ -32,24 +33,24 @@ const Insight = () => {
           <div className="col-md-6 d-flex align-items-center justify-content-end p-4">
             <img
               data-aos="fade-up"
-              className="img-fluid"
+              className="img-fluid insight-img"
               src={insight1}
               alt=""
             />
           </div>
         </div>
         {/* section */}
-        <div className="row mt-5">
+        <div className="row mt-5 Reverse-column">
           <div className="col-md-6 d-flex align-items-center justify-content-start p-4">
             <img
-              data-aos="fade-up"
-              className="img-fluid"
+              data-aos="fade-up "
+              className="img-fluid insight-img"
               src={insight2}
               alt=""
             />
           </div>
           <div className="col-md-6 d-flex align-items-center p-4">
-            <h3 data-aos="fade-up" className="insight-heading">
+            <h3 data-aos="fade-up" className="insight-heading ">
               Gather 1-On-One Insights On Every Student's Interest, Effort,
               Attention And Motivation.
             </h3>
@@ -66,24 +67,24 @@ const Insight = () => {
           <div className="col-md-6 d-flex align-items-center justify-content-start p-4">
             <img
               data-aos="fade-up"
-              className="img-fluid"
+              className="img-fluid insight-img"
               src={insight3}
               alt=""
             />
           </div>
         </div>
         {/* section */}
-        <div className="row mt-5">
+        <div className="row Reverse-column mt-5">
           <div className="col-md-6 d-flex align-items-center justify-content-start p-4">
             <img
               data-aos="fade-up"
-              className="img-fluid"
+              className="img-fluid insight-img"
               src={insight4}
               alt=""
             />
           </div>
           <div className="col-md-6 d-flex align-items-center p-4">
-            <h3 data-aos="fade-up" className="insight-heading">
+            <h3 data-aos="fade-up" className="insight-heading insight-img">
               Discover Insights On Which Topic Were More Engaging Over Others.
             </h3>
           </div>

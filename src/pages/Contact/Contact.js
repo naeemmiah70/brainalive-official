@@ -47,19 +47,21 @@ const Contact = () => {
     <>
       <Navbar />
       <section className="contact-section-bg">
-        <div className="contact-content d-flex justify-content-center">
+        <div className="contact-content d-flex justify-content-center align-items-center">
           <div className="contact-section contact-div">
             <div className="row">
-              <div className="col-md-6">
-                <h1 className="contact-hello">Hello.</h1>
-                <p className="contact-description">
-                  We’d love to hear from you if you have a sales question, a
-                  press inquiry or anything else you would like to ask us,
-                  please send a message and we’ll get back to you.
-                </p>
+              <div className="col-lg-6 d-flex align-items-center">
+                <div>
+                  <h1 className="contact-hello">Hello.</h1>
+                  <p className="contact-description">
+                    We’d love to hear from you if you have a sales question, a
+                    press inquiry or anything else you would like to ask us,
+                    please send a message and we’ll get back to you.
+                  </p>
+                </div>
               </div>
               {/* Contact form */}
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="contact-form-div">
                   <h2 className="lets-talk">Let's Talk</h2>
                   <form onSubmit={handleSubmit(onSubmit)}>

@@ -10,19 +10,19 @@ import RegionOfInterest from "../../components/Neumar/RegionOfInterest/RegionOfI
 import WhyFocci from "../../components/Neumar/WhyFocii/WhyFocci";
 
 const Neumar = () => {
-  useEffect(()=>{
+  useEffect(() => {
     document.title = "Neumar | BrainAlive";
-  },[])
+  }, []);
   return (
     <>
       <Navbar />
       <NeumarHeader />
-      <FOCIIservices/>
+      <FOCIIservices />
       <RegionOfInterest />
       <WhyFocci />
       <Applications />
-      <FAQ/>
-      <Footer/>
+      <FAQ />
+      <Footer />
     </>
   );
 };

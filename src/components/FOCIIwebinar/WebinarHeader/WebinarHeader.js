@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./WebinarHeader.css";
+import "../../FOCIIce/FOCIISDK/FOCCISDK.css";
+import "../../FOCIIce/FOCIIceHeader/FOCIIceHeader.css";
 import Video from "../../../resource/webinar.mp4";
 
 const WebinarHeader = () => {

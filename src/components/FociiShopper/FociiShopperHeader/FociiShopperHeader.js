@@ -1,7 +1,7 @@
 import React from "react";
 import "./FociiShopperHeader.css";
-import { Link } from "react-router-dom";
 import Video from "../../../resource/shopper-vid2.mp4";
+import '../../FOCIIce/FOCIIceHeader/FOCIIceHeader.css'
 
 const FociiShopperHeader = () => {
   return (

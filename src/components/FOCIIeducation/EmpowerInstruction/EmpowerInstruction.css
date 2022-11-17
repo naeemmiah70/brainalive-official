@@ -1,5 +1,17 @@
 .empower-heading-text{
     margin-top: 5rem;
-    width: 90%;
+    width: 80%;
     line-height: 1.5;
+    position: relative;
+    left: 10%;
+}
+@media only screen and (max-width: 520px) {
+    .empower-heading-text{
+        margin-top: 3.5rem;
+        width: 90%;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        letter-spacing: .2px;
+        margin-left: -15px;
+    }
 }
