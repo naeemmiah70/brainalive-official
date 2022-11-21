@@ -7,19 +7,19 @@ const Blog = () => {
   return (
     <section className="blog-bg">
       <div className="blog-container ">
-        <div className="container">
+      
           <div className="row">
             <div className="col-lg-9 my-5">
               <Blogs></Blogs>
             </div>
             <div
-              style={{ position: "sticky", top: "0px" }}
+              style={{ position: "sticky", top: "10px", width:"22%" }}
               className="col-lg-3 my-5"
             >
               <RecentBlog />
             </div>
           </div>
-        </div>
+   
       </div>
     </section>
   );

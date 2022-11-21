@@ -3,6 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import RecentBlog from "../RecentBlog/RecentBlog";
 import { tagBloglogData } from "../TagRelatedBlogData/Data";
 import "./DynamicBlogTag.css";
+import share from "../../../resource/icon/share (1).png";
+import save from "../../../resource/icon/save.png";
+import '../Blogs/Blogs.css'
 
 const DynamicBlogTag = () => {
   const id = useParams();
@@ -19,63 +22,77 @@ const DynamicBlogTag = () => {
 
   return (
     <>
-      <section>
-        <div className="blog-tag-header">
-          <div className="tag-blog-header-bg d-flex align-items-center justify-content-center">
-            {blog.slice(0, 1).map((data) => (
-              <h2 className="tag-heading-text">{data.tagHeading}</h2>
-            ))}
-          </div>
-        </div>
-      </section>
       <section className="blog-bg">
-        <div className="blog-container ">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-9 my-5">
-                {blog.map((data) => (
-                  <div className="row text-white blogs-margin-top">
-                    <div className="col-md-4 d-flex align-items-center">
-                      <Link to={data.link} style={{ textDecoration: "none" }}>
-                        <div className="blog-card-img-overflow">
-                          <img
-                            className="blog-card-img"
-                            src={data.img}
-                            alt=""
-                          />
-                        </div>
-                      </Link>
-                    </div>
-                    <div className="col-md-8 d-flex align-items-center ">
-                      <div className="blog-card-text">
-                        <p id={`colors-${data.id}`} className="Blog">
-                          BLOG
-                        </p>
-
-                        <Link to={data.link} style={{ textDecoration: "none" }}>
-                          <h4 className="blog-title-text">{data.title}</h4>{" "}
-                          <p className="read-more-texts">
-                            {data.readMore}{" "}
-                            <span className="blog-read-more">Read more...</span>
-                          </p>
-                        </Link>
-
-                        <p className="blog-by">
-                          By{" "}
-                          <strong className="posted-by">{data.postedBy}</strong>
-                          ,<span className="px-1"> {data.date}</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div
-                style={{ position: "sticky", top: "0px" }}
-                className="col-md-3 my-5"
-              >
-                <RecentBlog />
-              </div>
+        <div className="tag-blog-container">
+          <div className="row">
+            <div className="search-for-heading">
+              {blog.slice(0, 1).map((data) => (
+                <p>
+                  {" "}
+                  <span className="search-result">
+                    Search results for:{" "}
+                  </span>{" "}
+                  <span id="tag-title">{data.tagHeading}</span>
+                </p>
+              ))}
+            </div>
+            <div className="my-5">
+              {blog.map((data) => (
+                 <div className="row blogs-margin-top dynamic-tag blogs-div">
+                 <div className="col-md-3 col-sm-12 d-flex align-items-center">
+                   <Link to={data.link} style={{ textDecoration: "none" }}>
+                     <div className="blog-card-img-overflow">
+                       <img className="blog-card-img" src={data.img} alt="" />
+                     </div>
+                   </Link>
+                 </div>
+                 <div className="col-md-9 col-sm-12  ">
+                   <div className="">
+                     <Link to={data.link} style={{ textDecoration: "none" }}>
+                       <h4 className="blog-title-text">{data.title}</h4>{" "}
+                       <p className="read-more-text">{data.readMore}...</p>
+                       <p className="blog-read-more">Read more...</p>
+                     </Link>
+     
+                     <div className="d-flex justify-content-between">
+                       <div className="d-flex">
+                         <div className="d-flex date-div">
+                           <p style={{ color: "gray" }} className="date">
+                             {data.date}
+                           </p>{" "}
+                           <strong style={{ color: "gray" }} className="popular-dot">
+                             .
+                           </strong>{" "}
+                           <p style={{ color: "gray" }} className="date">
+                             10 min read
+                           </p>
+                           <strong className="blog-bottom-dot">.</strong>{" "}
+                         </div>
+                         <div className="blog-buttons">
+                           <button className="soap-color-btn">
+                             <small> Online Learning</small>
+                           </button>{" "}
+                           <button className="robin-egg-blue-btn mx-2">
+                             Traditional
+                           </button>{" "}
+                           <button className="champagne-color-btn">Classroom</button>
+                         </div>
+                       </div>
+                       <div className="share-div">
+                         <img
+                          //  onClick={() => {
+                          //    openModal();
+                          //    setLink(data.facebookShare);
+                          //  }}
+                           src={share}
+                           alt=""
+                         />
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+              ))}
             </div>
           </div>
         </div>

@@ -1,30 +1,25 @@
 .video-managing-bg {
-    height: 400px;
-    background: url('https://braina.live/blog/wp-content/uploads/2021/11/main-cognitive-load-image_edited-1024x576.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        height: 456px;
+        background-image: linear-gradient(125.69deg, rgba(41, 41, 41, 0.74) 0%, rgba(25, 25, 25, 0.74) 100%), url('../../../resource/blogs/video-management.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(12px);
+        margin: -20px;
+        position: relative;
+    
 }
 
 
-.blog-spacing-right{
-    width: 90%;
-}
-@media only screen and (min-width: 521px) and (max-width: 1024px)  {
-    .blog-spacing-right {
-        width: 100%;
-    }
-} 
+
 @media only screen and (max-width: 520px) {
     
     .video-managing-bg {
         height: 300px;
-        background: url('https://braina.live/blog/wp-content/uploads/2021/11/main-cognitive-load-image_edited-1024x576.jpg');
+        background: url('../../../resource/blogs/video-management.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-    .blog-spacing-right{
-        width: 100%;
-    }
+ 
 }

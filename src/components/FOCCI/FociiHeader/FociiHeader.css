@@ -55,7 +55,7 @@
 }
 
 .focii-header-bg {
-    background-image: url("https://braina.live/images/product-bg.png");
+    background-image: url("../../../resource/product-bg.png");
     height: 38rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +91,7 @@
     }
 
     .focii-header-bg {
-        background-image: url("https://braina.live/images/product-bg.png");
+        background-image: url("../../../resource/product-bg.png");
         height: 28rem;
         background-repeat: no-repeat;
         background-position: center;

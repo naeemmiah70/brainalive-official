@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import brainaLive from "../../resource/brainalive-nav.png";
 
 const Navbar = () => {
   return (
@@ -10,12 +11,7 @@ const Navbar = () => {
       <nav id="header-desktop" className="navbar navbar-expand-lg home-header">
         <div className="header-menu">
           <Link to="/" className="logo" aria-label="logo">
-            <img
-              src="https://braina.live/images/brainalive.png"
-              width="55"
-              height="53"
-              alt="logo"
-            />
+            <img src={brainaLive} width="55" height="53" alt="logo" />
           </Link>
 
           <ul className="header-links mt-3">
@@ -204,12 +200,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link className="logo" to="/">
-          <img
-            src="https://braina.live/images/brainalive.png"
-            alt="Logho"
-            width="51"
-            height="50"
-          />
+          <img src={brainaLive} alt="Logho" width="51" height="50" />
         </Link>
       </nav>
     </>

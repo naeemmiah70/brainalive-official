@@ -200,7 +200,7 @@
     }
 
     .hurray-image {
-        background: url("https://braina.live/abha/images/abha-mission.jpg");
+        background: url("../../../resource/abha/hurray.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

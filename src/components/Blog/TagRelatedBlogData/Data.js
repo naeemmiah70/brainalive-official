@@ -1,7 +1,12 @@
+import videoManagement from "../../../resource/blogs/video-management.jpg";
+import onlineTeaching from "../../../resource/blogs/online-teaching.jpg";
+import onlineLearning from "../../../resource/blogs/online-learning.jpg";
+import learningAnalytics from '../../../resource/blogs/learning-analytics.jpg'
+
 export const tagBloglogData = [
   {
     id: 1,
-    img: "https://braina.live/blog/wp-content/uploads/2021/11/business-presentation-laptop-screen-1-1-360x240.jpg",
+    img: learningAnalytics,
     title: "Learning Analytics",
     postedBy: "BrainAlive",
     date: "12 months ago",
@@ -14,7 +19,7 @@ export const tagBloglogData = [
   },
   {
     id: 2,
-    img: "https://braina.live/blog/wp-content/uploads/2021/11/cognitiveload_final-1-360x240.jpg",
+    img: videoManagement,
     title:
       "Is your educational video effectively managing the cognitive load of your viewers?",
     postedBy: "BrainAlive",
@@ -26,7 +31,7 @@ export const tagBloglogData = [
   },
   {
     id: 3,
-    img: "https://braina.live/blog/wp-content/uploads/2021/09/Downloader.la-6110efaa0db32-360x240.jpg",
+    img: onlineTeaching,
     title: "Online teaching just got easier!",
     postedBy: "BrainAlive",
     date: "1 year ago",
@@ -39,7 +44,7 @@ export const tagBloglogData = [
   },
   {
     id: 4,
-    img: "https://braina.live/blog/wp-content/uploads/2021/09/Downloader.la-6110efaa0db32-360x240.jpg",
+    img: onlineTeaching,
     title: "Online teaching just got easier!",
     postedBy: "BrainAlive",
     date: "1 year ago",
@@ -53,7 +58,7 @@ export const tagBloglogData = [
 
   {
     id: 6,
-    img: "https://braina.live/blog/wp-content/uploads/2021/09/Downloader.la-6110efaa0db32-360x240.jpg",
+    img: onlineTeaching,
     title: "Online teaching just got easier!",
     postedBy: "BrainAlive",
     date: "1 year ago",
@@ -67,7 +72,7 @@ export const tagBloglogData = [
 
   {
     id: 7,
-    img: "https://braina.live/blog/wp-content/uploads/2021/09/11121d34fe25-1-360x240.jpg",
+    img: onlineLearning,
     title:
       "Can online learning be made a fitting alternative to traditional classroom?",
     postedBy: "BrainAlive",
@@ -81,7 +86,7 @@ export const tagBloglogData = [
   },
   {
     id: 8,
-    img: "https://braina.live/blog/wp-content/uploads/2021/09/11121d34fe25-1-360x240.jpg",
+    img: onlineLearning,
     title:
       "Can online learning be made a fitting alternative to traditional classroom?",
     postedBy: "BrainAlive",
@@ -95,7 +100,7 @@ export const tagBloglogData = [
   },
   {
     id: 9,
-    img: "https://braina.live/blog/wp-content/uploads/2021/09/11121d34fe25-1-360x240.jpg",
+    img: onlineLearning,
     title:
       "Can online learning be made a fitting alternative to traditional classroom?",
     postedBy: "BrainAlive",

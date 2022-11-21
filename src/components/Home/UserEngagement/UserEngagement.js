@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./UserEngagement.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import analytics1 from '../../../resource/analytics1.jpg'
 
 const UserEngagement = () => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const UserEngagement = () => {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <img className="analytics-img-1" src="https://braina.live/images/analytics1.jpg" alt="" />
+        <img className="analytics-img-1" src={analytics1} alt="" />
       </div>
     </section>
   );

@@ -55,7 +55,7 @@ const FOCIIservices = () => {
                   <h1 className="fw-bold focii-center-text text-white">
                     FOCII
                   </h1>
-                  <div class="bar"></div>
+                  <div class="bar neumar-bar"></div>
                 </div>
               </div>
             </div>

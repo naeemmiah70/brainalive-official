@@ -1,6 +1,6 @@
 .abha-header {
     height: 93vh;
-    background: url("https://braina.live/abha/images/abha.jpg");
+    background: url("../../../resource/abha/abha.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -131,7 +131,7 @@
 @media only screen and (max-width: 520px) {
     .abha-header {
         height: 400px;
-        background: url("https://braina.live/abha/images/abha.jpg");
+        background: url("../../../resource/abha/abha.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

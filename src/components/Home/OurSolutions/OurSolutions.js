@@ -7,13 +7,17 @@ import usability from "../../../resource/student.jpg";
 import audience from "../../../resource/teaching.jpg";
 import stroke from "../../../resource/stroke-rehab.jpg";
 import neuro from "../../../resource/neuro.png";
+import ott from '../../../resource/icon/ott.png';
+import elearning from '../../../resource/icon/e-learning.png' ;
+import strokeIcon from '../../../resource/icon/stroke-icon.png' ;
+import neuroIcon from '../../../resource/icon/neuro-icon.png' ;
 
 const OurSolutions = () => {
   const solutionsData = [
     {
       id: 1,
       title: "UX/ Usability and Conversion Optimisation ",
-      iconURL: "https://braina.live/images/icon/ott.png",
+      iconURL: ott,
       imgURL: usability,
       link: "/neumar",
       description:
@@ -22,7 +26,7 @@ const OurSolutions = () => {
     {
       id: 2,
       title: "Audience Engagement Analytics",
-      iconURL: "https://braina.live/images/icon/e-learning.png",
+      iconURL: elearning,
       imgURL: audience,
       link: "/focii",
       description:
@@ -31,7 +35,7 @@ const OurSolutions = () => {
     {
       id: 3,
       title: "Stroke Rehabilitation",
-      iconURL: "https://braina.live/images/icon/stroke-icon.png",
+      iconURL: strokeIcon,
       imgURL: stroke,
       link: "/abha",
       description: "BCI driven neuro rehabilitative care for stroke survivors.",
@@ -39,7 +43,7 @@ const OurSolutions = () => {
     {
       id: 4,
       title: "Neuro Wearable for Smarter Brain",
-      iconURL: "https://braina.live/images/icon/neuro-icon.png",
+      iconURL: neuroIcon,
       imgURL: neuro,
       link: "/ba3e",
       description:

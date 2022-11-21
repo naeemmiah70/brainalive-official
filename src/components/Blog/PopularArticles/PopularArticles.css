@@ -1,0 +1,124 @@
+.popular-article-bg {
+    background: linear-gradient(125.69deg, #292929 0%, #191919 100%);
+    padding: 48px 0px;
+}
+
+.popular-article-container {
+    width: 90%;
+}
+
+.popular-articles-heading {
+    font-size: 24px;
+    line-height: 32px;
+    color: #EAEAEB;
+}
+
+.popular-article-div {
+    background: #141415;
+    border-radius: 8px;
+    margin: .8rem;
+    padding: 24px 16px 16px;
+    width: 302px;
+}
+
+.popular-card-content {
+    height: 88%;
+}
+
+.card-number {
+    width: 44px;
+    height: 44px;
+    padding: 8px 5px 7px 2px;
+    background: #313135;
+    border-radius: 92px;
+    position: relative;
+    left: 40%;
+    bottom: 50px;
+    opacity: .9;
+
+}
+
+.popular-article-card-titile {
+    font-size: 20px;
+    line-height: 28px;
+    color: #CACACE;
+    margin-top: -3rem;
+}
+
+.popular-read-more {
+    margin-top: -.5rem;
+    font-size: 12px;
+    background: linear-gradient(125.69deg, #C21E7E 0%, #C21E2C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.popular-read-more-text {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CACACE !important;
+    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+    border: 0;
+}
+
+.soap-color-btn {
+    background: #D2CDF4;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 10px;
+    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: 0;
+    margin-right: 5px;
+}
+
+
+.robin-egg-blue-btn {
+    background: #CDDBF4;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 10px;
+    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: 0;
+    margin-right: 5px;
+}
+
+.champagne-color-btn {
+    background: #F4E6CD;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 10px;
+    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: 0;
+    margin-right: 5px;
+}
+
+.date-div {
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #CACACE;
+}
+
+.popular-dot {
+    font-size: 30px;
+    position: relative;
+    bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: .9;
+}

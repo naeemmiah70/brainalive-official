@@ -1,14 +1,14 @@
 .blog-bg {
-    background: #191919;
+    background: linear-gradient(125.69deg, #FFFFFF 0%, #CCCCCC 100%);
+    display: flex;
+    justify-content: center;
 }
 
 .blog-container {
     margin-left: 2rem;
-    margin-right: 2rem;
-    position: relative;
-    bottom: 3rem;
-    background: linear-gradient(to left, #212121, #292929, #1c1c1c);
-    border-radius: 7px;
+    margin-right: -2rem;
+    width: 90%;
+  
 }
 @media only screen and (max-width: 520px) {
     .blog-container {

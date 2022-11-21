@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./FociiEvents.css";
+import focii1 from '../../../resource/icon/focii1.png';
+import focii2 from '../../../resource/icon/focii2.png';
+import focii3 from '../../../resource/icon/focii3.png'
 
 const FociiEvents = () => {
   const eventsData = [
@@ -8,7 +11,7 @@ const FociiEvents = () => {
       id: 1,
       title: "FOCII AI for Webinars",
       description: "Know what works for your audience and deliver like a pro",
-      imgURL: "https://braina.live/images/icon/focii1.png",
+      imgURL: focii1,
       link: "/focii_webinar",
     },
     {
@@ -16,7 +19,7 @@ const FociiEvents = () => {
       title: "FOCII AI for Education",
       description:
         "Understand true engagement of students in real time in a frictionless manner.",
-      imgURL: "https://braina.live/images/icon/focii2.png",
+      imgURL: focii2,
       link: "/focii_education",
     },
     {
@@ -24,7 +27,7 @@ const FociiEvents = () => {
       title: "FOCII AI SDK",
       description:
         "Completely customisable engagement AI white label solution/API for Learning/Webinar/Meeting softwares",
-      imgURL: "https://braina.live/images/icon/focii3.png",
+      imgURL: focii3,
       link: "/focii_ce",
     },
   ];

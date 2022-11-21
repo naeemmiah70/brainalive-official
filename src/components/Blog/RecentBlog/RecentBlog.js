@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { blogData } from "../BlogData/BlogData";
-import Subscribe from "../Subscribe/Subscribe";
 import "./RecentBlog.css";
 
 const RecentBlog = () => {
@@ -12,29 +11,36 @@ const RecentBlog = () => {
     setBlogs(blogData);
   }, []);
   return (
-    <div style={{ position: "sticky", top: "80px" }}>
+    <div className="recent-posts blogs-margin-top">
       <div>
-        <p className="recent-post-heading blogs-margin-top">Recent Posts</p>
-        {blogs.map((data) => (
-          <div className="row text-white recent-blog-div py-3">
-            <div className="col-md-7 col-7">
-              <Link to={data.link} style={{ textDecoration: "none" }}>
-                {" "}
-                <p className="recent-blog-title">{data.title}</p>
-              </Link>
-              <p className="recent-gray-text">{data.postedBy}</p>
-              <p className="recent-gray-text">{data.fullDate}</p>
-            </div>
-            <div className="col-md-5 col-5">
-              <Link to={data.link} style={{ textDecoration: "none" }}>
-                <img className="recent-img-blog" src={data.img} alt="" />
-              </Link>
-            </div>
+        <div>
+          <p>Trending Topics</p>
+          <div>
+            <button className="soap-color-btn">
+              <small> Online Learning</small>
+            </button>{" "}
+            <button className="robin-egg-blue-btn mx-2">Traditional</button>{" "}
+            <button className="champagne-color-btn">Classroom</button>
+            <button className="soap-color-btn">
+              <small> Online Learning</small>
+            </button>{" "}
+            <button className="robin-egg-blue-btn mx-2">Traditional</button>{" "}
+            <button className="champagne-color-btn">Classroom</button>
           </div>
-        ))}
-      </div>
-      <div>
-        <Subscribe></Subscribe>
+        </div>
+        <p className="mt-3">Recent Releases</p>
+        <div className="">
+          {blogs.map((data) => (
+            <Link style={{ textDecoration: "none" }} to={data.link}>
+              <div className="recent-blog-div p-2">
+                <div>
+                  <img className="img-fluid" src={data.img} alt="" />
+                  <h6 className="recent-blog-title">{data.title}</h6>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

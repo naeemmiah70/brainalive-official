@@ -328,7 +328,7 @@ const Sidebar = ({ componentRef }) => {
               className="d-flex m-2"
               style={{ cursor: "pointer" }}
               onClick={() =>
-                navigator.clipboard.writeText("https://braina.live/blog/")
+                navigator.clipboard.writeText("")
               }
             >
               <div className="modal-others-share-icon">

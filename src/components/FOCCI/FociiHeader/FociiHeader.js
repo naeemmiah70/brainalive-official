@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./FociiHeader.css";
+import focii from '../../../resource/focii.png'
 
 const FociiHeader = () => {
   return (
@@ -26,7 +27,7 @@ const FociiHeader = () => {
           <div  className="text-center focci-banner-img">
             <img
               className="header-img"
-              src="https://braina.live/images/focii.png"
+              src={focii}
               alt=""
             />
           </div>

@@ -5,6 +5,12 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Hurray from "../../../resource/abha/abha-mission.jpg";
+import rehabilitation from '../../../resource/abha/rehabilitation.jpg';
+import saving from '../../../resource/abha/saving.jpg';
+import skeleton from '../../../resource/abha/exoskeleton.jpg';
+import therapy from '../../../resource/abha/Remote-therapy.jpg';
+import gamified from '../../../resource/abha/gamified.jpg';
+import disabled from '../../../resource/abha/disabled.jpg';
 
 const AbhaServices = () => {
   useEffect(() => {
@@ -57,7 +63,7 @@ const AbhaServices = () => {
               <div>
                 <img
                   className="img-fluid service-img"
-                  src="https://braina.live/abha/images/rehabilitation.jpg"
+                  src={rehabilitation}
                   alt=""
                 />
               </div>
@@ -72,7 +78,7 @@ const AbhaServices = () => {
               <div>
                 <img
                   className="img-fluid service-img"
-                  src="https://braina.live/abha/images/saving.jpg"
+                  src={saving}
                   alt=""
                 />
               </div>
@@ -111,7 +117,7 @@ const AbhaServices = () => {
               <div>
                 <img
                   className="img-fluid service-img"
-                  src="https://braina.live/abha/images/exoskeleton.jpg"
+                  src={skeleton}
                   alt=""
                 />
               </div>
@@ -126,7 +132,7 @@ const AbhaServices = () => {
               <div>
                 <img
                   className="img-fluid service-img"
-                  src="https://braina.live/abha/images/Remote-therapy.jpg"
+                  src={therapy}
                   alt=""
                 />
               </div>
@@ -163,7 +169,7 @@ const AbhaServices = () => {
               <div>
                 <img
                   className="img-fluid service-img"
-                  src="https://braina.live/abha/images/gamified.jpg"
+                  src={gamified}
                   alt=""
                 />
               </div>
@@ -178,7 +184,7 @@ const AbhaServices = () => {
               <div>
                 <img
                   className="img-fluid service-img"
-                  src="https://braina.live/abha/images/disabled.jpg"
+                  src={disabled}
                   alt=""
                 />
               </div>

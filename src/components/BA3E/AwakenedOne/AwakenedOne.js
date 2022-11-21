@@ -1,5 +1,6 @@
 import React from "react";
 import "./AwakenedOne.css";
+import exploded from '../../../resource/ba3e/exploded.png'
 
 const AwakenedOne = () => {
   const details = [
@@ -35,7 +36,7 @@ const AwakenedOne = () => {
         <h1 className="awekened-header">Be The Awakened One</h1>
         <img
           className="img-fluid awekend-one-img"
-          src="https://braina.live/images/ba3e/exploded.png"
+          src={exploded}
           alt=""
         />
       </div>

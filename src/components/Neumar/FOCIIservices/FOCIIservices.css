@@ -121,9 +121,8 @@
 
 .focii-center-text {
     position: relative;
-    left: 34%;
+    left: 35%;
     font-size: 3rem;
-
 }
 
 .single_service .card-shadow {
@@ -160,36 +159,43 @@
 
 .focci-comp-sol .single_service.single_one::before {
     width: 23%;
-    top: 136%;
+    top: 146%;
     left: 78%;
     transform: rotate(238deg);
+}
+.focci-comp-sol .single_service.single_two::before {
+    width: 25%;
+ 
+ 
 }
 
 .focci-comp-sol .single_service.single_three::before {
     width: 23%;
     top: -42%;
-    left: 75%;
+    left: 78%;
+    top: -55%;
     transform: rotate(121deg);
 }
 
 .focci-comp-sol .single_service.single_five::before {
-    left: -35%;
-    width: 30%;
+    left: -28%;
+    width: 23%;
 }
 
 .focci-comp-sol .single_service.single_six::before {
     width: 25%;
     top: -48%;
     content: '';
-    left: 8%;
+    left: -2%;
+    top: -55%;
     transform: rotate(240deg);
 }
 
 .focci-comp-sol .single_service.single_four::before {
     width: 25%;
-    top: 135%;
+    top: 150%;
     content: '';
-    left: -1%;
+    left: -3%;
     transform: rotate(121deg);
 
 }
@@ -343,14 +349,17 @@
         position: relative;
         left: 0% !important;
     }
+
     .single_four {
         position: relative;
         left: 1% !important;
     }
+
     .single_four .card-shadow {
         position: relative;
         right: 1% !important;
     }
+
     .single_six .card-shadow {
         position: relative;
         right: 1% !important;
@@ -361,6 +370,7 @@
         position: relative;
         left: 4% !important;
     }
+
     .single_five .card-shadow {
         position: relative;
         right: 1% !important;
@@ -382,4 +392,13 @@
         margin-left: -5px !important;
     }
 
+}
+
+
+@media (min-width: 1600px) {
+
+    .neumar-bar{
+        position: relative;
+        right: 2.5%;
+    }
 }

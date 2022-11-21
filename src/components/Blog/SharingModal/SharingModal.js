@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
-import '../Sidebar/Sidebar.css'
+import "../Sidebar/Sidebar.css";
+import "./SharingModal.css";
 
 const customStyles = {
   content: {
@@ -13,14 +14,16 @@ const customStyles = {
     background: "none",
     border: 0,
   },
+  overlay: {
+    backgroundColor: "none",
+  },
 };
 Modal.setAppElement("#root");
 
-const SharingModal = ({ modalIsOpen, closeModal }) => {
+const SharingModal = ({ modalIsOpen, closeModal, link }) => {
+  console.log(link)
   return (
     <div>
-      {/* Sharing Modal */}
-
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -28,11 +31,31 @@ const SharingModal = ({ modalIsOpen, closeModal }) => {
         contentLabel="Example Modal"
       >
         <section className="sharing-modal">
-          <h6 className="modal-share-heading">Share Via:</h6>
+          <div className="d-flex justify-content-between">
+            <h6 className="modal-share-heading">Share Via:</h6>
+            <p onClick={closeModal} className="modal-close-icon">
+              {" "}
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="xmark"
+                class="svg-inline--fa fa-xmark close-btn"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+                ></path>
+              </svg>
+            </p>
+          </div>
           <div className="d-flex flex-wrap">
             <a
               className="d-flex text-decoration-none m-2"
-              href="https://www.facebook.com/sharer.php?t=Learning%20Analytics&amp;u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F11%2F13%2Flearning-analytics-2%2F"
+              href={link}
             >
               <div className="modal-facebook-share-icon">
                 <svg
@@ -48,6 +71,7 @@ const SharingModal = ({ modalIsOpen, closeModal }) => {
               </div>
               <div className="modal-fb-share-text-bg">
                 <p className="modal-facebook-text px-3">FaceBook</p>
+                <p></p>
               </div>
             </a>
             <a
@@ -90,7 +114,7 @@ const SharingModal = ({ modalIsOpen, closeModal }) => {
                 <p className="modal-facebook-text px-3">LinkedIn</p>
               </div>
             </a>
-            <a
+            {/* <a
               className="d-flex text-decoration-none m-2"
               href="https://mix.com/add?url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F11%2F13%2Flearning-analytics-2%2F"
             >
@@ -156,7 +180,7 @@ const SharingModal = ({ modalIsOpen, closeModal }) => {
               <div className="modal-others-share-text-bg">
                 <p className="modal-facebook-text px-3">Print</p>
               </div>
-            </a>
+            </a> */}
             <a
               className="d-flex text-decoration-none m-2"
               href="https://www.facebook.com/sharer.php?t=Learning%20Analytics&amp;u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F11%2F13%2Flearning-analytics-2%2F"
@@ -180,27 +204,6 @@ const SharingModal = ({ modalIsOpen, closeModal }) => {
                 <p className="modal-facebook-text px-3">Copy Link</p>
               </div>
             </a>
-          </div>
-          <div className="d-flex justify-content-center">
-            <p className="snap-text">Powered by</p>
-            <a
-              href="https://socialsnap.com/?utm_source=WordPress&amp;utm_medium=link&amp;utm_campaign=inthewild"
-              target="_blank"
-            >
-              <svg
-                class="ss-svg-icon snap-icon"
-                aria-hidden="true"
-                role="img"
-                focusable="false"
-                width="30"
-                height="32"
-                viewBox="0 0 30 32"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M22.293 0.146l7.602 4.172c0.386 0.201 0.386 0.541 0 0.757l-16.688 9.147c-1.684 0.943-2.241 2.271-1.669 3.461 0 0.093 0 0.201-0.201 0.263-0.207 0.088-0.441 0.088-0.649 0l-10.399-5.702c-0.386-0.201-0.386-0.541 0-0.757l20.628-11.311c0.428-0.225 0.937-0.236 1.375-0.031zM7.892 31.854l-7.602-4.172c-0.386-0.201-0.386-0.541 0-0.757l16.688-9.147c1.684-0.943 2.241-2.271 1.669-3.461 0-0.093 0-0.201 0.201-0.263 0.207-0.088 0.442-0.088 0.649 0l10.399 5.702c0.386 0.201 0.386 0.541 0 0.757l-20.628 11.311c-0.428 0.225-0.937 0.237-1.375 0.031z"></path>
-              </svg>
-            </a>
-            <p className="snap-text">Social Snap</p>
           </div>
         </section>
       </Modal>

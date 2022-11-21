@@ -1,9 +1,18 @@
-.blog-tag-header {
-    height: 350px;
-    background: url('https://braina.live/blog/wp-content/uploads/2021/09/blog-2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+.tag-blog-container {
+    margin-left: 1rem;
+    margin-right: 0rem;
+    width: 90%;
+    height: 77vh;
+
+}
+
+@media only screen and (max-width: 520px) {
+    .tag-blog-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .tag-blog-header-bg {
@@ -53,4 +62,28 @@
 #colors-4 {
     font-weight: 300;
     color: #ff9800;
+}
+
+.search-for-heading {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+}
+
+.search-result {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+
+    color: #313135;
+}
+
+#tag-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+
+
+    color: #313135;
 }
