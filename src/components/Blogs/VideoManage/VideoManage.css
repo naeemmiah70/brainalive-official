@@ -1,5 +1,20 @@
 .video-managing-bg {
-        height: 456px;
+    height: 456px;
+    background-image: linear-gradient(125.69deg, rgba(41, 41, 41, 0.74) 0%, rgba(25, 25, 25, 0.74) 100%), url('../../../resource/blogs/video-management.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(12px);
+    margin: -20px;
+    position: relative;
+}
+
+
+
+@media only screen and (max-width: 520px) {
+
+    .video-managing-bg {
+        height: 490px;
         background-image: linear-gradient(125.69deg, rgba(41, 41, 41, 0.74) 0%, rgba(25, 25, 25, 0.74) 100%), url('../../../resource/blogs/video-management.jpg');
         background-size: cover;
         background-position: center;
@@ -7,19 +22,6 @@
         filter: blur(12px);
         margin: -20px;
         position: relative;
-    
-}
-
-
-
-@media only screen and (max-width: 520px) {
-    
-    .video-managing-bg {
-        height: 300px;
-        background: url('../../../resource/blogs/video-management.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
- 
+
 }

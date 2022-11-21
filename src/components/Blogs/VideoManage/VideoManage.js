@@ -11,6 +11,7 @@ import intrinsic from "../../../resource/blogs/intrinsic.png";
 import germane from "../../../resource/icon/mind.png";
 import segmentation from "../../../resource/icon/self-aware.png";
 import segmentation2 from "../../../resource/icon/e-learning.png";
+import '../../Blog/PopularArticles/PopularArticles.css'
 
 const VideoManage = () => {
   return (

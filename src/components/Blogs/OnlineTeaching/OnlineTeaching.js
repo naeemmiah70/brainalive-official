@@ -21,6 +21,7 @@ import eyeTracking from "../../../resource/blogs/eye-tracking.jpg";
 import engagingContent from "../../../resource/blogs/engaging-content.png";
 import learnerEngagement from "../../../resource/blogs/learner-engagement.jpg";
 import comparisionGraph from "../../../resource/blogs/comparision-graph.jpg";
+import '../../Blog/PopularArticles/PopularArticles.css'
 
 const customStyles = {
   content: {
@@ -58,7 +59,7 @@ const OnlineTeaching = () => {
       <section className="online-teaching-bg"></section>
       <div>
         <div className="blog-hero-text-bg d-flex justify-content-center ">
-          <div className="blog-header-content d-flex align-items-center">
+          <div className="blog-header-content online-teaching-heading-content d-flex align-items-center">
             <div className="row ">
               <div className="col-md-4">
                 <img

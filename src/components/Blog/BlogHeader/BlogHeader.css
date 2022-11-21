@@ -1,5 +1,5 @@
 .blog-header {
-    height: 512px;
+    height: 500px;
     background: url('../../../resource/Group\ 1.png');
     background-size: cover;
     background-position: center;
@@ -37,6 +37,8 @@
     border-radius: 8px;
 }
 
+
+
 .news-letter-btn {
     background: #1974CE;
     border-radius: 4px;
@@ -72,4 +74,83 @@
     font-size: 15px;
     font-weight: 400;
     color: #8A8A93;
+}
+
+@media only screen and (max-width: 520px) {
+    .blog-header {
+        height: 450px;
+        background: url('../../../resource/Group\ 1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .blog-header-title {
+        color: #AB864F;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+    }
+
+    .news-letter {
+        padding: 32px;
+        width: 98% !important;
+        height: 164px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 48px rgba(20, 20, 21, 0.16);
+        border-radius: 8px;
+        margin-bottom: -2rem;
+    }
+
+    .news-letter-btn {
+        background: #1974CE;
+        border-radius: 4px;
+        padding: 0px 24px;
+        padding-bottom: 8px;
+        color: #fff;
+        width: 120px;
+        height: 40px;
+        border: 0;
+        margin-left: 20px;
+    }
+
+    .news-letter-input {
+        border: 0;
+        border-bottom: 1px solid #8A8A93;
+        ;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 48px rgba(20, 20, 21, 0.16);
+        width: 100% !important;
+        height: 40px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    .news-letter {
+        padding: 32px;
+        width: 95% !important;
+        height: 164px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 48px rgba(20, 20, 21, 0.16);
+        border-radius: 8px;
+        margin-left: 2%;
+
+    }
+
+    .news-letter-input {
+        border: 0;
+        border-bottom: 1px solid #8A8A93;
+        ;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 48px rgba(20, 20, 21, 0.16);
+        width: 100% !important;
+        height: 48px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
 }

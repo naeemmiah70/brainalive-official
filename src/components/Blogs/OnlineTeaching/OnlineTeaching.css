@@ -12,7 +12,9 @@
 
 @media only screen and (max-width: 520px) {
     .online-teaching-bg{
-        height: 300px;
-    
+        height: 456px;
     }  
+    .online-teaching-heading-content{
+        top: 2%;
+    }
 }

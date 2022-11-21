@@ -9,6 +9,7 @@ import RecentReleases from "../../Blog/RecentReleases/RecentReleases";
 import '../../Blog/Blogs/Blogs.css'
 import learningAnalytics from '../../../resource/blogs/learning-analytics.jpg';
 import analyticsDiagram from '../../../resource/blogs/analytics-diagram.png'
+import '../../Blog/PopularArticles/PopularArticles.css'
 
 const LearnAnalytic = () => {
 
@@ -19,8 +20,8 @@ const LearnAnalytic = () => {
       <section className="learn-analytics-bg"></section>
       <div>
         <div className="blog-hero-text-bg d-flex justify-content-center ">
-          <div className="blog-header-content d-flex align-items-center">
-            <div className="row ">
+          <div className="blog-header-content analytics-header-content d-flex align-items-center">
+            <div className="row">
               <div className="col-md-5">
                 <img
                   className="blog-header-image"

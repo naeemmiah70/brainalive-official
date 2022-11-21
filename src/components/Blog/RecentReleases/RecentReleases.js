@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { blogData } from "../BlogData/BlogData";
+import '../RecentBlog/RecentBlog.css'
 
 const RecentReleases = () => {
   const [blogs, setBlogs] = useState([]);
@@ -11,7 +12,7 @@ const RecentReleases = () => {
   }, []);
   return (
     
-      <div className="recent-releases ">
+      <div className="recent-releases">
         <div>
           <div>
             <p className="text-white">Trending Topics</p>
@@ -19,12 +20,12 @@ const RecentReleases = () => {
               <button className="soap-color-btn">
                 <small> Online Learning</small>
               </button>{" "}
-              <button className="robin-egg-blue-btn mx-2">Traditional</button>{" "}
+              <button className="robin-egg-blue-btn">Traditional</button>{" "}
               <button className="champagne-color-btn">Classroom</button>
               <button className="soap-color-btn">
                 <small> Online Learning</small>
               </button>{" "}
-              <button className="robin-egg-blue-btn mx-2">Traditional</button>{" "}
+              <button className="robin-egg-blue-btn ">Traditional</button>{" "}
               <button className="champagne-color-btn">Classroom</button>
             </div>
           </div>

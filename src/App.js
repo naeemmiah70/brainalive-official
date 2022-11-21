@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Loading from "./components/Loading/Loading";
  
@@ -53,7 +53,7 @@ const DynamicTagBlogs = React.lazy(() =>
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter >
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -92,7 +92,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
-    </BrowserRouter>
+    </HashRouter >
   );
 }
 

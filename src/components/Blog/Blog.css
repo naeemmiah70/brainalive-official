@@ -3,6 +3,13 @@
     display: flex;
     justify-content: center;
 }
+.home-blog-container{
+
+    margin-left: 2rem;
+    margin-right: -2rem;
+    width: 90%;
+    
+}
 
 .blog-container {
     margin-left: 2rem;
@@ -12,7 +19,17 @@
 }
 @media only screen and (max-width: 520px) {
     .blog-container {
-        margin-left: 0;
+        margin-left: 2rem;
         margin-right: 0;
+        width: 95%;
+        padding: .5rem;
+    }
+    .home-blog-container{
+
+        margin-left: -.1rem;
+        margin-right: 0;
+        width: 95%;
+        padding: .5rem;
+        
     }
 }

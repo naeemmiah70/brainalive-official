@@ -45,16 +45,16 @@ const Blogs = () => {
                   <p className="blog-read-more">Read more...</p>
                 </Link>
 
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between mt-4">
                   <div className="d-flex">
-                    <div className="d-flex date-div">
+                    <div className="date-div">
                       <p style={{ color: "gray" }} className="date">
                         {data.date}
                       </p>{" "}
-                      <strong style={{ color: "gray" }} className="popular-dot">
+                      <strong style={{ color: "gray" }} className="date-dot">
                         .
                       </strong>{" "}
-                      <p style={{ color: "gray" }} className="date">
+                      <p style={{ color: "gray" }} className="date read-time">
                         10 min read
                       </p>
                       <strong className="blog-bottom-dot">.</strong>{" "}
@@ -63,7 +63,7 @@ const Blogs = () => {
                       <button className="soap-color-btn">
                         <small> Online Learning</small>
                       </button>{" "}
-                      <button className="robin-egg-blue-btn mx-2">
+                      <button className="robin-egg-blue-btn ">
                         Traditional
                       </button>{" "}
                       <button className="champagne-color-btn">Classroom</button>

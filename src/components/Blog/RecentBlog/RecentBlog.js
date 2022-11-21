@@ -11,11 +11,11 @@ const RecentBlog = () => {
     setBlogs(blogData);
   }, []);
   return (
-    <div className="recent-posts blogs-margin-top">
+    <div className="recent-posts ">
       <div>
-        <div>
+        <div className="row">
           <p>Trending Topics</p>
-          <div>
+          <div className="">
             <button className="soap-color-btn">
               <small> Online Learning</small>
             </button>{" "}
@@ -29,10 +29,10 @@ const RecentBlog = () => {
           </div>
         </div>
         <p className="mt-3">Recent Releases</p>
-        <div className="">
+        <div className="row">
           {blogs.map((data) => (
-            <Link style={{ textDecoration: "none" }} to={data.link}>
-              <div className="recent-blog-div p-2">
+            <Link className="col-sm-12" style={{ textDecoration: "none" }} to={data.link}>
+              <div className="recent-blog-div p-2 ">
                 <div>
                   <img className="img-fluid" src={data.img} alt="" />
                   <h6 className="recent-blog-title">{data.title}</h6>

@@ -12,7 +12,7 @@ const BlogHeader = () => {
 
         <div className="news-letter">
           <h5 className=""> Subscribe to our newsletter</h5>
-          <form action="" className="d-flex">
+          <form action="" className="d-flex mt-3">
             <div>
               <input className="news-letter-input" type="email" placeholder="johndoe@example.com" />
             </div>

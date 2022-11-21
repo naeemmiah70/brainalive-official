@@ -10,15 +10,8 @@
 
 }
 
-.blog-header-content {
-    width: 90%;
-    height: 456px;
-    position: absolute;
-    top: 7%;
-}
 
 .blog-hero-text-bg {
-    height: 1005;
     width: 100%;
 
 }
@@ -32,13 +25,7 @@
     border-radius: 5px;
 }
 
-.blog-top-header-title {
-    margin-top: 1rem;
-    font-size: 48px;
-    line-height: 46px;
-    color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif, Galano-Grotesque;
-}
+
 .share-via {
     color: #fff;
     font-family: 'Montserrat', sans-serif,;

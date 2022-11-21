@@ -10,6 +10,7 @@ import copy from "../../../resource/icon/copy .png";
 import RecentReleases from "../../Blog/RecentReleases/RecentReleases";
 import onlinLearning from "../../../resource/blogs/online-learning.jpg";
 import eyeTracking from "../../../resource/blogs/eye-tracking.jpg";
+import '../../Blog/PopularArticles/PopularArticles.css'
 
 const OnlineLearnings = () => {
   return (
