@@ -8,10 +8,10 @@ import copy from "../../../resource/icon/copy .png";
 import RecentReleases from "../../Blog/RecentReleases/RecentReleases";
 import videoManage from "../../../resource/blogs/video-management.jpg";
 import intrinsic from "../../../resource/blogs/intrinsic.png";
-import germane from "../../../resource/icon/mind.png";
-import segmentation from "../../../resource/icon/self-aware.png";
-import segmentation2 from "../../../resource/icon/e-learning.png";
-import '../../Blog/PopularArticles/PopularArticles.css'
+import germane from "../../../resource/blogs/germane.png";
+import segmentation from "../../../resource/blogs/distracting.png";
+import segmentation2 from "../../../resource/blogs/segmentation.png";
+import "../../Blog/PopularArticles/PopularArticles.css";
 
 const VideoManage = () => {
   return (
@@ -29,7 +29,7 @@ const VideoManage = () => {
                 <div>
                   <div className="d-flex date-div mt-1">
                     <p style={{ color: "gray" }} className="date">
-                      10th January
+                      November 11, 2021
                     </p>{" "}
                     <strong style={{ color: "gray" }} className="popular-dot">
                       .
@@ -37,17 +37,8 @@ const VideoManage = () => {
                     <p style={{ color: "gray" }} className="date">
                       10 min read
                     </p>
-                    <strong className="blog-bottom-dot">.</strong>{" "}
                   </div>
-                  <div>
-                    <button className="soap-color-btn">
-                      <small> Online Learning</small>
-                    </button>{" "}
-                    <button className="robin-egg-blue-btn mx-2">
-                      Traditional
-                    </button>{" "}
-                    <button className="champagne-color-btn">Classroom</button>
-                  </div>
+
                   <div>
                     <h1 className="blog-top-header-title">
                       Is your educational video effectively managing the
@@ -256,15 +247,18 @@ const VideoManage = () => {
                             alt=""
                           />
                         </div>
-                        <div className="col-md-9">
-                          <p className="main-blog-text">
-                            <strong className="text-white fw-bold">
-                              Off loading
-                            </strong>{" "}
-                            – It is suggested to balance the load on visual and
-                            verbal channels to help the learner better process
-                            the information from each channel separately.
-                          </p>
+                        <div className="col-md-9 d-flex align-items-center">
+                          <div>
+                            <p className="main-blog-text">
+                              <strong className="text-white fw-bold">
+                                Off loading
+                              </strong>{" "}
+                              – It is suggested to balance the load on visual
+                              and verbal channels to help the learner better
+                              process the information from each channel
+                              separately.
+                            </p>
+                          </div>
                         </div>
                       </div>
                       <p className="main-blog-text">

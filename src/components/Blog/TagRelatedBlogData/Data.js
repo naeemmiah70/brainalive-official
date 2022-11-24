@@ -1,7 +1,7 @@
 import videoManagement from "../../../resource/blogs/video-management.jpg";
 import onlineTeaching from "../../../resource/blogs/online-teaching.jpg";
 import onlineLearning from "../../../resource/blogs/online-learning.jpg";
-import learningAnalytics from '../../../resource/blogs/learning-analytics.jpg'
+import learningAnalytics from "../../../resource/blogs/learning-analytics.jpg";
 
 export const tagBloglogData = [
   {
@@ -14,8 +14,22 @@ export const tagBloglogData = [
     link: "/blog/learn_analytics",
     tags: "learning-analytics",
     tagHeading: "Learning Analytics",
+    buttons: [
+      {
+        id: 1,
+        title: "Learning Analytics",
+        link: "learning-analytics",
+      },
+    ],
     readMore:
       "As per an MIT study, the completion rates for LMS-based courses is not more than 4 per cent and the success of the graduates is even lower. Various factors that influence learner engagement include the quality of lesson design and delivery, it’s difficulty for students, or loss of motivation among",
+    facebookShare:
+      "https://web.facebook.com/sharer.php?t=Learning%20Analytics&u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F11%2F13%2Flearning-analytics-2%2F&_rdc=1&_rdr",
+    twitterShare:
+      "https://twitter.com/intent/tweet?text=Learning+Analytics&amp;url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F11%2F13%2Flearning-analytics-2%2F",
+    linkedInShare:
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbraina.live%2Fblog%2F",
+    copyLink: "https://braina.live/blog/2021/11/13/learning-analytics-2/",
   },
   {
     id: 2,
@@ -28,6 +42,13 @@ export const tagBloglogData = [
     link: "/blog/video_managing",
     tags: "",
     tagHeading: "",
+    buttons: [
+      {
+        id: 1,
+        title: "",
+        link: "",
+      },
+    ],
   },
   {
     id: 3,
@@ -39,8 +60,33 @@ export const tagBloglogData = [
     link: "/blog/online_teaching",
     tags: "content-engagement",
     tagHeading: "Content Engagement",
+    buttons: [
+      {
+        id: 1,
+        title: "Content Engagement",
+        link: "content-engagement",
+      },
+      {
+        id: 2,
+        title: "Learner Engagement",
+        link: "learner-engagement",
+      },
+      {
+        id: 3,
+        title: "Online Teaching",
+        link: "online-teaching",
+      },
+    ],
     readMore:
       "As learning becomes increasingly online, the more challenging it becomes to deliver engaging, high quality and impactful education for students. While attention lapses have been a regular occurrence in the traditional classroom, it has been found to occur with even greater frequency in online learning, where learners are prone to",
+    facebookShare:
+      "https://web.facebook.com/sharer.php?t=Online%20teaching%20just%20got%20easier!&u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F&_rdc=1&_rdr",
+    twitterShare:
+      "https://twitter.com/intent/tweet?text=Online+teaching+just+got+easier%21&url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F",
+    linkedInShare:
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F",
+    copyLink:
+      "https://braina.live/blog/2021/09/03/online-teaching-just-got-easier/",
   },
   {
     id: 4,
@@ -52,8 +98,33 @@ export const tagBloglogData = [
     link: "/blog/online_teaching",
     tags: "learner-engagement",
     tagHeading: "Learner Engagement",
+    buttons: [
+      {
+        id: 1,
+        title: "Content Engagement",
+        link: "content-engagement",
+      },
+      {
+        id: 2,
+        title: "Learner Engagement",
+        link: "learner-engagement",
+      },
+      {
+        id: 3,
+        title: "Online Teaching",
+        link: "online-teaching",
+      },
+    ],
     readMore:
       "As learning becomes increasingly online, the more challenging it becomes to deliver engaging, high quality and impactful education for students. While attention lapses have been a regular occurrence in the traditional classroom, it has been found to occur with even greater frequency in online learning, where learners are prone to",
+    facebookShare:
+      "https://web.facebook.com/sharer.php?t=Online%20teaching%20just%20got%20easier!&u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F&_rdc=1&_rdr",
+    twitterShare:
+      "https://twitter.com/intent/tweet?text=Online+teaching+just+got+easier%21&url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F",
+    linkedInShare:
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F",
+    copyLink:
+      "https://braina.live/blog/2021/09/03/online-teaching-just-got-easier/",
   },
 
   {
@@ -66,8 +137,33 @@ export const tagBloglogData = [
     link: "/blog/online_teaching",
     tags: "online-teaching",
     tagHeading: "Online Teaching",
+    buttons: [
+      {
+        id: 1,
+        title: "Content Engagement",
+        link: "content-engagement",
+      },
+      {
+        id: 2,
+        title: "Learner Engagement",
+        link: "learner-engagement",
+      },
+      {
+        id: 3,
+        title: "Online Teaching",
+        link: "online-teaching",
+      },
+    ],
     readMore:
       "As learning becomes increasingly online, the more challenging it becomes to deliver engaging, high quality and impactful education for students. While attention lapses have been a regular occurrence in the traditional classroom, it has been found to occur with even greater frequency in online learning, where learners are prone to",
+    facebookShare:
+      "https://web.facebook.com/sharer.php?t=Online%20teaching%20just%20got%20easier!&u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F&_rdc=1&_rdr",
+    twitterShare:
+      "https://twitter.com/intent/tweet?text=Online+teaching+just+got+easier%21&url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F",
+    linkedInShare:
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fonline-teaching-just-got-easier%2F",
+    copyLink:
+      "https://braina.live/blog/2021/09/03/online-teaching-just-got-easier/",
   },
 
   {
@@ -81,8 +177,33 @@ export const tagBloglogData = [
     link: "/blog/online_learning",
     tags: "online-teaching",
     tagHeading: "Online Teaching",
+    buttons: [
+      {
+        id: 1,
+        title: "New Normal",
+        link: "new-normal",
+      },
+      {
+        id: 2,
+        title: "Online Teaching",
+        link: "online-teaching",
+      },
+      {
+        id: 3,
+        title: "Traditional Classroom",
+        link: "traditional-classroom",
+      },
+    ],
     readMore:
       "Are you one among the many trying to accustom to the new normal? The new normal in education is the ever increasing usage of online learning tools.  Online learning stands to transform the concept of education with better content, improved accessibility, and affordability while meeting different learning needs. However, online",
+    facebookShare:
+      "https://web.facebook.com/sharer.php?t=Can%20online%20learning%20be%20made%20a%20fitting%20alternative%20to%20traditional%20classroom%3F&u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F&_rdc=1&_rdr",
+    twitterShare:
+      "https://twitter.com/intent/tweet?text=Can+online+learning+be+made+a+fitting+alternative+to+traditional+classroom%3F&amp;url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F",
+    linkedInShare:
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F",
+    copyLink:
+      "https://braina.live/blog/2021/09/03/can-online-learning-be-made-a-fitting-alternative-to-traditional-classroom/",
   },
   {
     id: 8,
@@ -95,8 +216,33 @@ export const tagBloglogData = [
     link: "/blog/online_learning",
     tags: "new-normal",
     tagHeading: "New Normal",
+    buttons: [
+      {
+        id: 1,
+        title: "New Normal",
+        link: "new-normal",
+      },
+      {
+        id: 2,
+        title: "Online Teaching",
+        link: "online-teaching",
+      },
+      {
+        id: 3,
+        title: "Traditional Classroom",
+        link: "traditional-classroom",
+      },
+    ],
     readMore:
       "Are you one among the many trying to accustom to the new normal? The new normal in education is the ever increasing usage of online learning tools.  Online learning stands to transform the concept of education with better content, improved accessibility, and affordability while meeting different learning needs. However, online",
+    facebookShare:
+      "https://web.facebook.com/sharer.php?t=Can%20online%20learning%20be%20made%20a%20fitting%20alternative%20to%20traditional%20classroom%3F&u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F&_rdc=1&_rdr",
+    twitterShare:
+      "https://twitter.com/intent/tweet?text=Can+online+learning+be+made+a+fitting+alternative+to+traditional+classroom%3F&amp;url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F",
+    linkedInShare:
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F",
+    copyLink:
+      "https://braina.live/blog/2021/09/03/can-online-learning-be-made-a-fitting-alternative-to-traditional-classroom/",
   },
   {
     id: 9,
@@ -109,7 +255,32 @@ export const tagBloglogData = [
     link: "/blog/online_learning",
     tags: "traditional-classroom",
     tagHeading: "Traditional Classroom",
+    buttons: [
+      {
+        id: 1,
+        title: "New Normal",
+        link: "new-normal",
+      },
+      {
+        id: 2,
+        title: "Online Teaching",
+        link: "online-teaching",
+      },
+      {
+        id: 3,
+        title: "Traditional Classroom",
+        link: "traditional-classroom",
+      },
+    ],
     readMore:
       "Are you one among the many trying to accustom to the new normal? The new normal in education is the ever increasing usage of online learning tools.  Online learning stands to transform the concept of education with better content, improved accessibility, and affordability while meeting different learning needs. However, online",
+    facebookShare:
+      "https://web.facebook.com/sharer.php?t=Can%20online%20learning%20be%20made%20a%20fitting%20alternative%20to%20traditional%20classroom%3F&u=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F&_rdc=1&_rdr",
+    twitterShare:
+      "https://twitter.com/intent/tweet?text=Can+online+learning+be+made+a+fitting+alternative+to+traditional+classroom%3F&amp;url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F",
+    linkedInShare:
+      "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbraina.live%2Fblog%2F2021%2F09%2F03%2Fcan-online-learning-be-made-a-fitting-alternative-to-traditional-classroom%2F",
+    copyLink:
+      "https://braina.live/blog/2021/09/03/can-online-learning-be-made-a-fitting-alternative-to-traditional-classroom/",
   },
 ];

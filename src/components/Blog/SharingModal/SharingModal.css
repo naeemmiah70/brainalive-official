@@ -1,6 +1,61 @@
-.modal-close-icon{
-    position: relative;
-    bottom: 50px;
-    left: 18px;
+.sharing-modal {
+    z-index: 1;
+    padding: 8px 16px 16px;
+    width: 175px;
+    height: 240px;
+    background: #141415;
+    border-radius: 8px;
+}
+
+.modal-close-icon {
     cursor: pointer;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 5px;
+}
+
+.modal-share-via {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CACACE;
+}
+
+.social-share {
+    width: 143px !important;
+    height: 40px !important;
+    padding: 8px 10px;
+    width: 143px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social-media-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #313135;
+}
+
+.copy-text {
+    font-weight: 300 !important;
+    font-size: 16px !important;
+    line-height: 22px;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 3px;
+}
+
+.social-media-icon{
+    position: relative;
+    bottom: 4px !important;
+}
+
+.copy-btn-bg {
+    background: none !important;
+    border: 1px solid #fff;
 }

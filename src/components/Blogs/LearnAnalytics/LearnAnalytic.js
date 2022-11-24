@@ -6,13 +6,12 @@ import twitter from "../../../resource/icon/twitter.png";
 import linkedIn from "../../../resource/icon/linkedIn.png";
 import copy from "../../../resource/icon/copy .png";
 import RecentReleases from "../../Blog/RecentReleases/RecentReleases";
-import '../../Blog/Blogs/Blogs.css'
-import learningAnalytics from '../../../resource/blogs/learning-analytics.jpg';
-import analyticsDiagram from '../../../resource/blogs/analytics-diagram.png'
-import '../../Blog/PopularArticles/PopularArticles.css'
+import "../../Blog/Blogs/Blogs.css";
+import learningAnalytics from "../../../resource/blogs/learning-analytics.jpg";
+import analyticsDiagram from "../../../resource/blogs/analytics-diagram.png";
+import "../../Blog/PopularArticles/PopularArticles.css";
 
 const LearnAnalytic = () => {
-
   return (
     <>
       {/* Header */}
@@ -33,7 +32,7 @@ const LearnAnalytic = () => {
                 <div>
                   <div className="d-flex date-div mt-1">
                     <p style={{ color: "gray" }} className="date">
-                      10th January
+                      November 13, 2021
                     </p>{" "}
                     <strong style={{ color: "gray" }} className="popular-dot">
                       .
@@ -41,22 +40,21 @@ const LearnAnalytic = () => {
                     <p style={{ color: "gray" }} className="date">
                       10 min read
                     </p>
-                    <strong className="blog-bottom-dot">.</strong>{" "}
+                 
                   </div>
                   <div>
-                    <button className="soap-color-btn">
-                      <small> Online Learning</small>
-                    </button>{" "}
-                    <button className="robin-egg-blue-btn mx-2">
-                      Traditional
-                    </button>{" "}
-                    <button className="champagne-color-btn">Classroom</button>
+                    <Link to="/blog/tag/learning-analytics">
+                      <button className="soap-color-btn">
+                        <small>Learning Analytics</small>
+                      </button>
+                    </Link>
                   </div>
                   <div>
                     <h1 className="blog-top-header-title">
                       Learning Analytics
                     </h1>
                   </div>
+
                   <section>
                     <h6 className="share-via mt-3">Share Via:</h6>
                     <div className="d-flex flex-wrap mt-3">
@@ -260,35 +258,6 @@ const LearnAnalytic = () => {
                         improve and adapt the content of the future courses.
                       </p>
                     </div>
-
-                    {/* Share Via */}
-                    <section>
-                      <div style={{ marginTop: "3rem" }} className="text-white">
-                        <div className="d-flex">
-                          <p style={{ fontWeight: 300 }}>Category</p>:{" "}
-                          <Link to="/blog" className="blog-category-btn">
-                            BLOG
-                          </Link>
-                        </div>
-                        <div className="d-flex">
-                          <p style={{ fontWeight: 300 }}>Tags</p>:{" "}
-                          <Link
-                            to="/blog/tag/learning-analytics"
-                            className="tag-texts"
-                          >
-                            learning analytics
-                          </Link>
-                        </div>
-                      </div>
-                      <div
-                        style={{
-                          width: "100%",
-                          border: "1px solid white",
-                          marginTop: "10px",
-                          opacity: "0.8",
-                        }}
-                      ></div>
-                    </section>
                   </div>
                 </div>
               </div>

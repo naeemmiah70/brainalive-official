@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./PopularArticles.css";
 import { blogData } from "../BlogData/BlogData";
 import "./PopularArticles.css";
+import { Link } from "react-router-dom";
 
 const PopularArticles = () => {
   const [blogs, setBlogs] = useState([]);
@@ -26,20 +27,22 @@ const PopularArticles = () => {
                       {data.title}
                     </h4>
                     <p className="popular-read-more-text">{data.readMore}</p>
-                    <p className="popular-read-more">Read more...</p>
+                    <Link className="text-decoration-none" to={`${data.link}`}><p className="popular-read-more">Read more...</p></Link>
                   </div>
                   <div className="">
                     <div className="d-flex date-div">
                       <p className="date">{data.date}</p> <strong className="popular-dot">.</strong> <p className="date">10 min read</p>
                     </div>
                     <div>
-                      <button className="soap-color-btn">
-                       <small> Online Learning</small>
-                      </button>{" "}
-                      <button className="robin-egg-blue-btn">
-                        Traditional
-                      </button>{" "}
-                      <button className="champagne-color-btn">Classroom</button>
+                    {data.buttons.map((data) => (
+                        <Link to={`/blog/tag/${data.link}`}>
+                          {data.link && (
+                            <button className={`tag-btn-${data.id}`}>
+                              <small>{data.title}</small>
+                            </button>
+                          )}
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 </div>

@@ -10,7 +10,8 @@ import copy from "../../../resource/icon/copy .png";
 import RecentReleases from "../../Blog/RecentReleases/RecentReleases";
 import onlinLearning from "../../../resource/blogs/online-learning.jpg";
 import eyeTracking from "../../../resource/blogs/eye-tracking.jpg";
-import '../../Blog/PopularArticles/PopularArticles.css'
+import "../../Blog/PopularArticles/PopularArticles.css";
+import { Link } from "react-router-dom";
 
 const OnlineLearnings = () => {
   return (
@@ -28,7 +29,7 @@ const OnlineLearnings = () => {
                 <div>
                   <div className="d-flex date-div mt-1">
                     <p style={{ color: "gray" }} className="date">
-                      10th January
+                      September 3, 2021
                     </p>{" "}
                     <strong style={{ color: "gray" }} className="popular-dot">
                       .
@@ -36,16 +37,32 @@ const OnlineLearnings = () => {
                     <p style={{ color: "gray" }} className="date">
                       10 min read
                     </p>
-                    <strong className="blog-bottom-dot">.</strong>{" "}
                   </div>
                   <div>
-                    <button className="soap-color-btn">
-                      <small> Online Learning</small>
-                    </button>{" "}
-                    <button className="robin-egg-blue-btn mx-2">
-                      Traditional
-                    </button>{" "}
-                    <button className="champagne-color-btn">Classroom</button>
+                    <Link
+                      to="/blog/tag/new-normal"
+                      className="text-decoration-none"
+                    >
+                      <button className="soap-color-btn">
+                        <small> New Normal</small>
+                      </button>{" "}
+                    </Link>
+                    <Link
+                      to="/blog/tag/online-teaching"
+                      className="text-decoration-none"
+                    >
+                      <button className="robin-egg-blue-btn mx-2">
+                        Online Teaching
+                      </button>{" "}
+                    </Link>
+                    <Link
+                      to="/blog/tag/traditional-classroom"
+                      className="text-decoration-none"
+                    >
+                      <button className="champagne-color-btn">
+                        Traditional Classroom
+                      </button>
+                    </Link>
                   </div>
                   <div>
                     <h1 className="blog-top-header-title">
@@ -129,7 +146,6 @@ const OnlineLearnings = () => {
         <div className="blog-container ">
           <div className="container">
             <div className="row">
-              {/* Main Blog */}
               <div className="col-lg-9 my-5 ">
                 <div className="d-flex justify-content-center blog-spacing-right">
                   <div className="focci-sdk-container">

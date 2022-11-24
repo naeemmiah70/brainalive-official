@@ -5,13 +5,31 @@ import { Link } from "react-router-dom";
 import { blogData } from "../BlogData/BlogData";
 import "./Blogs.css";
 import share from "../../../resource/icon/share (1).png";
-import save from "../../../resource/icon/save.png";
 import SharingModal from "../SharingModal/SharingModal";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "66%",
+    right: "auto",
+    bottom: "auto",
+    transform: "translate(-50%, -50%)",
+    background: "none",
+    border: 0,
+  },
+  overlay: {
+    backgroundColor: "none",
+  },
+};
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
-  const [links, setLink] = useState(null);
-  console.log(links);
+  const [links, setLink] = useState({
+    facebookShare: "",
+    twitterShare: "",
+    linkedInShare: "",
+    copyLink: "",
+  });
 
   useEffect(() => {
     setBlogs(blogData);
@@ -60,25 +78,26 @@ const Blogs = () => {
                       <strong className="blog-bottom-dot">.</strong>{" "}
                     </div>
                     <div className="blog-buttons">
-                      <button className="soap-color-btn">
-                        <small> Online Learning</small>
-                      </button>{" "}
-                      <button className="robin-egg-blue-btn ">
-                        Traditional
-                      </button>{" "}
-                      <button className="champagne-color-btn">Classroom</button>
+                      {data.buttons.map((data) => (
+                        <Link to={`/blog/tag/${data.link}`}>
+                          {data.link && (
+                            <button className={`tag-btn-${data.id}`}>
+                              <small>{data.title}</small>
+                            </button>
+                          )}
+                        </Link>
+                      ))}
                     </div>
                   </div>
                   <div className="share-div">
                     <img
                       onClick={() => {
                         openModal();
-                        setLink(data.facebookShare);
+                        setLink(data);
                       }}
                       src={share}
                       alt=""
                     />
-                    <img src={save} alt="" />
                   </div>
                 </div>
               </div>
@@ -87,7 +106,8 @@ const Blogs = () => {
         </>
       ))}
       <SharingModal
-        link={links}
+      customStyles={customStyles}
+        links={links}
         modalIsOpen={modalIsOpen}
         closeModal={closeModal}
       ></SharingModal>

@@ -1,14 +1,6 @@
 import React from "react";
-import RecentBlog from "../../Blog/RecentBlog/RecentBlog";
 import "./OnlineTeaching.css";
 import "../LearnAnalytics/LearnAnalytics.css";
-import { useState } from "react";
-import Modal from "react-modal";
-import ReactToPrint from "react-to-print";
-import { useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import FeedbackModal from "../../Blog/FeedbackModal/FeedbackModal";
 import { Link } from "react-router-dom";
 import facebook from "../../../resource/icon/facebook.png";
 import twitter from "../../../resource/icon/twitter.png";
@@ -21,39 +13,9 @@ import eyeTracking from "../../../resource/blogs/eye-tracking.jpg";
 import engagingContent from "../../../resource/blogs/engaging-content.png";
 import learnerEngagement from "../../../resource/blogs/learner-engagement.jpg";
 import comparisionGraph from "../../../resource/blogs/comparision-graph.jpg";
-import '../../Blog/PopularArticles/PopularArticles.css'
-
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    background: "none",
-    border: 0,
-  },
-};
-Modal.setAppElement("#root");
+import "../../Blog/PopularArticles/PopularArticles.css";
 
 const OnlineTeaching = () => {
-  const [modalIsOpen, setIsOpen] = useState(false);
-  function openModal() {
-    setIsOpen(true);
-  }
-  function closeModal() {
-    setIsOpen(false);
-  }
-  const componentRef = useRef();
-
-  const [feedbackModalIsOpen, setFeedbackIsOpen] = useState(false);
-  function feedbackOpenModal() {
-    setFeedbackIsOpen(true);
-  }
-  function feedbackCloseModal() {
-    setFeedbackIsOpen(false);
-  }
   return (
     <>
       <section className="online-teaching-bg"></section>
@@ -72,7 +34,7 @@ const OnlineTeaching = () => {
                 <div>
                   <div className="d-flex date-div mt-1">
                     <p style={{ color: "gray" }} className="date">
-                      10th January
+                      September 3, 2021
                     </p>{" "}
                     <strong style={{ color: "gray" }} className="popular-dot">
                       .
@@ -80,16 +42,30 @@ const OnlineTeaching = () => {
                     <p style={{ color: "gray" }} className="date">
                       10 min read
                     </p>
-                    <strong className="blog-bottom-dot">.</strong>{" "}
                   </div>
                   <div>
-                    <button className="soap-color-btn">
-                      <small> Online Learning</small>
-                    </button>{" "}
-                    <button className="robin-egg-blue-btn mx-2">
-                      Traditional
-                    </button>{" "}
-                    <button className="champagne-color-btn">Classroom</button>
+                    <Link
+                      to="/blog/tag/content-engagement"
+                      className="text-decoration-none"
+                    >
+                      <button className="soap-color-btn">
+                        <small> Content engagement</small>
+                      </button>{" "}
+                    </Link>
+                    <Link
+                      to="/blog/tag/learner-engagement"
+                      className="text-decoration-none"
+                    >
+                      <button className="robin-egg-blue-btn mx-2">
+                        Learner Engagement
+                      </button>{" "}
+                    </Link>
+                    <Link
+                      to="/blog/tag/online-teaching"
+                      className="text-decoration-none"
+                    >
+                      <button className="champagne-color-btn">Online Teaching</button>
+                    </Link>
                   </div>
                   <div>
                     <h1 className="blog-top-header-title">
@@ -303,48 +279,7 @@ const OnlineTeaching = () => {
                         content or not.{" "}
                       </p>
                     </div>
-                    {/* Share Via: */}
-                    <section>
-                      <div style={{ marginTop: "3rem" }} className="text-white">
-                        <div className="d-flex">
-                          <p style={{ fontWeight: 300 }}>Category</p>:{" "}
-                          <Link to="/blog" className="blog-category-btn">
-                            BLOG
-                          </Link>
-                        </div>
-                        <div className="d-flex">
-                          <p style={{ fontWeight: 300 }}>Tags</p>:{" "}
-                          <div>
-                            <Link
-                              to="/blog/tag/content-engagement"
-                              className="tag-texts"
-                            >
-                              Content Engagement
-                            </Link>{" "}
-                            <Link
-                              to="/blog/tag/learner-engagement"
-                              className="tag-texts"
-                            >
-                              Learner Engagement
-                            </Link>{" "}
-                            <Link
-                              to="/blog/tag/online-teaching"
-                              className="tag-texts"
-                            >
-                              Online Teaching
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        style={{
-                          width: "100%",
-                          border: "1px solid white",
-                          marginTop: "10px",
-                          opacity: "0.8",
-                        }}
-                      ></div>
-                    </section>
+                   
                   </div>
                 </div>
               </div>

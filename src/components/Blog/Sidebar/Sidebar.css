@@ -5,16 +5,7 @@ a {
 }
 
 
-.sharing-modal {
-    background-color: white;
-    border-radius: 2px;
-    max-width: 90%;
-    max-height: 90%;
-    width: 730px;
-    height: auto;
-    z-index: 10;
-    padding: 1rem;
-}
+
 
 .modal-share-heading {
     font-size: 18px;
